@@ -1,0 +1,564 @@
+fileFormatVersion: 2
+guid: 147cea96ce3a98648bb36f79bc33f000
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 2110737317242084727
+    second: playerkilled3_0
+  - first:
+      213: 1711205569950338208
+    second: playerkilled3_1
+  - first:
+      213: 7372748084204089157
+    second: playerkilled3_2
+  - first:
+      213: -3808596399936074601
+    second: playerkilled3_3
+  - first:
+      213: -6083524559099681744
+    second: playerkilled3_4
+  - first:
+      213: 5570060275441072628
+    second: playerkilled3_5
+  - first:
+      213: 4402208076081924777
+    second: playerkilled3_6
+  - first:
+      213: 2827497186583578401
+    second: playerkilled3_7
+  - first:
+      213: 6800917611221244374
+    second: playerkilled3_8
+  - first:
+      213: 8606833435077934162
+    second: playerkilled3_9
+  - first:
+      213: -480617800635517744
+    second: playerkilled3_10
+  - first:
+      213: -8326322495203673741
+    second: playerkilled3_11
+  - first:
+      213: 514788836093936796
+    second: playerkilled3_12
+  - first:
+      213: -25064423303186320
+    second: playerkilled3_13
+  - first:
+      213: -4501402631046929922
+    second: playerkilled3_14
+  - first:
+      213: -7562588243148076371
+    second: playerkilled3_15
+  - first:
+      213: -4046757890479471311
+    second: playerkilled3_16
+  - first:
+      213: -107773305222230635
+    second: playerkilled3_17
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: playerkilled3_0
+      rect:
+        serializedVersion: 2
+        x: 227
+        y: 355
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 77d10682868da4d10800000000000000
+      internalID: 2110737317242084727
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playerkilled3_1
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 359
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0ac4f86466c6fb710800000000000000
+      internalID: 1711205569950338208
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playerkilled3_2
+      rect:
+        serializedVersion: 2
+        x: 269
+        y: 354
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 54f2d61f153415660800000000000000
+      internalID: 7372748084204089157
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playerkilled3_3
+      rect:
+        serializedVersion: 2
+        x: 227
+        y: 332
+        width: 11
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 79c8af8c0c5252bc0800000000000000
+      internalID: -3808596399936074601
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playerkilled3_4
+      rect:
+        serializedVersion: 2
+        x: 251
+        y: 349
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 034af7835aaf29ba0800000000000000
+      internalID: -6083524559099681744
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playerkilled3_5
+      rect:
+        serializedVersion: 2
+        x: 250
+        y: 333
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4f9fd2f1f44dc4d40800000000000000
+      internalID: 5570060275441072628
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playerkilled3_6
+      rect:
+        serializedVersion: 2
+        x: 271
+        y: 335
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9aa083adbe8c71d30800000000000000
+      internalID: 4402208076081924777
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playerkilled3_7
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 164
+        width: 428
+        height: 167
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1270bb1e5b94d3720800000000000000
+      internalID: 2827497186583578401
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playerkilled3_8
+      rect:
+        serializedVersion: 2
+        x: 237
+        y: 157
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6d95a8bd886b16e50800000000000000
+      internalID: 6800917611221244374
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playerkilled3_9
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 148
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 25c76c2886d917770800000000000000
+      internalID: 8606833435077934162
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playerkilled3_10
+      rect:
+        serializedVersion: 2
+        x: 241
+        y: 147
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0d4f36028a08459f0800000000000000
+      internalID: -480617800635517744
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playerkilled3_11
+      rect:
+        serializedVersion: 2
+        x: 265
+        y: 150
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3797a0c2ec5f27c80800000000000000
+      internalID: -8326322495203673741
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playerkilled3_12
+      rect:
+        serializedVersion: 2
+        x: 227
+        y: 136
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c9447bd08b5e42700800000000000000
+      internalID: 514788836093936796
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playerkilled3_13
+      rect:
+        serializedVersion: 2
+        x: 271
+        y: 136
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 07873803a04f6aff0800000000000000
+      internalID: -25064423303186320
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playerkilled3_14
+      rect:
+        serializedVersion: 2
+        x: 282
+        y: 140
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ef16071182ec781c0800000000000000
+      internalID: -4501402631046929922
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playerkilled3_15
+      rect:
+        serializedVersion: 2
+        x: 236
+        y: 130
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: daa0d98af0a4c0790800000000000000
+      internalID: -7562588243148076371
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playerkilled3_16
+      rect:
+        serializedVersion: 2
+        x: 283
+        y: 125
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 13546f5a32707d7c0800000000000000
+      internalID: -4046757890479471311
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playerkilled3_17
+      rect:
+        serializedVersion: 2
+        x: 269
+        y: 123
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 59d85f9ffbc118ef0800000000000000
+      internalID: -107773305222230635
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      playerkilled3_0: 2110737317242084727
+      playerkilled3_1: 1711205569950338208
+      playerkilled3_10: -480617800635517744
+      playerkilled3_11: -8326322495203673741
+      playerkilled3_12: 514788836093936796
+      playerkilled3_13: -25064423303186320
+      playerkilled3_14: -4501402631046929922
+      playerkilled3_15: -7562588243148076371
+      playerkilled3_16: -4046757890479471311
+      playerkilled3_17: -107773305222230635
+      playerkilled3_2: 7372748084204089157
+      playerkilled3_3: -3808596399936074601
+      playerkilled3_4: -6083524559099681744
+      playerkilled3_5: 5570060275441072628
+      playerkilled3_6: 4402208076081924777
+      playerkilled3_7: 2827497186583578401
+      playerkilled3_8: 6800917611221244374
+      playerkilled3_9: 8606833435077934162
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
