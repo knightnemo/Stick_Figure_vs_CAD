@@ -2,28 +2,31 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class fallingblock : MonoBehaviour
+public class FallingBlock : MonoBehaviour
 {
     Rigidbody2D rigidbody2d;
+    float m = 1.0f;
+    public GameObject ply; // 获取玩家的位置信息
+    Transform targetTransform;
 
-    // Start is called before the first frame update
     void Start()
     {
         rigidbody2d = GetComponent<Rigidbody2D>();
+        targetTransform = ply.transform;
         rigidbody2d.gravityScale = 0;
     }
 
-    // Update is called once per frame
     void Update()
     {
-        
-    }
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        if (collision.tag == "Player")
+        Vector2 targetPosition = targetTransform.position;
+        if (targetPosition.y < rigidbody2d.position.y)
         {
-            Debug.Log("Enter");
-            rigidbody2d.gravityScale = 1 ;
+            Debug.Log(targetPosition.x + "/" + targetPosition.y + "/" + rigidbody2d.position.x);
+            if ((targetPosition.x <= rigidbody2d.position.x + m) && (targetPosition.x >= rigidbody2d.position.x - m))
+            {
+                Debug.Log("Triggered fallingblock");
+                rigidbody2d.gravityScale = 1;
+            }
         }
     }
 }
