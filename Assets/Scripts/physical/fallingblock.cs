@@ -21,7 +21,7 @@ public class FallingBlock : MonoBehaviour
         Vector2 targetPosition = targetTransform.position;
         if (targetPosition.y < rigidbody2d.position.y)
         {
-            Debug.Log(targetPosition.x + "/" + targetPosition.y + "/" + rigidbody2d.position.x);
+            //Debug.Log(targetPosition.x + "/" + targetPosition.y + "/" + rigidbody2d.position.x);
             if ((targetPosition.x <= rigidbody2d.position.x + m) && (targetPosition.x >= rigidbody2d.position.x - m))
             {
                 Debug.Log("Triggered fallingblock");
