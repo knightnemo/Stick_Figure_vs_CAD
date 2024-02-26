@@ -12,19 +12,13 @@ public class rm : MonoBehaviour
     public float flytime = 7.0f;
     float timer;
     Vector2 direction;
-    void Awake()
-    {
-        rigidbody2d = GetComponent<Rigidbody2D>();
-        rmTransform = GetComponent<Transform>();
-        targetTransform = ply.transform;
-        direction=targetTransform.position-rmTransform.position;
-    }
     // Start is called before the first frame update
     void Start()
     {
+        rigidbody2d = GetComponent<Rigidbody2D>();
         timer = flytime;
         Debug.Log(direction.x+"/"+direction.y);
-        launch(direction);
+        launch();
     }
 
     // Update is called once per frame
@@ -42,9 +36,10 @@ public class rm : MonoBehaviour
         }
     }
 
-    public void launch(Vector2 direction)
+    public void launch()
     {
-        rigidbody2d.AddForce(-direction * force);
+        Vector3 v=(playercontroller.instance.transform.position-transform.position).normalized;
+        rigidbody2d.AddForce(-v * force);
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
