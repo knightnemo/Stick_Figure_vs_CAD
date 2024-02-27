@@ -6,11 +6,12 @@ public class Terminal : MonoBehaviour
 {   
     Transform terminalTransform;
     public GameObject rm;
+    public GameObject wq;
     float force=10.0f;
     bool activestate=false;
     public GameObject ply;
     public float activedistance;
-    public float interval=1.0f;
+    public float interval=5.0f;
     public float projectilespeed;
     Vector2 direction;
     float intervaltime;
@@ -33,12 +34,17 @@ public class Terminal : MonoBehaviour
             intervaltime-=Time.deltaTime;
             if(intervaltime<=0){
                 intervaltime=interval;
-                rmobject = Instantiate(rm, (Vector2)terminalTransform.position+ Vector2.up * 10.0f, Quaternion.identity);
+                int randomNumber = Random.Range(1, 10);
+                if(randomNumber<=6){
+                rmobject = Instantiate(rm, (Vector2)terminalTransform.position+ Vector2.up * 3.0f, Quaternion.identity);
+                rigidbody2d =rm.GetComponent<Rigidbody2D>();}
+                else{
+                rmobject = Instantiate(wq, (Vector2)terminalTransform.position+ Vector2.up * 3.0f, Quaternion.identity);
+                rigidbody2d =wq.GetComponent<Rigidbody2D>();
+                }
                 direction.x=targetTransform.position.x-terminalTransform.position.x;
                 direction.y=targetTransform.position.y-terminalTransform.position.y;
-                rigidbody2d =rm.GetComponent<Rigidbody2D>();
-                rigidbody2d.AddForce(-direction * force);
-                //我想在这里调用launch
+                rigidbody2d.AddForce(-direction * force);//随机生成:wq或rm
             }
 
         }

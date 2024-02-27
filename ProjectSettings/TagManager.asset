@@ -25,6 +25,7 @@ TagManager:
   - background
   - tips
   - Restart
+  - wq
   layers:
   - Default
   - TransparentFX

@@ -12,7 +12,7 @@ public class playercontroller : MonoBehaviour
     float RT;
 
     Rigidbody2D rigidbody2d;
-    public float speed = 3.0f;
+    public float speed = 5.0f;
     public bool canjump = true;
     public bool canjumptwice = false;
     public bool intheair;
@@ -67,8 +67,10 @@ public class playercontroller : MonoBehaviour
     float cooldownTimer;
     bool rightclick,leftclick,cooldown;
     public float chargespeed;
-
-
+    //lost attack related
+    public bool LostAttack; 
+    public float LostAttackTime;
+    public float LAtimer;
     
     void Awake()
     {
@@ -77,6 +79,7 @@ public class playercontroller : MonoBehaviour
         leftclick=false;
         cooldown=false;
         cooldownTimer=cooldownTime;
+        LostAttack=false;
     }
 
     // Start is called before the first frame update
@@ -112,7 +115,7 @@ public class playercontroller : MonoBehaviour
     // Update is called once per frame
     void Update()
     {   
-        Debug.Log(speed);
+        //Debug.Log(speed);
         if(Input.GetKeyDown(KeyCode.D)){
                     rightclick=true;
         }
@@ -145,11 +148,12 @@ public class playercontroller : MonoBehaviour
         if(cooldown){
             cooldownTimer-=Time.deltaTime;
             if(cooldownTimer<0){
-                speed=3.0f;
+                speed=5.0f;
                 cooldown=false;
                 cooldownTimer=cooldownTime;
             }
         }
+        //以上实现加速跑
         if(died)
         {
             return;
@@ -223,6 +227,20 @@ public class playercontroller : MonoBehaviour
         if (canBreakdown && chances[2] >0)//��ʹ��ʱ
         {
             Breakdown();
+        }
+        //lost attack state:
+        if(LostAttack){
+            LAtimer-=Time.deltaTime;
+            if(LAtimer<0){
+            Debug.Log("Player Can Attack again");
+            LostAttack=false;
+            canErase=true;
+            canTeleport=true;
+            canBreakdown=true;
+            canFillet=true;//FIXME:这一块留了个小坑，就是可能被:wq击中时候还有一些技能没有解锁
+            //但这个实际上很好修，就是在player中添加一个记录四个技能是不是没获得的bool数组就行
+            //但鉴于这个事情是和到时候获取技能十分相关的，故留白，避免后来者不必要的麻烦
+            }
         }
     }
     

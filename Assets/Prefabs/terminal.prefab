@@ -118,7 +118,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
@@ -147,8 +147,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rm: {fileID: 9043957134738810276, guid: 06c6e44dfb4f340a98f32f5f99ec7479, type: 3}
+  wq: {fileID: 2710847328650926831, guid: 67abf673764c54c99ba776a2aa6102c3, type: 3}
   ply: {fileID: 7671142803375392009, guid: f8749428834992d46940fe9b40f4a53a, type: 3}
-  activedistance: 20
-  interval: 1
+  activedistance: 25
+  interval: 5
   projectilespeed: 5
   rmobject: {fileID: 9043957134738810276, guid: 06c6e44dfb4f340a98f32f5f99ec7479, type: 3}
