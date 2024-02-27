@@ -43,34 +43,46 @@ public class playercontroller : MonoBehaviour
     //Animation
     Animator ani;
 
-    //¼¼ÄÜÄÜ·ñÊ¹ÓÃ£¬³õÊ¼»¯Îªfalse
+    //ï¿½ï¿½ï¿½ï¿½ï¿½Ü·ï¿½Ê¹ï¿½Ã£ï¿½ï¿½ï¿½Ê¼ï¿½ï¿½Îªfalse
     public bool canErase=true;
     public bool canTeleport=true;
     public bool canBreakdown=true;
     public bool canFillet=true;
-    //¼¼ÄÜ»¹¿ÉÊ¹ÓÃ´ÎÊý
+    //ï¿½ï¿½ï¿½Ü»ï¿½ï¿½ï¿½Ê¹ï¿½Ã´ï¿½ï¿½ï¿½
     public int[] chances = new int[4] ;
-    //ÒÔÏÂÎª×Ü´ÎÊý
+    //ï¿½ï¿½ï¿½ï¿½Îªï¿½Ü´ï¿½ï¿½ï¿½
     public int eraseChances;
     public int teleportChances;
     public int breakdownChances;
     public int filletChances;
-    //µ÷ÓÃ¼¼ÄÜÌáÊ¾
+    //ï¿½ï¿½ï¿½Ã¼ï¿½ï¿½ï¿½ï¿½ï¿½Ê¾
     public Console0Script console;
 
-    //¸´»î°´Å¥
+    //ï¿½ï¿½ï¿½î°´Å¥
     public GameObject restart;
+    //change-speed related
+    public float keyDetectTime;
+    public float cooldownTime;
+    float detectTimer;
+    float cooldownTimer;
+    bool rightclick,leftclick,cooldown;
+    public float chargespeed;
+
 
     
     void Awake()
     {
         instance = this;
+        rightclick=false;
+        leftclick=false;
+        cooldown=false;
+        cooldownTimer=cooldownTime;
     }
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        detectTimer=keyDetectTime;
         rigidbody2d = GetComponent<Rigidbody2D>();
         ani = GetComponent<Animator>();
 
@@ -82,16 +94,16 @@ public class playercontroller : MonoBehaviour
         erasetimer = erasetime;
         fillettimer = fillettime;
 
-        //»ñÈ¡¼¼ÄÜ¿ØÖÆÌ¨
+        //ï¿½ï¿½È¡ï¿½ï¿½ï¿½Ü¿ï¿½ï¿½ï¿½Ì¨
         console=Console0Script.instance;
 
-        //¼¼ÄÜ¿ÉÊ¹ÓÃ´ÎÊý³õÊ¼»¯
+        //ï¿½ï¿½ï¿½Ü¿ï¿½Ê¹ï¿½Ã´ï¿½ï¿½ï¿½ï¿½ï¿½Ê¼ï¿½ï¿½
         chances[0] = eraseChances;
         chances[1] = teleportChances;
         chances[2] = breakdownChances;
         chances[3] = filletChances;
 
-        //»ñÈ¡¸´»î¼ü
+        //ï¿½ï¿½È¡ï¿½ï¿½ï¿½ï¿½ï¿½
         restart = GameObject.FindGameObjectWithTag("Restart");
 
         
@@ -99,7 +111,45 @@ public class playercontroller : MonoBehaviour
 
     // Update is called once per frame
     void Update()
-    {
+    {   
+        Debug.Log(speed);
+        if(Input.GetKeyDown(KeyCode.D)){
+                    rightclick=true;
+        }
+        if(Input.GetKeyDown(KeyCode.A)){
+                    leftclick=true;
+        }
+        if(rightclick||leftclick){
+        if(detectTimer>=0){
+            detectTimer-=Time.deltaTime;
+            if((keyDetectTime-detectTimer)>0.1f){
+            if(rightclick){
+                if(Input.GetKeyDown(KeyCode.D)){
+                    speed=chargespeed;
+                    cooldown=true;
+                }
+            }
+            if(leftclick){
+                if(Input.GetKeyDown(KeyCode.A)){
+                    speed=chargespeed;
+                    cooldown=true;
+                }
+            }}
+        }
+        else{
+            detectTimer=keyDetectTime;
+            leftclick=false;
+            rightclick=false;
+        }
+        }
+        if(cooldown){
+            cooldownTimer-=Time.deltaTime;
+            if(cooldownTimer<0){
+                speed=3.0f;
+                cooldown=false;
+                cooldownTimer=cooldownTime;
+            }
+        }
         if(died)
         {
             return;
@@ -148,7 +198,7 @@ public class playercontroller : MonoBehaviour
             if (Input.GetMouseButtonDown(0))
             {
                 erasetimer = erasetime;
-                if (canErase && chances[0] >0)//¿ÉÊ¹ÓÃÊ±
+                if (canErase && chances[0] >0)//ï¿½ï¿½Ê¹ï¿½ï¿½Ê±
                 {
                     Erase();
                 }
@@ -164,13 +214,13 @@ public class playercontroller : MonoBehaviour
             if (Input.GetKeyDown(KeyCode.F))
             {
                 fillettimer = fillettime;
-                if (canFillet && chances[3] >0)//¿ÉÊ¹ÓÃÊ±
+                if (canFillet && chances[3] >0)//ï¿½ï¿½Ê¹ï¿½ï¿½Ê±
                 {
                     Fillet();
                 }
             }
         }
-        if (canBreakdown && chances[2] >0)//¿ÉÊ¹ÓÃÊ±
+        if (canBreakdown && chances[2] >0)//ï¿½ï¿½Ê¹ï¿½ï¿½Ê±
         {
             Breakdown();
         }
@@ -313,7 +363,7 @@ public class playercontroller : MonoBehaviour
 
                 ani.SetTrigger("Hurt");
                 console.hurt = value;
-                console.Generate(4);//ÊÜµ½ÉËº¦ÌáÊ¾
+                console.Generate(4);//ï¿½Üµï¿½ï¿½Ëºï¿½ï¿½ï¿½Ê¾
             }
         }
         else
@@ -335,7 +385,7 @@ public class playercontroller : MonoBehaviour
         died = true;
         rigidbody2d.simulated = false;
         ani.SetTrigger("Killed");
-        if(console?.tips!=null)//ËÀÍöÊ±Ìø³ö¸´»î°´Å¥
+        if(console?.tips!=null)//ï¿½ï¿½ï¿½ï¿½Ê±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½î°´Å¥
         {
             foreach (GameObject tip in console.tips)
             {

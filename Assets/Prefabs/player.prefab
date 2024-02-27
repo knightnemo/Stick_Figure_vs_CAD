@@ -221,14 +221,34 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dc1b17136b68aaa49a23ad110267f36f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 5
+  speed: 3
   canjump: 0
   canjumptwice: 0
   intheair: 0
   HP: 5
+  died: 0
   invtime: 1
+  rdyfortele: -1
   erase: {fileID: 7008419762836328075, guid: cdc541c4d0f728c4e847b4e08c14cb77, type: 3}
   erasetime: 0.5
+  fillet: {fileID: 0}
+  fillettime: 1
+  detect: {fileID: 0}
+  rdyforbreak: -1
+  canErase: 1
+  canTeleport: 1
+  canBreakdown: 1
+  canFillet: 1
+  chances: 00000000000000000000000000000000
+  eraseChances: 0
+  teleportChances: 0
+  breakdownChances: 0
+  filletChances: 0
+  console: {fileID: 0}
+  restart: {fileID: 0}
+  keyDetectTime: 0.5
+  cooldownTime: 1.5
+  chargespeed: 10
 --- !u!95 &5022240458395622029
 Animator:
   serializedVersion: 7
