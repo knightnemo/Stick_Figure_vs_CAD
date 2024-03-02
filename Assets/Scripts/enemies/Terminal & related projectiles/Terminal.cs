@@ -7,6 +7,8 @@ public class Terminal : MonoBehaviour
     Transform terminalTransform;
     public GameObject rm;
     public GameObject wq;
+    public GameObject beam;
+    public GameObject rm_f;
     float force=10.0f;
     bool activestate=false;
     public GameObject ply;
@@ -18,35 +20,59 @@ public class Terminal : MonoBehaviour
     Transform targetTransform;
     Rigidbody2D rigidbody2d;
     public GameObject rmobject;
+    bool beamstate;
+    public float beamtime;
+    float beamtimer;
     // Start is called before the first frame update
     void Start()
     {
         terminalTransform = GetComponent<Transform>();
         targetTransform = ply.transform;
         intervaltime=interval;
-        
+        beamstate=false;
+        beamtimer=beamtime;
     }
 
     // Update is called once per frame
     void Update()
     {
         if(activestate){
-            intervaltime-=Time.deltaTime;
-            if(intervaltime<=0){
-                intervaltime=interval;
-                int randomNumber = Random.Range(1, 10);
-                if(randomNumber<=6){
-                rmobject = Instantiate(rm, (Vector2)terminalTransform.position+ Vector2.up * 3.0f, Quaternion.identity);
-                rigidbody2d =rm.GetComponent<Rigidbody2D>();}
-                else{
-                rmobject = Instantiate(wq, (Vector2)terminalTransform.position+ Vector2.up * 3.0f, Quaternion.identity);
-                rigidbody2d =wq.GetComponent<Rigidbody2D>();
+            if(!beamstate){
+                intervaltime-=Time.deltaTime;
+                if(intervaltime<=0){
+                    intervaltime=interval;
+                    int randomNumber = Random.Range(1, 10);
+                    if(randomNumber<=2){
+                    rmobject = Instantiate(rm, (Vector2)terminalTransform.position, Quaternion.identity);
+                    rigidbody2d =rm.GetComponent<Rigidbody2D>();
+                    direction.x=targetTransform.position.x-terminalTransform.position.x;
+                    direction.y=targetTransform.position.y-terminalTransform.position.y;
+                    rigidbody2d.AddForce(-direction * force);//随机生成:wq或rm
+                    }
+                    else if(randomNumber<=7){
+                        beam_action();
+                        
+                    }
+                    else{
+                    rmobject = Instantiate(wq, (Vector2)terminalTransform.position, Quaternion.identity);
+                    rigidbody2d =wq.GetComponent<Rigidbody2D>();
+                    direction.x=targetTransform.position.x-terminalTransform.position.x;
+                    direction.y=targetTransform.position.y-terminalTransform.position.y;
+                    rigidbody2d.AddForce(-direction * force);//随机生成:wq或rm
+                    }
                 }
-                direction.x=targetTransform.position.x-terminalTransform.position.x;
-                direction.y=targetTransform.position.y-terminalTransform.position.y;
-                rigidbody2d.AddForce(-direction * force);//随机生成:wq或rm
             }
-
+            if(beamstate){
+                beamtimer-=Time.deltaTime;
+                if(beamtimer<=0){
+                    Destroy(rmobject);
+                    beamstate=false;
+                    beamtimer=beamtime;
+                    rmobject = Instantiate(rm_f, (Vector2)terminalTransform.position, Quaternion.identity);
+                    rigidbody2d =rm_f.GetComponent<Rigidbody2D>();
+                    rigidbody2d.AddForce(-direction * force);
+                }
+            }
         }
         else{
             float distance = Vector2.Distance(targetTransform.position, terminalTransform.position);
@@ -57,5 +83,14 @@ public class Terminal : MonoBehaviour
             }
         }//判断进入activestate,一旦进入后不再可能退出，直至Terminal死亡
 
+    }
+    void beam_action(){
+        Vector2 direction = targetTransform.position - terminalTransform.position;
+        float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
+        Quaternion targetRotation = Quaternion.AngleAxis(angle, Vector3.forward);
+
+        rmobject = Instantiate(beam, terminalTransform.position, targetRotation);
+        Debug.Log("Beam Generated");
+        beamstate = true;
     }
 }
