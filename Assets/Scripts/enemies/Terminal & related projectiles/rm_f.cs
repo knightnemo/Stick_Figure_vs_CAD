@@ -14,6 +14,8 @@ public class rm_f : MonoBehaviour
     int shieldnum=0;
 
     Vector2 direction;
+
+    public Vector3 v;
     // Start is called before the first frame update
     void Start()
     {
@@ -40,7 +42,7 @@ public class rm_f : MonoBehaviour
 
     public void launch()
     {
-        Vector3 v=(playercontroller.instance.transform.position-transform.position).normalized;
+        //=(playercontroller.instance.transform.position-transform.position).normalized;
         //Debug.Log(v.x+"/"+v.y+"/"+v.z);
         rigidbody2d.AddForce(v * force);
     }

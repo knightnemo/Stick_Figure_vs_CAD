@@ -27,6 +27,9 @@ public class Terminal : MonoBehaviour
     public float beamtime;
     Vector2 copydir;
     float beamtimer;
+
+    rm_f rS;
+    public float tmpx, tmpy;
     // Start is called before the first frame update
     void Start()
     {
@@ -95,6 +98,9 @@ public class Terminal : MonoBehaviour
                     rmobject = Instantiate(rm_f, (Vector2)terminalTransform.position, Quaternion.identity);
                     rigidbody2d =rm_f.GetComponent<Rigidbody2D>();
                     rigidbody2d.AddForce(-copydir * force);
+
+                    rS = rmobject.GetComponent<rm_f>();
+                    rS.v = new Vector3(tmpx, tmpy, 0).normalized;
                 }
             }
         }
@@ -112,8 +118,8 @@ public class Terminal : MonoBehaviour
         Vector2 tmp = targetTransform.position - terminalTransform.position;
         float angle = Mathf.Atan2(tmp.y, tmp.x) * Mathf.Rad2Deg;
         Quaternion targetRotation = Quaternion.AngleAxis(angle, Vector3.forward);
-        float tmpx=(float)tmp.x;
-        float tmpy=(float)tmp.y;
+        tmpx=(float)tmp.x;
+        tmpy=(float)tmp.y;
         copydir=new Vector2(tmpx, tmpy);
         rmobject = Instantiate(beam, terminalTransform.position, targetRotation);
         Debug.Log("Beam Generated");
