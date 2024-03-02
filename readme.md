@@ -1,6 +1,13 @@
-###火柴人vsCAD
-This game is a Project for 2024 THU software engineering contest. Uses Unity to develop a 2D game of Stick Figures and CAD.
-Credits: TUOMF, Xyberoid, KnightNemo
+# 火柴人vsCAD
+
+This game is a Project for 2024 THU software engineering contest.💻
+
+Uses Unity to develop a 2D game of Stick Figures and CAD.💾
+
+Credits: TUOMF, Xyberoid, KnightNemo🧑‍💻
+
+## Overview
+
 * 场景中包含了**玩家**，**鼠标光标**和很多**物体**和**敌对单位**🤖
 
 * 玩家有四个技能可以使用:
@@ -17,7 +24,7 @@ Credits: TUOMF, Xyberoid, KnightNemo
 
 * 其他的组件暂时不用做什么调整🤗
 
-####0219更新:
+## 0219更新:
 * 增加了有HP和技能的UI/复活🗿
 
 * **HP机制**:显示数字和相对应的六边形数(用的不是预制件)❤️
@@ -28,14 +35,14 @@ Credits: TUOMF, Xyberoid, KnightNemo
     * 使用技能事会出现提示框(预制件)，3个以上或4s以上自动消失(在`Console0Script`和`TipsScript`)里
 * 死后点击右上角按钮本关重新开始✝️
 
-####0220更新:
+## 0220更新:
 * `DontDestroyOnLoad`仅包括`LogicManagers`和`Canvas0`，其他需要共用的每个场景单独放(包括`Camera`和`player`相关的)，`player`的数据可以放到`LogicManagers`里的`Logic`的脚本`LogicScript`中。🤯
 已实例化可以LogicScript.instance引用
 
-####0221更新:
+## 0221更新:
 * 增加了**记录点**(文件保存的图标)，玩家碰到后消失并将这个位置作为重生点。在实际关卡设置中应避免玩家回到上一个重生点。
 * 改进了**分解**技能，如果绿色的探测区域没有接触到阵列物体(蓝色区域不会产生)，则不会消耗使用次数。
-####0302更新:
+## 0302更新:
 * 完成小boss: `Terminal`的制作,`Terminal`在玩家进入特定范围后进入`ActiveState`,能发射6种不同的炮弹:
     * `rm`:发射正常的炮弹，击中玩家后玩家`HP`-1🚀
     * `:wq`:发射的炮弹会短时间内禁用玩家的所有技能🈲
