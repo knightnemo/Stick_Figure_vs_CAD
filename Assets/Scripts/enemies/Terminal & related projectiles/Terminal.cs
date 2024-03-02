@@ -9,6 +9,9 @@ public class Terminal : MonoBehaviour
     public GameObject wq;
     public GameObject beam;
     public GameObject rm_f;
+    public GameObject tac;
+    public GameObject help;
+    public GameObject move;
     float force=10.0f;
     bool activestate=false;
     public GameObject ply;
@@ -22,6 +25,7 @@ public class Terminal : MonoBehaviour
     public GameObject rmobject;
     bool beamstate;
     public float beamtime;
+    Vector2 copydir;
     float beamtimer;
     // Start is called before the first frame update
     void Start()
@@ -35,32 +39,52 @@ public class Terminal : MonoBehaviour
 
     // Update is called once per frame
     void Update()
-    {
+    {//FIXME:预留接口，如果有一二阶段切换可以通过调整randomNumber的范围和intervaltime的数值实现
         if(activestate){
             if(!beamstate){
                 intervaltime-=Time.deltaTime;
                 if(intervaltime<=0){
                     intervaltime=interval;
-                    int randomNumber = Random.Range(1, 10);
+                    int randomNumber =Random.Range(1, 13);
                     if(randomNumber<=2){
                     rmobject = Instantiate(rm, (Vector2)terminalTransform.position, Quaternion.identity);
                     rigidbody2d =rm.GetComponent<Rigidbody2D>();
                     direction.x=targetTransform.position.x-terminalTransform.position.x;
                     direction.y=targetTransform.position.y-terminalTransform.position.y;
-                    rigidbody2d.AddForce(-direction * force);//随机生成:wq或rm
+                    rigidbody2d.AddForce(-direction * force);//rm
                     }
-                    else if(randomNumber<=7){
-                        beam_action();
-                        
+                    else if(randomNumber<=4){
+                        beam_action();//rm-f
                     }
-                    else{
+                    else if(randomNumber<=6){
+                        rmobject = Instantiate(help, (Vector2)terminalTransform.position, Quaternion.identity);
+                        rigidbody2d =help.GetComponent<Rigidbody2D>();
+                        direction.x=targetTransform.position.x-terminalTransform.position.x;
+                        direction.y=targetTransform.position.y-terminalTransform.position.y;
+                        rigidbody2d.AddForce(-direction * force);//--help
+                    }
+                    else if(randomNumber<=8){
+                        rmobject = Instantiate(tac, (Vector2)terminalTransform.position, Quaternion.identity);
+                        rigidbody2d =tac.GetComponent<Rigidbody2D>();
+                        direction.x=targetTransform.position.x-terminalTransform.position.x;
+                        direction.y=targetTransform.position.y-terminalTransform.position.y;
+                        rigidbody2d.AddForce(-direction * force);//tac
+                    }
+                    else if(randomNumber<=10){
                     rmobject = Instantiate(wq, (Vector2)terminalTransform.position, Quaternion.identity);
                     rigidbody2d =wq.GetComponent<Rigidbody2D>();
                     direction.x=targetTransform.position.x-terminalTransform.position.x;
                     direction.y=targetTransform.position.y-terminalTransform.position.y;
-                    rigidbody2d.AddForce(-direction * force);//随机生成:wq或rm
+                    rigidbody2d.AddForce(-direction * force);//wq
                     }
-                }
+                    else{
+                        rmobject = Instantiate(move, (Vector2)terminalTransform.position, Quaternion.identity);
+                        rigidbody2d =move.GetComponent<Rigidbody2D>();
+                        direction.x=targetTransform.position.x-terminalTransform.position.x;
+                        direction.y=targetTransform.position.y-terminalTransform.position.y;
+                        rigidbody2d.AddForce(-direction * force);//move
+                    }//随机生成6种projectile
+                }//FIXME:没有对应的小怪，help暂时搁弃
             }
             if(beamstate){
                 beamtimer-=Time.deltaTime;
@@ -70,7 +94,7 @@ public class Terminal : MonoBehaviour
                     beamtimer=beamtime;
                     rmobject = Instantiate(rm_f, (Vector2)terminalTransform.position, Quaternion.identity);
                     rigidbody2d =rm_f.GetComponent<Rigidbody2D>();
-                    rigidbody2d.AddForce(-direction * force);
+                    rigidbody2d.AddForce(-copydir * force);
                 }
             }
         }
@@ -85,10 +109,12 @@ public class Terminal : MonoBehaviour
 
     }
     void beam_action(){
-        Vector2 direction = targetTransform.position - terminalTransform.position;
-        float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
+        Vector2 tmp = targetTransform.position - terminalTransform.position;
+        float angle = Mathf.Atan2(tmp.y, tmp.x) * Mathf.Rad2Deg;
         Quaternion targetRotation = Quaternion.AngleAxis(angle, Vector3.forward);
-
+        float tmpx=(float)tmp.x;
+        float tmpy=(float)tmp.y;
+        copydir=new Vector2(tmpx, tmpy);
         rmobject = Instantiate(beam, terminalTransform.position, targetRotation);
         Debug.Log("Beam Generated");
         beamstate = true;

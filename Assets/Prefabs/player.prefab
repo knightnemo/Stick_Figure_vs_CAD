@@ -221,6 +221,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dc1b17136b68aaa49a23ad110267f36f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isUpsideDown: 0
+  upsidedowntime: 3
   speed: 5
   canjump: 0
   canjumptwice: 0

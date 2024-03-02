@@ -10,6 +10,9 @@ public class playercontroller : MonoBehaviour
     public static playercontroller instance { get; private set; }
     //Movement
     float RT;
+    public bool isUpsideDown;
+    public float upsidedowntime;
+    float upsidedowntimer;
 
     Rigidbody2D rigidbody2d;
     public float speed = 5.0f;
@@ -74,12 +77,14 @@ public class playercontroller : MonoBehaviour
     
     void Awake()
     {
+        isUpsideDown=false;
         instance = this;
         rightclick=false;
         leftclick=false;
         cooldown=false;
         cooldownTimer=cooldownTime;
         LostAttack=false;
+        upsidedowntimer=upsidedowntime;
     }
 
     // Start is called before the first frame update
@@ -115,6 +120,17 @@ public class playercontroller : MonoBehaviour
     // Update is called once per frame
     void Update()
     {   
+        if(isUpsideDown){
+            upsidedowntimer-=Time.deltaTime;
+            if(upsidedowntimer<=0){
+                isUpsideDown=false;
+                Vector3 currentScale = transform.localScale;
+                currentScale.y *= -1f; // 反转Y轴的缩放
+                transform.localScale = currentScale;
+                upsidedowntimer=upsidedowntime;
+                Debug.Log("y轴恢复正常");
+            }
+        }
         //Debug.Log(speed);
         if(Input.GetKeyDown(KeyCode.D)){
                     rightclick=true;

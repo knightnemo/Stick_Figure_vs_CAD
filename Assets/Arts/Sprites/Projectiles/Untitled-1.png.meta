@@ -260,8 +260,8 @@ TextureImporter:
         serializedVersion: 2
         x: 0
         y: 1
-        width: 1840
-        height: 736
+        width: 798
+        height: 294
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -279,10 +279,10 @@ TextureImporter:
       name: Untitled-1_4
       rect:
         serializedVersion: 2
-        x: 1840
-        y: 1
-        width: 1840
-        height: 736
+        x: 2146
+        y: 24
+        width: 571
+        height: 291
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -300,10 +300,10 @@ TextureImporter:
       name: Untitled-1_5
       rect:
         serializedVersion: 2
-        x: 3680
+        x: 4724
         y: 1
-        width: 1840
-        height: 736
+        width: 796
+        height: 324
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
