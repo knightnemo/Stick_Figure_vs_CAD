@@ -48,6 +48,7 @@ public class tac : MonoBehaviour
         Debug.Log("TAC collided with "+collision.gameObject.tag);
         if (collision.gameObject.tag == "Player")
         {
+            playercontroller.instance.ChangeHP(-1);
             Vector3 currentScale = playercontroller.instance.transform.localScale;
             currentScale.y *= -1f; // 反转X轴的缩放
             playercontroller.instance.transform.localScale = currentScale;
@@ -63,6 +64,11 @@ public class tac : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D collider){
         if(collider.tag == "erase"){
+            Destroy(gameObject);
+        }
+        if (collider.tag == "shield")
+        {
+            playercontroller.instance.shieldnum--;
             Destroy(gameObject);
         }
     }

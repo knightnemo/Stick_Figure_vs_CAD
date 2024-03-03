@@ -48,6 +48,7 @@ public class move : MonoBehaviour
         Debug.Log("MOVE collided with "+collision.gameObject.tag);
         if (collision.gameObject.tag == "Player")
         {
+            playercontroller.instance.ChangeHP(-1);
             Vector2 newPosition;
             newPosition.x=playercontroller.instance.transform.position.x+Random.Range(-5,5);
             newPosition.y=playercontroller.instance.transform.position.y+Random.Range(0,10);
@@ -58,10 +59,16 @@ public class move : MonoBehaviour
         {
             Destroy(gameObject);
         }
+
         Destroy(gameObject);
     }
     private void OnTriggerEnter2D(Collider2D collider){
         if(collider.tag == "erase"){
+            Destroy(gameObject);
+        }
+        if (collider.tag == "shield")
+        {
+            playercontroller.instance.shieldnum--;
             Destroy(gameObject);
         }
     }

@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 764055793197900170}
   m_Layer: 0
   m_Name: tac
-  m_TagString: Untagged
+  m_TagString: terminalchar
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

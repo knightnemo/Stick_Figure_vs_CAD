@@ -43,6 +43,11 @@ public class playercontroller : MonoBehaviour
     //Breakdown
     public GameObject detect;
     public int rdyforbreak = -1;
+    //Shield
+    public int shieldnum = 3;
+    bool shieldopen = false;
+    Transform Shield;
+
     //Animation
     Animator ani;
 
@@ -94,8 +99,10 @@ public class playercontroller : MonoBehaviour
         rigidbody2d = GetComponent<Rigidbody2D>();
         ani = GetComponent<Animator>();
 
+        //All things attached to player
         line = GameObject.Find("teleportline").GetComponent<Transform>();
         erasepointer= GameObject.Find("erasesign").GetComponent<Transform>();
+        Shield = GameObject.FindGameObjectWithTag("shield").GetComponent<Transform>();
 
         //timers
         invtimer = invtime;
@@ -244,8 +251,10 @@ public class playercontroller : MonoBehaviour
         {
             Breakdown();
         }
+        //Shield
+        Defend();
         //lost attack state:
-        if(LostAttack){
+        if (LostAttack){
             LAtimer-=Time.deltaTime;
             if(LAtimer<0){
             Debug.Log("Player Can Attack again");
@@ -254,8 +263,7 @@ public class playercontroller : MonoBehaviour
             canTeleport=true;
             canBreakdown=true;
             canFillet=true;//FIXME:这一块留了个小坑，就是可能被:wq击中时候还有一些技能没有解锁
-            //但这个实际上很好修，就是在player中添加一个记录四个技能是不是没获得的bool数组就行
-            //但鉴于这个事情是和到时候获取技能十分相关的，故留白，避免后来者不必要的麻烦
+            //它出现时四个技能已经获取完了，因此不用考虑这个问题
             }
         }
     }
@@ -384,6 +392,40 @@ public class playercontroller : MonoBehaviour
                 //chances[2]--;
                 console.Generate(2);
             }
+        }
+    }
+    //Use shield
+    void Defend()
+    {
+        if (shieldnum > 0)
+        {
+            if (Input.GetMouseButtonDown(1))
+            {
+                if (shieldopen == false)
+                {
+                    shieldopen = true;
+                    Debug.Log("open the shield!");
+                    ani.SetTrigger("Openshield");
+                }
+                else
+                {
+                    shieldopen = false;
+                }
+
+            }
+        }
+        else
+        {
+            shieldopen = false;
+        }
+
+        if (shieldopen)
+        {
+            Shield.gameObject.SetActive(true);
+        }
+        else
+        {
+            Shield.gameObject.SetActive(false);
         }
     }
     public void ChangeHP(int value)

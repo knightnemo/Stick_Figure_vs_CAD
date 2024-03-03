@@ -76,5 +76,10 @@ public class Cpluserror : MonoBehaviour
         {
             Destroy(gameObject);
         }
+        if (collision.tag == "shield")
+        {
+            playercontroller.instance.shieldnum--;
+            Destroy(gameObject);
+        }
     }
 }

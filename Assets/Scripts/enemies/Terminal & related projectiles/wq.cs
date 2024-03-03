@@ -49,7 +49,9 @@ public class wq : MonoBehaviour
         Debug.Log("WQ collided with"+collision.gameObject.tag);
         
         if (collision.gameObject.tag == "Player")
-        {   
+        {
+            playercontroller.instance.ChangeHP(-1);
+
             playercontroller.instance.LostAttack=true;
             playercontroller.instance.canErase=false;
             playercontroller.instance.canTeleport=false;
@@ -66,6 +68,11 @@ public class wq : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D collider){
         if(collider.tag == "erase"){
+            Destroy(gameObject);
+        }
+        if (collider.tag == "shield")
+        {
+            playercontroller.instance.shieldnum--;
             Destroy(gameObject);
         }
     }

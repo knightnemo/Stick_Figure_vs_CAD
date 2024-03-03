@@ -82,5 +82,11 @@ public class duck : MonoBehaviour
             HP--;
             Debug.Log("Duck is hit!");
         }
+        if (collision.tag == "shield")
+        {
+            Debug.Log("Duck is blocked!");
+            Vector2 direction=(transform.position - playercontroller.instance.transform.position).normalized;
+            rigidbody2d.AddForce(direction * 550.0f);
+        }
     }
 }

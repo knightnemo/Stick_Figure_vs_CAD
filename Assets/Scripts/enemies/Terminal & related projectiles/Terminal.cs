@@ -12,12 +12,12 @@ public class Terminal : MonoBehaviour
     public GameObject tac;
     public GameObject help;
     public GameObject move;
-    float force=10.0f;
+    float force=200.0f;
     bool activestate=false;
     public GameObject ply;
     public float activedistance;
-    public float interval=5.0f;
-    public float projectilespeed;
+    public float interval=2.0f;
+    
     Vector2 direction;
     float intervaltime;
     Transform targetTransform;
@@ -25,10 +25,10 @@ public class Terminal : MonoBehaviour
     public GameObject rmobject;
     bool beamstate;
     public float beamtime;
-    Vector2 copydir;
+    
     float beamtimer;
 
-    rm_f rS;
+    
     public float tmpx, tmpy;
     // Start is called before the first frame update
     void Start()
@@ -87,7 +87,7 @@ public class Terminal : MonoBehaviour
                         direction.y=targetTransform.position.y-terminalTransform.position.y;
                         rigidbody2d.AddForce(-direction * force);//move
                     }//随机生成6种projectile
-                }//FIXME:没有对应的小怪，help暂时搁弃
+                }
             }
             if(beamstate){
                 beamtimer-=Time.deltaTime;
@@ -95,12 +95,8 @@ public class Terminal : MonoBehaviour
                     Destroy(rmobject);
                     beamstate=false;
                     beamtimer=beamtime;
-                    rmobject = Instantiate(rm_f, (Vector2)terminalTransform.position, Quaternion.identity);
-                    rigidbody2d =rm_f.GetComponent<Rigidbody2D>();
-                    rigidbody2d.AddForce(-copydir * force);
-
-                    rS = rmobject.GetComponent<rm_f>();
-                    rS.v = new Vector3(tmpx, tmpy, 0).normalized;
+                    Deathray();
+                  
                 }
             }
         }
@@ -120,9 +116,17 @@ public class Terminal : MonoBehaviour
         Quaternion targetRotation = Quaternion.AngleAxis(angle, Vector3.forward);
         tmpx=(float)tmp.x;
         tmpy=(float)tmp.y;
-        copydir=new Vector2(tmpx, tmpy);
+        
         rmobject = Instantiate(beam, terminalTransform.position, targetRotation);
         Debug.Log("Beam Generated");
         beamstate = true;
+    }
+
+    void Deathray()
+    {
+       
+        float angle = Mathf.Atan2(tmpy, tmpx) * Mathf.Rad2Deg;
+        Quaternion targetRotation = Quaternion.AngleAxis(angle, Vector3.forward);
+        GameObject deathray = Instantiate(rm_f, terminalTransform.position, targetRotation);
     }
 }

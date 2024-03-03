@@ -48,6 +48,11 @@ public class paperchar : MonoBehaviour
         {
             Destroy(gameObject);
         }
+        if (collision.tag == "shield")
+        {
+            
+            Destroy(gameObject);
+        }
     }
 
     public void selfdestroy()

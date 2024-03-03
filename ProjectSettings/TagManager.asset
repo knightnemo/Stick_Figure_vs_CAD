@@ -25,7 +25,11 @@ TagManager:
   - background
   - tips
   - Restart
-  - wq
+  - deathbeam
+  - shield
+  - C++error
+  - Cerror
+  - terminalchar
   layers:
   - Default
   - TransparentFX

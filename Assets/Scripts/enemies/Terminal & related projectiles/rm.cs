@@ -61,6 +61,11 @@ public class rm : MonoBehaviour
         if(collider.tag == "erase"){
             Destroy(gameObject);
         }
+        if (collider.tag == "shield")
+        {
+            playercontroller.instance.shieldnum--;
+            Destroy(gameObject);
+        }
     }
 
     public void selfdestroy()
