@@ -469,7 +469,8 @@ public class playercontroller : MonoBehaviour
             }
         }
         restart = RestartHappening.instance.restart;
-        
+        if (restart != null) Debug.Log("not null");
+        else Debug.Log("NULL!");
         console.Generate(5);
         restart.SetActive(true);
     }

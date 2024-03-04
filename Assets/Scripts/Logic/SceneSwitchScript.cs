@@ -8,6 +8,7 @@ public class SceneSwitchScript : MonoBehaviour
     public GameObject[] objectsToRemain;//转场时要保留的游戏对象，editor中拖拽
     public string[] scenes;//所有的场景，editor中拖拽
     public int sceneNum;//切换到第sceneNum个场景
+    public NextScript next;
     // Start is called before the first frame update
     void Start()
     {
@@ -21,7 +22,15 @@ public class SceneSwitchScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if(NextScript.instance != null)
+        {
+            next = NextScript.instance;
+        }
         if(Input.GetKeyDown(KeyCode.Backspace))//转场条件，关卡中可以设为OnTriggerEnter2D
+        {
+            SceneChange();
+        }
+        if(next.goNext)
         {
             SceneChange();
         }
