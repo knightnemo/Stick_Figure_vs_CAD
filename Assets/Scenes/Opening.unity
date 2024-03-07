@@ -1314,6 +1314,7 @@ MonoBehaviour:
   - SampleScene
   - Null
   - Another
+  - Scene02
   sceneNum: 0
   next: {fileID: 0}
 --- !u!212 &898061800
@@ -2029,7 +2030,7 @@ Transform:
   m_GameObject: {fileID: 1612530292}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -5.609, y: 2.044, z: -10}
+  m_LocalPosition: {x: -5.35, y: 31.8, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

@@ -86,7 +86,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!70 &5218784290470889670
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -139,6 +139,7 @@ MonoBehaviour:
   isUpsideDown: 0
   upsidedowntime: 0
   speed: 5
+  jumpspeed: 6
   canjump: 1
   canjumptwice: 0
   intheair: 0

@@ -298,7 +298,15 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      die5_0: 5825575627708896380
+      die5_1: -1777617495501410617
+      die5_2: -5089232928555401596
+      die5_3: -4107709919181682298
+      die5_4: 2718205295267526928
+      die5_5: -1530515485801721511
+      die5_6: -6368346736841498122
+      die5_7: 1384700872124755368
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

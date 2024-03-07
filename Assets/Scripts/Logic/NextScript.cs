@@ -10,6 +10,12 @@ public class NextScript : MonoBehaviour
     public float timer;
     private bool sp;
     public bool goNext;
+
+    Renderer rend;
+    Color texturecolor;
+    float shinetime = 0.27f;
+    float shinetimer;
+    int litup = 1;
     private void Awake()
     {
         instance = this;
@@ -22,12 +28,15 @@ public class NextScript : MonoBehaviour
         goNext = false;
         got.gameObject.SetActive(sp);
         player = playercontroller.instance;
+
+        rend = GetComponent<Renderer>();
+        shinetimer = shinetime;
     }
 
     // Update is called once per frame
     void Update()
     {
-
+        Shine();
     }
     void OnTriggerEnter2D(Collider2D collider2D)
     {
@@ -45,5 +54,31 @@ public class NextScript : MonoBehaviour
             yield return new WaitForSeconds(timer);
         }
 
+    }
+
+    void Shine()
+    {
+        if (shinetimer > 0)
+        {
+            shinetimer -= Time.deltaTime;
+        }
+        else
+        {
+            shinetimer = shinetime;
+            litup = litup * -1;
+
+        }
+        if (litup == 1)
+        {
+            texturecolor = new Color(1f, 1.3f, 1f);
+
+        }
+        if (litup == -1)
+        {
+            texturecolor = new Color(1f, 1f, 1f);
+
+        }
+
+        rend.material.color = texturecolor;
     }
 }

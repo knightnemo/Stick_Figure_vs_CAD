@@ -25,15 +25,16 @@ public class SceneSwitchScript : MonoBehaviour
         if(NextScript.instance != null)
         {
             next = NextScript.instance;
+            if (next.goNext)
+            {
+                SceneChange();
+            }
         }
         if(Input.GetKeyDown(KeyCode.Backspace))//转场条件，关卡中可以设为OnTriggerEnter2D
         {
             SceneChange();
         }
-        if(next.goNext)
-        {
-            SceneChange();
-        }
+        
     }
     void SceneChange()//场景变换函数
     {

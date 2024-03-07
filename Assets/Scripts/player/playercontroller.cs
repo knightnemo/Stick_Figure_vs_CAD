@@ -16,6 +16,7 @@ public class playercontroller : MonoBehaviour
 
     Rigidbody2D rigidbody2d;
     public float speed = 5.0f;
+    public float jumpspeed = 6.0f;
     public bool canjump = true;
     public bool canjumptwice = false;
     public bool intheair;
@@ -296,7 +297,7 @@ public class playercontroller : MonoBehaviour
         {
             if (Input.GetKeyDown(KeyCode.W))
             {
-                rigidbody2d.velocity = new Vector2(rigidbody2d.velocity.x, speed*1.2f);
+                rigidbody2d.velocity = new Vector2(rigidbody2d.velocity.x, jumpspeed*1.2f);
                 canjumptwice = true;
             } 
         }
@@ -306,7 +307,7 @@ public class playercontroller : MonoBehaviour
             {
                 if (Input.GetKeyDown(KeyCode.W))
                 {
-                    rigidbody2d.velocity = new Vector2(rigidbody2d.velocity.x, speed * 1.3f);
+                    rigidbody2d.velocity = new Vector2(rigidbody2d.velocity.x, jumpspeed * 1.3f);
                     canjumptwice = false;
                 }
             }

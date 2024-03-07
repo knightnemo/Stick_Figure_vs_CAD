@@ -9,10 +9,15 @@ public class deathbeam : MonoBehaviour
     float scale = 0.1f;
     bool magfinish = false;
 
+    Renderer rend;
+    Color texturecolor;
     // Start is called before the first frame update
     void Start()
     {
+        rend=GetComponent<Renderer>();
         magtimer = magtime;
+        texturecolor = new Color(1.5f, 1, 1);
+        rend.material.color= texturecolor;
     }
 
     // Update is called once per frame
