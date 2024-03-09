@@ -51,6 +51,12 @@ public class playercontroller : MonoBehaviour
 
     //Animation
     Animator ani;
+    public GameObject player0;
+    public GameObject Died;
+    public GameObject Hurt;
+    float timer;
+    public float hurttime = 1.0f;
+    bool timeup=false;
 
     //�����ܷ�ʹ�ã���ʼ��Ϊfalse
     public bool canErase=true;
@@ -98,7 +104,7 @@ public class playercontroller : MonoBehaviour
     {
         detectTimer=keyDetectTime;
         rigidbody2d = GetComponent<Rigidbody2D>();
-        ani = GetComponent<Animator>();
+        ani = player0.GetComponent<Animator>();
 
         //All things attached to player
         line = GameObject.Find("teleportline").GetComponent<Transform>();
@@ -190,13 +196,17 @@ public class playercontroller : MonoBehaviour
         //Debug.Log("mouse at:" + Input.mousePosition);
         Move();
       
-        if (intheair)
+        if (intheair&&rigidbody2d.velocityY>0)
         {
-            ani.SetBool("InAir", true);
+            ani.SetInteger("Air", 1);
         }
-        else
+        else if(intheair&&rigidbody2d.velocityY<0)
         {
-            ani.SetBool("InAir", false);
+            ani.SetInteger("Air", -1);
+        }
+        else if(!intheair)
+        {
+            ani.SetInteger("Air", 0);
         }
 
         //When killed
@@ -267,6 +277,8 @@ public class playercontroller : MonoBehaviour
             //它出现时四个技能已经获取完了，因此不用考虑这个问题
             }
         }
+
+        if (timeup) CountDown();
     }
     
     void Move()
@@ -274,11 +286,11 @@ public class playercontroller : MonoBehaviour
         RT = Input.GetAxis("Horizontal") * speed;
         
         //Walk
-        if (RT >= 0)
+        if (RT > 0)
         {
             transform.rotation = new Quaternion(0,0,0,0);
         }
-        else
+        else if(RT < 0)
         {
             transform.rotation = new Quaternion(0, 180, 0, 0);
         }
@@ -438,7 +450,9 @@ public class playercontroller : MonoBehaviour
                 HP = HP + value;
                 invtimer = invtime;
 
-                ani.SetTrigger("Hurt");
+                //ani.SetTrigger("Hurt");
+                ChangeAni(1);
+                timeup = true;
                 console.hurt = value;
                 console.Generate(4);//�ܵ��˺���ʾ
             }
@@ -461,7 +475,8 @@ public class playercontroller : MonoBehaviour
         HP = 0;
         died = true;
         rigidbody2d.simulated = false;
-        ani.SetTrigger("Killed");
+        //ani.SetTrigger("Killed");
+        ChangeAni(2);
         if(console?.tips!=null)//����ʱ�������ť
         {
             foreach (GameObject tip in console.tips)
@@ -483,5 +498,40 @@ public class playercontroller : MonoBehaviour
     {
         transform.position = LogicScript.instance.startPos;
     }
-    
+    void ChangeAni(int n)
+    {
+        if(n==1)
+        {
+            player0.SetActive(false);
+            Died.SetActive(false);
+            Hurt.SetActive(true);
+        }
+        if (n == 0)
+        {
+            player0.SetActive(true);
+            Died.SetActive(false);
+            Hurt.SetActive(false);
+            return;
+        }
+        if (n==2)
+        {
+            player0.SetActive(false);
+            Died.SetActive(true);
+            Hurt.SetActive(false);
+            return;
+        }
+    }
+    void CountDown()
+    {
+        if (timer < hurttime)
+        {
+            timer += Time.deltaTime;
+        }
+        else
+        {
+            timer = 0f;
+            timeup = false;
+            ChangeAni(0);
+        }
+    }
 }
