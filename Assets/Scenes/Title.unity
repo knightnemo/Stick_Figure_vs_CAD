@@ -628,7 +628,7 @@ Transform:
   m_GameObject: {fileID: 1899901702}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.6, y: 1.75, z: 0}
+  m_LocalPosition: {x: -1.6, y: 2.09, z: 0}
   m_LocalScale: {x: 1.6776, y: 1.6776, z: 1.6776}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -971,7 +971,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 843521705483541232, guid: 96f12b51e1d9aab479d592b7384147c8, type: 3}
       propertyPath: speed
-      value: 30
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 843521705483541232, guid: 96f12b51e1d9aab479d592b7384147c8, type: 3}
       propertyPath: canvas
@@ -987,7 +987,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8481448883798592927, guid: 96f12b51e1d9aab479d592b7384147c8, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -4.749
+      value: -4.12
       objectReference: {fileID: 0}
     - target: {fileID: 8481448883798592927, guid: 96f12b51e1d9aab479d592b7384147c8, type: 3}
       propertyPath: m_LocalPosition.z

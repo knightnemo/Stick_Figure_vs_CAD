@@ -86,7 +86,7 @@ public class duck : MonoBehaviour
         {
             Debug.Log("Duck is blocked!");
             Vector2 direction=(transform.position - playercontroller.instance.transform.position).normalized;
-            rigidbody2d.AddForce(direction * 550.0f);
+            rigidbody2d.AddForce(direction * 650.0f);
         }
     }
 }

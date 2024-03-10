@@ -59,7 +59,7 @@ public class playercontroller : MonoBehaviour
     bool timeup=false;
 
     //�����ܷ�ʹ�ã���ʼ��Ϊfalse
-    public bool canErase=true;
+    public bool canErase=false;
     public bool canTeleport=true;
     public bool canBreakdown=true;
     public bool canFillet=true;
@@ -102,6 +102,8 @@ public class playercontroller : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        //Stand at 0,0;
+        
         detectTimer=keyDetectTime;
         rigidbody2d = GetComponent<Rigidbody2D>();
         ani = player0.GetComponent<Animator>();

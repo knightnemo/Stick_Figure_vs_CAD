@@ -27,6 +27,16 @@ public class feetdetect : MonoBehaviour
             playercontroller.instance.intheair = false;
         }
     }
+    private void OnTriggerStay2D(Collider2D collider)
+    {
+        if (collider.tag == "ground" || collider.tag == "Array")
+        {
+            //Debug.Log("Step on gound");
+            playercontroller.instance.canjump = true;
+            playercontroller.instance.canjumptwice = false;
+            playercontroller.instance.intheair = false;
+        }
+    }
     void OnTriggerExit2D(Collider2D collider)
     {
         if (collider.tag == "ground" || collider.tag == "Array")
@@ -34,6 +44,7 @@ public class feetdetect : MonoBehaviour
             //Debug.Log("Away from gound");
             playercontroller.instance.canjump = false;
             playercontroller.instance.intheair = true;
+            playercontroller.instance.canjumptwice = true;
         }
     }
 }

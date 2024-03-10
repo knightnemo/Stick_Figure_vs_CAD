@@ -1,0 +1,439 @@
+fileFormatVersion: 2
+guid: 12dab71ad16b94b45bf665827c6b476a
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 5679460793164275543
+    second: gonextdesc_0
+  - first:
+      213: -7779018173805999683
+    second: gonextdesc_1
+  - first:
+      213: -5410144312630682518
+    second: gonextdesc_2
+  - first:
+      213: -8106206531380104935
+    second: gonextdesc_3
+  - first:
+      213: 8156755212304578483
+    second: gonextdesc_4
+  - first:
+      213: -8046734919861915314
+    second: gonextdesc_5
+  - first:
+      213: -6928506880447221374
+    second: gonextdesc_6
+  - first:
+      213: -5545492676543358250
+    second: gonextdesc_7
+  - first:
+      213: -8352803634319138053
+    second: gonextdesc_8
+  - first:
+      213: 6125227528993209539
+    second: gonextdesc_9
+  - first:
+      213: -7948526390361361621
+    second: gonextdesc_10
+  - first:
+      213: 7910851937489547144
+    second: gonextdesc_11
+  - first:
+      213: 636009595784176875
+    second: gonextdesc_12
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: gonextdesc_0
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 298
+        width: 87
+        height: 107
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 75f9054108f71de40800000000000000
+      internalID: 5679460793164275543
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gonextdesc_1
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 298
+        width: 72
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: db94cf89f206b0490800000000000000
+      internalID: -7779018173805999683
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gonextdesc_2
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 300
+        width: 63
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a6c5c0e696e4be4b0800000000000000
+      internalID: -5410144312630682518
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gonextdesc_3
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 300
+        width: 83
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9113325bb18f08f80800000000000000
+      internalID: -8106206531380104935
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gonextdesc_4
+      rect:
+        serializedVersion: 2
+        x: 423
+        y: 300
+        width: 90
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3b7fa3536ad923170800000000000000
+      internalID: 8156755212304578483
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gonextdesc_5
+      rect:
+        serializedVersion: 2
+        x: 532
+        y: 300
+        width: 64
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e4136eb4931445090800000000000000
+      internalID: -8046734919861915314
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gonextdesc_6
+      rect:
+        serializedVersion: 2
+        x: 639
+        y: 300
+        width: 83
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 281f71773bff8df90800000000000000
+      internalID: -6928506880447221374
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gonextdesc_7
+      rect:
+        serializedVersion: 2
+        x: 725
+        y: 298
+        width: 103
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6da5a1ebac37a03b0800000000000000
+      internalID: -5545492676543358250
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gonextdesc_8
+      rect:
+        serializedVersion: 2
+        x: 834
+        y: 298
+        width: 103
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bf2e0d18951e41c80800000000000000
+      internalID: -8352803634319138053
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gonextdesc_9
+      rect:
+        serializedVersion: 2
+        x: 950
+        y: 300
+        width: 63
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3cc751a1cfd210550800000000000000
+      internalID: 6125227528993209539
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gonextdesc_10
+      rect:
+        serializedVersion: 2
+        x: 1063
+        y: 331
+        width: 26
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b2371be6c5921b190800000000000000
+      internalID: -7948526390361361621
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gonextdesc_11
+      rect:
+        serializedVersion: 2
+        x: 1062
+        y: 298
+        width: 28
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 88f66c47cedf8cd60800000000000000
+      internalID: 7910851937489547144
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gonextdesc_12
+      rect:
+        serializedVersion: 2
+        x: 197
+        y: 100
+        width: 659
+        height: 113
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: be4a47e8b5f83d800800000000000000
+      internalID: 636009595784176875
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      gonextdesc_0: 5679460793164275543
+      gonextdesc_1: -7779018173805999683
+      gonextdesc_10: -7948526390361361621
+      gonextdesc_11: 7910851937489547144
+      gonextdesc_12: 636009595784176875
+      gonextdesc_2: -5410144312630682518
+      gonextdesc_3: -8106206531380104935
+      gonextdesc_4: 8156755212304578483
+      gonextdesc_5: -8046734919861915314
+      gonextdesc_6: -6928506880447221374
+      gonextdesc_7: -5545492676543358250
+      gonextdesc_8: -8352803634319138053
+      gonextdesc_9: 6125227528993209539
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
