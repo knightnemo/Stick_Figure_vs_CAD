@@ -25,7 +25,7 @@ public class TipsScript : MonoBehaviour
         }
         if(n==5)
         {
-            content.text = "You died.Press Z or the button to resqwan";
+            content.text = "You died.Press Z to respwan.";
         }
         //可以增加新的提示词
         StartCoroutine(StartTimer());

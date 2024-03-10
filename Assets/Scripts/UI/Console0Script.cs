@@ -28,7 +28,7 @@ public class Console0Script : MonoBehaviour
     }
     public void Generate(int n)//生成第n条提示
     {
-        GameObject neo = Instantiate(template, new Vector3(515f, 130f, 0f), transform.rotation, transform);
+        GameObject neo = Instantiate(template, new Vector3(715f, 130f, 0f), transform.rotation, transform);
         TipsScript temp = neo.GetComponent<TipsScript>();
         temp.n = n;
         TipPlus();

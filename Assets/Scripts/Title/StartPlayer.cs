@@ -7,7 +7,7 @@ using UnityEngine.UI;
 public class StartPlayer : MonoBehaviour
 {
     public float open;
-    public float close;
+    public float close=11.9f;
     public GameObject buttP;
     public bool run;
     public float speed;

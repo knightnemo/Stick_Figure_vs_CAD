@@ -55,12 +55,20 @@ public class SceneSwitchScript : MonoBehaviour
                 posrestimer = posrestime;
             }
         }
-
+        if(Input.GetKeyDown(KeyCode.Escape))
+        {
+            QuitGame();
+        }
     }
     void SceneChange()//³¡¾°±ä»»º¯Êý
     {
         sceneNum++;
         SceneManager.LoadScene(scenes[sceneNum]);
         Debug.Log("sceneNum=" + sceneNum);
+    }
+
+    void QuitGame()
+    {
+        Application.Quit();
     }
 }
