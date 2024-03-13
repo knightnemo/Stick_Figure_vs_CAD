@@ -40,10 +40,12 @@ public class fillet : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        Debug.Log("fillet hit:" + collision.tag);
+        
         if (collision.tag != "Player" && collision.tag != "feet")
         {
+            Debug.Log("fillet hit:" + collision.tag);
             Destroy(gameObject);
+            
         }
 
     }

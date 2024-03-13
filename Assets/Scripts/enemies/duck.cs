@@ -10,6 +10,7 @@ public class duck : MonoBehaviour
     float timer;
     float deadtimer;
     public int direction = 1;
+    public int damage = 1;
     Rigidbody2D rigidbody2d;
 
     public int HP = 3;
@@ -70,7 +71,7 @@ public class duck : MonoBehaviour
 
         if (collision.gameObject.tag == "Player")
         {
-            playercontroller.instance.ChangeHP(-1);
+            playercontroller.instance.ChangeHP(-damage);
         }
 
     }

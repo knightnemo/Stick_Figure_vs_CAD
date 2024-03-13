@@ -27,6 +27,7 @@ public class GetMove : MonoBehaviour
         if (collider2D.tag == "Player")
         {
             player.canTeleport = true;
+            player.chances[1] ++;
             gameObject.SetActive(false);
         }
     }

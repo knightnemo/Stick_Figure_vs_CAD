@@ -29,6 +29,7 @@ public class GetBreak : MonoBehaviour
         if(collider2D.tag=="Player")
         {
             player.canBreakdown = true;
+            player.chances[2]++;
             gameObject.SetActive(false);
         }
     }

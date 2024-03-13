@@ -122,10 +122,10 @@ public class playercontroller : MonoBehaviour
         console=Console0Script.instance;
 
         //���ܿ�ʹ�ô�����ʼ��
-        chances[0] = eraseChances;
-        chances[1] = teleportChances;
-        chances[2] = breakdownChances;
-        chances[3] = filletChances;
+        chances[0] = 0;//erase
+        chances[1] = 0;//teleport
+        chances[2] = 0;//breakdown
+        chances[3] = filletChances;//fillet
 
         //��ȡ�����
         restart = GameObject.FindGameObjectWithTag("Restart");

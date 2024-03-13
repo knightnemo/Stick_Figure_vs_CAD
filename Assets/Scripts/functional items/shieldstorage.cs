@@ -8,6 +8,7 @@ public class shieldstorage : MonoBehaviour
     float movetime = 1.0f;
     float movetimer;
     int direction = 1;
+    public int nums = 1;
     // Start is called before the first frame update
     void Start()
     {
@@ -37,7 +38,11 @@ public class shieldstorage : MonoBehaviour
         {
             if (playercontroller.instance.shieldnum <= 10)
             {
-                playercontroller.instance.shieldnum++;
+                playercontroller.instance.shieldnum+=nums;
+                if(playercontroller.instance.shieldnum > 10)
+                {
+                    playercontroller.instance.shieldnum = 10;
+                }
                 Destroy(gameObject);
             }
         }

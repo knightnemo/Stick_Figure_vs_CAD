@@ -27,7 +27,9 @@ public class GetErase : MonoBehaviour
         if (collider2D.tag == "Player")
         {
             player.canErase = true;
+            player.chances[0] += 5;
             gameObject.SetActive(false);
+            
         }
     }
     IEnumerator Sparkle()

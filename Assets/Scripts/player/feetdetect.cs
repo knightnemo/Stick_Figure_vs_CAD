@@ -19,7 +19,7 @@ public class feetdetect : MonoBehaviour
     //When step on ground
     void OnTriggerEnter2D(Collider2D collider)
     {
-        if (collider.tag == "ground" || collider.tag=="Array")
+        if (collider.tag == "ground" || collider.tag=="Array"|| collider.tag== "chosenbar" || collider.tag == "object")
         {
             //Debug.Log("Step on gound");
             playercontroller.instance.canjump = true;
@@ -29,7 +29,7 @@ public class feetdetect : MonoBehaviour
     }
     private void OnTriggerStay2D(Collider2D collider)
     {
-        if (collider.tag == "ground" || collider.tag == "Array")
+        if (collider.tag == "ground" || collider.tag == "Array" || collider.tag == "chosenbar" ||collider.tag=="object")
         {
             //Debug.Log("Step on gound");
             playercontroller.instance.canjump = true;
@@ -39,7 +39,7 @@ public class feetdetect : MonoBehaviour
     }
     void OnTriggerExit2D(Collider2D collider)
     {
-        if (collider.tag == "ground" || collider.tag == "Array")
+        if (collider.tag == "ground" || collider.tag == "Array" || collider.tag == "chosenbar" || collider.tag == "object")
         {
             //Debug.Log("Away from gound");
             playercontroller.instance.canjump = false;

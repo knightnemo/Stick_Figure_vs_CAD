@@ -5,28 +5,52 @@ using UnityEngine;
 public class FallingBlock : MonoBehaviour
 {
     Rigidbody2D rigidbody2d;
-    float m = 1.0f;
-    public GameObject ply; // 获取玩家的位置信息
-    Transform targetTransform;
+    public float triggerdistance = 4.0f;
+    public bool up = false;
+    
 
     void Start()
     {
         rigidbody2d = GetComponent<Rigidbody2D>();
-        targetTransform = ply.transform;
+        
         rigidbody2d.gravityScale = 0;
     }
 
     void Update()
     {
-        Vector2 targetPosition = targetTransform.position;
-        if (targetPosition.y < rigidbody2d.position.y)
+        
+        if (up)
         {
-            //Debug.Log(targetPosition.x + "/" + targetPosition.y + "/" + rigidbody2d.position.x);
-            if ((targetPosition.x <= rigidbody2d.position.x + m) && (targetPosition.x >= rigidbody2d.position.x - m))
+            if(playercontroller.instance.transform.position.y-transform.position.y <= triggerdistance && playercontroller.instance.transform.position.y - transform.position.y >0) 
             {
-                Debug.Log("Triggered fallingblock");
-                rigidbody2d.gravityScale = 1;
+                if (Mathf.Abs(playercontroller.instance.transform.position.x - transform.position.x) < 2f)
+                {
+                    Debug.Log("Triggered fallingblock");
+                    rigidbody2d.gravityScale = 1;
+                }
+                
             }
+        }
+        else
+        {
+            if(transform.position.y-playercontroller.instance.transform.position.y<=triggerdistance && transform.position.y - playercontroller.instance.transform.position.y > 0)
+            {
+                if (Mathf.Abs(playercontroller.instance.transform.position.x - transform.position.x) < 2f)
+                {
+                    Debug.Log("Triggered fallingblock");
+                    rigidbody2d.gravityScale = 1;
+                }
+
+            }
+        }
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.tag == "Player")
+        {
+            Debug.Log("Triggered fallingblock");
+            rigidbody2d.gravityScale = 1;
         }
     }
 }
