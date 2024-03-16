@@ -119,3 +119,10 @@ Credits: TUOMF, Xyberoid, KnightNemo🧑‍💻
 * 加入了会旋转的四角尖刺，之后还会加入更多障碍物类型
 * 完成了Scene04和05
 * 加入了特大地图背景，未完成的Scene03已经在使用。可以使用`background`中的图片在图片编辑软件中拼出其他大小的地图。
+## 0316更新
+* 制作了Boss的动画：
+    * Boss名为`Namukp`，即`pkuman`倒过来，放入场景`Null`中
+    * 制作了各个动画，其中`Shoot`和`Blow`区分左右，`Jump`和`Fall`构成完整过程
+    * 创建代码Bosscontroller
+    * Boss有关内容均放在`Assests/Boss`中
+* 这次更新有点水，真的很对不起😰
