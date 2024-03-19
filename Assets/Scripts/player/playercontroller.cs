@@ -14,7 +14,7 @@ public class playercontroller : MonoBehaviour
     public float upsidedowntime;
     float upsidedowntimer;
 
-    Rigidbody2D rigidbody2d;
+    public Rigidbody2D rigidbody2d;
     public float speed = 5.0f;
     public float jumpspeed = 6.0f;
     public bool canjump = true;

@@ -126,3 +126,12 @@ Credits: TUOMF, Xyberoid, KnightNemo🧑‍💻
     * 创建代码Bosscontroller
     * Boss有关内容均放在`Assests/Boss`中
 * 这次更新有点水，真的很对不起😰
+## 0319更新
+* 进一步完善了Boss的行为：
+    * 已制作函数包括`MultiShoot()`（这个应该基本没问题了） `Move()` `Jump()` `Blow()` 未完成`Laser` `Shoot()` `Eliminate`
+    * 动画播放有点问题，可以的话拜托修一下了🙏
+    * 目前行为逻辑是横向超过一定距离启动`Jump()`从player上方落下，小于一定距离启动`Multishoot()`
+    * 在`OnCollisionEnter2D`里面有击飞玩家，但没有效果
+    * 因为碰撞体的形状不能变化，所以暂时用外围的环来掩盖这个问题
+    * 在Edit-Project Settings-Physics里可以设置不同Layer是否碰撞，目前取消了Boss和bullet图层间的碰撞
+* 以上左右更新均在Assests/Boss中
