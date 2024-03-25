@@ -14,7 +14,7 @@ public class Circle : MonoBehaviour
     float colortime = 1.0f;
     Color texturecolor;
 
-    private float x0,y0;
+    
     public float R, r,d;
     public int tracktype;
     // Start is called before the first frame update
@@ -22,14 +22,14 @@ public class Circle : MonoBehaviour
     {
         livetimer = 0f;
         flytimer = flytime;
-        x0=transform.position.x;
-        y0=transform.position.y;
+       
         rend = GetComponent<Renderer>();
     }
 
     // Update is called once per frame
     void Update()
     {
+        
         Shine();
 
         if (flytimer > 0)
@@ -41,9 +41,20 @@ public class Circle : MonoBehaviour
             flytimer = flytime;
             Destroy(gameObject);
         }
-        livetimer+= Time.deltaTime;
-        R += 0.1f*Time.deltaTime;
-        transform.position =new Vector3( x0 + (R - r) * Mathf.Cos(livetimer) + d * Mathf.Cos(livetimer * (R - r) / r ),y0+(R-r)*Mathf.Sin(livetimer + 2 * Mathf.PI * tracktype / 3) -d*Mathf.Sin(livetimer*(R-r)/r + 2 * Mathf.PI * tracktype / 3),0);
+        if (Bosscontroller.instance == null)
+        {
+            Destroy(gameObject);
+        }
+        livetimer+= Time.deltaTime*2;
+        if (livetimer > 3)
+        {
+            R += 0.06f;
+        }
+        if (Bosscontroller.instance != null)
+        {
+            transform.position = new Vector3(Bosscontroller.instance.transform.position.x + (R - r) * Mathf.Cos(livetimer) + d * Mathf.Cos(livetimer * (R - r) / r), Bosscontroller.instance.transform.position.y + 16.0f + (R - r) * Mathf.Sin(livetimer + 2 * Mathf.PI * tracktype / 3) - d * Mathf.Sin(livetimer * (R - r) / r + 2 * Mathf.PI * tracktype / 3), 0);
+        }
+        
         
     }
     private void OnCollisionEnter2D(Collision2D collision)
@@ -53,6 +64,10 @@ public class Circle : MonoBehaviour
             playercontroller.instance.ChangeHP(-1);
             Debug.Log("Shot!");
             //Destroy(gameObject);
+        }
+        if (collision.gameObject.tag == "EOL")
+        {
+            EOLcontroller.instance.HP -= 5;
         }
     }
 
@@ -64,7 +79,7 @@ public class Circle : MonoBehaviour
             colortime = 1.5f;
         }
         //Red
-        texturecolor = new Color(1.5f, 1.05f, 1f);
+        texturecolor = new Color(2.5f, 1.05f, 1f);
         rend.material.color = texturecolor;
 
     }

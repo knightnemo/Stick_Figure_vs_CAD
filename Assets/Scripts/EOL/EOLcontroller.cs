@@ -13,8 +13,11 @@ public class EOLcontroller : MonoBehaviour
     //Movement
     public bool rdyfordash = false;
     Vector2 destination;
-    float stayrange = 4.0f;
-    float speed = 3.0f;
+    float stayrange = 8.0f;
+    float speed = 4.0f;
+    float shifttime = 3.0f;
+    float shifttimer;
+    int shifttype = 1;
     //attack basic
     bool attacking = false;
     public float attacktime = 5.0f;
@@ -45,7 +48,7 @@ public class EOLcontroller : MonoBehaviour
     public bool preparing = false;
     public bool dashing = false;
     public bool finish = false;
-    float dashtime = 1.5f;
+    float dashtime = 2.5f;
     float dashtimer;
     float height;
     //color the spears
@@ -63,7 +66,11 @@ public class EOLcontroller : MonoBehaviour
     void Start()
     {
         //Get target.When PKUman is added,change the tag.
-        target = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
+        if (GameObject.FindGameObjectWithTag("Boss") != null)
+        {
+            target = GameObject.FindGameObjectWithTag("Boss").GetComponent<Transform>();
+        }
+        
         //timers
         attacktimer = attacktime;
         arraytimer = arraytime;
@@ -71,6 +78,7 @@ public class EOLcontroller : MonoBehaviour
         crystalfiretimer = crystalfiretime;
         dashtimer = dashtime;
         fadetimer = fadetime;
+        shifttimer = shifttime;
 
         rend=GetComponent<Renderer>();
         
@@ -83,6 +91,10 @@ public class EOLcontroller : MonoBehaviour
     }
     void Update()
     {
+        if (GameObject.FindGameObjectWithTag("Boss") == null)
+        {
+            return;
+        }
         if (killed)
         {
             Fade();
@@ -142,8 +154,36 @@ public class EOLcontroller : MonoBehaviour
 
     void Move()
     {
+        if (shifttimer > 0)
+        {
+            shifttimer -= Time.deltaTime;
+        }
+        else
+        {
+            shifttimer = shifttime;
+            shifttype++;
+            if (shifttype > 3)
+            {
+                shifttype = 1;
+            }
+        }
         destination=target.position;
-        destination.y += 10.0f;
+        if(shifttype == 1)
+        {
+            destination.y += 25.0f;
+            destination.x += 30.0f;
+        }
+        if (shifttype == 2)
+        {
+            destination.y += 25.0f;
+            destination.x -= 30.0f;
+        }
+        if(shifttype == 3)
+        {
+            destination.y += 40.0f;
+            
+        }
+        
         Vector2 distance=new Vector2(destination.x-transform.position.x,destination.y-transform.position.y);
         Vector2 movedirection = distance.normalized;
 
@@ -231,8 +271,8 @@ public class EOLcontroller : MonoBehaviour
                 angle = angle + 30.0f;
                 Quaternion rotation = Quaternion.AngleAxis(angle, Vector3.forward);
                 Debug.Log("angle is " + angle+"Cos:"+ Mathf.Cos(angle*Mathf.Deg2Rad) +"Sin: "+ Mathf.Sin(angle * Mathf.Deg2Rad));
-                GameObject aimlineobj = Instantiate(aimline, target.transform.position, rotation);
-                GameObject spearobj = Instantiate(lightspear, new Vector2(target.transform.position.x-15*Mathf.Sin(angle*Mathf.Deg2Rad),target.transform.position.y+15*Mathf.Cos(angle*Mathf.Deg2Rad)), rotation);
+                GameObject aimlineobj = Instantiate(aimline, target.transform.position+Vector3.up*16, rotation);
+                GameObject spearobj = Instantiate(lightspear, new Vector2(target.transform.position.x-15*Mathf.Sin(angle*Mathf.Deg2Rad),target.transform.position.y+15*Mathf.Cos(angle*Mathf.Deg2Rad)+16), rotation);
             }
             else if(aimrounds == 21)
             {
@@ -342,9 +382,9 @@ public class EOLcontroller : MonoBehaviour
     //Please change "player"into "boss"
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.tag == "Player")
+        if (collision.tag == "Boss")
         {
-            playercontroller.instance.ChangeHP(-1);
+            Bosscontroller.instance.HP-=50;
             
         }
     }
@@ -361,6 +401,7 @@ public class EOLcontroller : MonoBehaviour
         else
         {
             fadetimer = fadetime;
+            Bosscontroller.instance.targettype = 1;
             Debug.Log("Revenge for me, T......");
             Destroy(gameObject);
         }

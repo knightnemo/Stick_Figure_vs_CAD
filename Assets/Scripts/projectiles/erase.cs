@@ -9,6 +9,7 @@ public class erase : MonoBehaviour
     public float force = 400.0f;
     public float flytime = 5.0f;
     float timer;
+    SpriteRenderer rend;
     void Awake()
     {
         rigidbody2d = GetComponent<Rigidbody2D>();
@@ -17,11 +18,16 @@ public class erase : MonoBehaviour
     void Start()
     {
         timer = flytime;
+        rend = GetComponent<SpriteRenderer>();
     }
 
     // Update is called once per frame
     void Update()
     {
+        if (playercontroller.instance.cankillall)
+        {
+            rend.material.color = new Color(3.5f, 1.2f, 1.2f);
+        }
         if (timer > 0)
         {
             timer = timer - Time.deltaTime;
@@ -30,6 +36,11 @@ public class erase : MonoBehaviour
         else
         {
             timer = flytime;
+            if (playercontroller.instance.cankillall)
+            {
+                playercontroller.instance.killall = true;
+                playercontroller.instance.cankillall = false;
+            }
             Destroy(gameObject);
         }
     }
@@ -44,7 +55,13 @@ public class erase : MonoBehaviour
         Debug.Log("erase hit:" + collision.tag);
         if (collision.tag != "Player" && collision.tag!="feet")
         {
+            if (playercontroller.instance.cankillall)
+            {
+                playercontroller.instance.killall = true;
+                playercontroller.instance.cankillall = false;
+            }
             Destroy(gameObject);
+
         }
         
     }

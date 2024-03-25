@@ -36,7 +36,7 @@ public class spear : MonoBehaviour
         }
         if (flymode == 5)
         {
-           v = (playercontroller.instance.transform.position - transform.position).normalized;
+           v = (Bosscontroller.instance.transform.position+Vector3.up*16 - transform.position).normalized;
             
         }
 
@@ -105,10 +105,10 @@ public class spear : MonoBehaviour
     //Please change "player"into "boss"
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.tag == "Player")
+        if (collision.tag == "Boss")
         {
-            playercontroller.instance.ChangeHP(-1);
-            Destroy(gameObject);
+            Bosscontroller.instance.HP -= 17;
+            
         }
     }
 

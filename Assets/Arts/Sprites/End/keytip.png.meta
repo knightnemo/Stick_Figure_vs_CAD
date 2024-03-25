@@ -1,0 +1,939 @@
+fileFormatVersion: 2
+guid: 77f72e4b3a3ca5b488070946950bcd29
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -5332994076179531532
+    second: keytip_0
+  - first:
+      213: -5557929210658410011
+    second: keytip_1
+  - first:
+      213: -5743554861883048445
+    second: keytip_2
+  - first:
+      213: -3342918230243046836
+    second: keytip_3
+  - first:
+      213: 2392309218106110145
+    second: keytip_4
+  - first:
+      213: 869280655093739641
+    second: keytip_5
+  - first:
+      213: 6300414933148271671
+    second: keytip_6
+  - first:
+      213: -6782874312985494410
+    second: keytip_7
+  - first:
+      213: 1031386747448590432
+    second: keytip_8
+  - first:
+      213: 4166756154033381889
+    second: keytip_9
+  - first:
+      213: 3553342869863970352
+    second: keytip_10
+  - first:
+      213: -8929107865061182348
+    second: keytip_11
+  - first:
+      213: -5994803363328555045
+    second: keytip_12
+  - first:
+      213: 6990976290380922543
+    second: keytip_13
+  - first:
+      213: 2210432141696109803
+    second: keytip_14
+  - first:
+      213: 2246953455476920663
+    second: keytip_15
+  - first:
+      213: 7421582022131951816
+    second: keytip_16
+  - first:
+      213: 5441661616908361815
+    second: keytip_17
+  - first:
+      213: 5256992119058139033
+    second: keytip_18
+  - first:
+      213: -7121326944663678580
+    second: keytip_19
+  - first:
+      213: -1114219290520081661
+    second: keytip_20
+  - first:
+      213: -1869671088752380061
+    second: keytip_21
+  - first:
+      213: 2978702341477351511
+    second: keytip_22
+  - first:
+      213: 4445249093818138558
+    second: keytip_23
+  - first:
+      213: 6331494203643031077
+    second: keytip_24
+  - first:
+      213: -120395090172273663
+    second: keytip_25
+  - first:
+      213: -5730351448160055238
+    second: keytip_26
+  - first:
+      213: -7997811258275340325
+    second: keytip_27
+  - first:
+      213: -2373451121001004612
+    second: keytip_28
+  - first:
+      213: -7107500998953974010
+    second: keytip_29
+  - first:
+      213: -5369925319549820978
+    second: keytip_30
+  - first:
+      213: 6218280727725442245
+    second: keytip_31
+  - first:
+      213: 5447523880329448911
+    second: keytip_32
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: keytip_0
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 782
+        width: 67
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4f87e04a4266df5b0800000000000000
+      internalID: -5332994076179531532
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: keytip_1
+      rect:
+        serializedVersion: 2
+        x: 191
+        y: 782
+        width: 46
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5e130ff74d44ed2b0800000000000000
+      internalID: -5557929210658410011
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: keytip_2
+      rect:
+        serializedVersion: 2
+        x: 237
+        y: 782
+        width: 103
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 30e3e75a84bca40b0800000000000000
+      internalID: -5743554861883048445
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: keytip_3
+      rect:
+        serializedVersion: 2
+        x: 367
+        y: 781
+        width: 59
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c4a8f25c4919b91d0800000000000000
+      internalID: -3342918230243046836
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: keytip_4
+      rect:
+        serializedVersion: 2
+        x: 430
+        y: 781
+        width: 73
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1c07b121f80333120800000000000000
+      internalID: 2392309218106110145
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: keytip_5
+      rect:
+        serializedVersion: 2
+        x: 510
+        y: 782
+        width: 68
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9703bf0762e401c00800000000000000
+      internalID: 869280655093739641
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: keytip_6
+      rect:
+        serializedVersion: 2
+        x: 583
+        y: 782
+        width: 60
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7348edb20029f6750800000000000000
+      internalID: 6300414933148271671
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: keytip_7
+      rect:
+        serializedVersion: 2
+        x: 648
+        y: 782
+        width: 46
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 67cb062efb36ed1a0800000000000000
+      internalID: -6782874312985494410
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: keytip_8
+      rect:
+        serializedVersion: 2
+        x: 701
+        y: 782
+        width: 67
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 06008b348c8305e00800000000000000
+      internalID: 1031386747448590432
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: keytip_9
+      rect:
+        serializedVersion: 2
+        x: 773
+        y: 782
+        width: 61
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 10225da45aa43d930800000000000000
+      internalID: 4166756154033381889
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: keytip_10
+      rect:
+        serializedVersion: 2
+        x: 835
+        y: 781
+        width: 53
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 036b8638382005130800000000000000
+      internalID: 3553342869863970352
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: keytip_11
+      rect:
+        serializedVersion: 2
+        x: 249
+        y: 608
+        width: 62
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 474b1e584bf651480800000000000000
+      internalID: -8929107865061182348
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: keytip_12
+      rect:
+        serializedVersion: 2
+        x: 322
+        y: 609
+        width: 67
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bd70c765a1e2ecca0800000000000000
+      internalID: -5994803363328555045
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: keytip_13
+      rect:
+        serializedVersion: 2
+        x: 401
+        y: 609
+        width: 46
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fae355575efe40160800000000000000
+      internalID: 6990976290380922543
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: keytip_14
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 608
+        width: 72
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bec07ed42580dae10800000000000000
+      internalID: 2210432141696109803
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: keytip_15
+      rect:
+        serializedVersion: 2
+        x: 523
+        y: 608
+        width: 59
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 751d98c4348ce2f10800000000000000
+      internalID: 2246953455476920663
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: keytip_16
+      rect:
+        serializedVersion: 2
+        x: 590
+        y: 609
+        width: 62
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8c8a9942781cef660800000000000000
+      internalID: 7421582022131951816
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: keytip_17
+      rect:
+        serializedVersion: 2
+        x: 655
+        y: 609
+        width: 47
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 75063bfc86aa48b40800000000000000
+      internalID: 5441661616908361815
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: keytip_18
+      rect:
+        serializedVersion: 2
+        x: 709
+        y: 609
+        width: 66
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9970d73ca7694f840800000000000000
+      internalID: 5256992119058139033
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: keytip_19
+      rect:
+        serializedVersion: 2
+        x: 782
+        y: 631
+        width: 21
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c8157edcfd6fb2d90800000000000000
+      internalID: -7121326944663678580
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: keytip_20
+      rect:
+        serializedVersion: 2
+        x: 781
+        y: 608
+        width: 23
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 30ba9aa657f7980f0800000000000000
+      internalID: -1114219290520081661
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: keytip_21
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 355
+        width: 734
+        height: 149
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 367b81cfc089d06e0800000000000000
+      internalID: -1869671088752380061
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: keytip_22
+      rect:
+        serializedVersion: 2
+        x: 142
+        y: 143
+        width: 69
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 750c16b6ff9765920800000000000000
+      internalID: 2978702341477351511
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: keytip_23
+      rect:
+        serializedVersion: 2
+        x: 215
+        y: 143
+        width: 74
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ebf3827bf72b0bd30800000000000000
+      internalID: 4445249093818138558
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: keytip_24
+      rect:
+        serializedVersion: 2
+        x: 323
+        y: 144
+        width: 64
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 52e6699be6cfdd750800000000000000
+      internalID: 6331494203643031077
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: keytip_25
+      rect:
+        serializedVersion: 2
+        x: 386
+        y: 144
+        width: 77
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 10c9499ad45445ef0800000000000000
+      internalID: -120395090172273663
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: keytip_26
+      rect:
+        serializedVersion: 2
+        x: 463
+        y: 143
+        width: 60
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a305646f7b3b970b0800000000000000
+      internalID: -5730351448160055238
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: keytip_27
+      rect:
+        serializedVersion: 2
+        x: 530
+        y: 144
+        width: 68
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bdfd0e9e801120190800000000000000
+      internalID: -7997811258275340325
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: keytip_28
+      rect:
+        serializedVersion: 2
+        x: 627
+        y: 144
+        width: 71
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cb18bf0d7cecf0fd0800000000000000
+      internalID: -2373451121001004612
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: keytip_29
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 143
+        width: 75
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6074d94af751d5d90800000000000000
+      internalID: -7107500998953974010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: keytip_30
+      rect:
+        serializedVersion: 2
+        x: 779
+        y: 144
+        width: 107
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ecf5bd97f513a75b0800000000000000
+      internalID: -5369925319549820978
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: keytip_31
+      rect:
+        serializedVersion: 2
+        x: 890
+        y: 167
+        width: 26
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5c48bb14065cb4650800000000000000
+      internalID: 6218280727725442245
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: keytip_32
+      rect:
+        serializedVersion: 2
+        x: 889
+        y: 143
+        width: 28
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fcd8e706b1e799b40800000000000000
+      internalID: 5447523880329448911
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      keytip_0: -5332994076179531532
+      keytip_1: -5557929210658410011
+      keytip_10: 3553342869863970352
+      keytip_11: -8929107865061182348
+      keytip_12: -5994803363328555045
+      keytip_13: 6990976290380922543
+      keytip_14: 2210432141696109803
+      keytip_15: 2246953455476920663
+      keytip_16: 7421582022131951816
+      keytip_17: 5441661616908361815
+      keytip_18: 5256992119058139033
+      keytip_19: -7121326944663678580
+      keytip_2: -5743554861883048445
+      keytip_20: -1114219290520081661
+      keytip_21: -1869671088752380061
+      keytip_22: 2978702341477351511
+      keytip_23: 4445249093818138558
+      keytip_24: 6331494203643031077
+      keytip_25: -120395090172273663
+      keytip_26: -5730351448160055238
+      keytip_27: -7997811258275340325
+      keytip_28: -2373451121001004612
+      keytip_29: -7107500998953974010
+      keytip_3: -3342918230243046836
+      keytip_30: -5369925319549820978
+      keytip_31: 6218280727725442245
+      keytip_32: 5447523880329448911
+      keytip_4: 2392309218106110145
+      keytip_5: 869280655093739641
+      keytip_6: 6300414933148271671
+      keytip_7: -6782874312985494410
+      keytip_8: 1031386747448590432
+      keytip_9: 4166756154033381889
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -13,9 +13,10 @@ GameObject:
   - component: {fileID: 5358887774350460627}
   - component: {fileID: 2347155617249088376}
   - component: {fileID: 2310802319283561976}
+  - component: {fileID: 2258593209174773767}
   m_Layer: 0
   m_Name: Empress of light
-  m_TagString: Untagged
+  m_TagString: EOL
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -159,3 +160,43 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 610ea5e628c00b44ab2be396c86f075b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  target: {fileID: 0}
+  rdyfordash: 0
+  attacktime: 4
+  spearmode: 0
+  lightspear: {fileID: 5758900032511841455, guid: 44fd0ecc76e270e47b46c1e5e58bab83, type: 3}
+  aimline: {fileID: 1717658387734978326, guid: 0d7551a2f30c1f6499aaa4096a83f82b, type: 3}
+  lightcrystal: {fileID: 3582751862986279461, guid: bac84913a96b0b44da7e55a12af7aacd, type: 3}
+  start: 1
+  preparing: 0
+  dashing: 0
+  finish: 0
+  spearcolor: 1
+  HP: 500
+--- !u!50 &2258593209174773767
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3052919843816677641}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 4

@@ -419,6 +419,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isUpsideDown: 0
   upsidedowntime: 0
+  rigidbody2d: {fileID: 0}
   speed: 5
   jumpspeed: 6
   canjump: 1
@@ -456,6 +457,12 @@ MonoBehaviour:
   LostAttack: 0
   LostAttackTime: 6
   LAtimer: 0
+  EliminateSafe: 0
+  Selected: 0
+  Selectedtime: 5
+  barriernum: 1
+  rdyforstart: 0
+  candetonate: 0
 --- !u!70 &146145242
 CapsuleCollider2D:
   m_ObjectHideFlags: 0

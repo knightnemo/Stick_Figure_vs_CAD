@@ -86,7 +86,29 @@ public class playercontroller : MonoBehaviour
     public bool LostAttack; 
     public float LostAttackTime;
     public float LAtimer;
-    
+    //Boss
+    public bool EliminateSafe = false;
+    public bool Selected = false;
+    public float Selectedtime = 5.0f;
+    float Selectedtimer;
+    public int barriernum = 1;
+    //End
+    public bool rdy1 = false;
+    public bool rdy2 = false;
+    public bool cankillall= false;
+    public bool killall=false;
+    float killTime = 0.2f;
+    float killTimer;
+    int killnum = 30;
+    int killcount = 0;
+    float offset = 1.5f;
+    public GameObject killbeam;
+    public bool End = false;
+    //Genshin
+    public bool rdyforstart = false;
+    public bool candetonate = false;
+    float detonatetime = 10.0f;
+    float detonatetimer;
     void Awake()
     {
         isUpsideDown=false;
@@ -96,6 +118,10 @@ public class playercontroller : MonoBehaviour
         cooldown=false;
         cooldownTimer=cooldownTime;
         LostAttack=false;
+        rdy1 = false;
+        rdy2 = false;
+        cankillall = false;
+        killall = false;
         upsidedowntimer=upsidedowntime;
     }
 
@@ -117,9 +143,12 @@ public class playercontroller : MonoBehaviour
         invtimer = invtime;
         erasetimer = erasetime;
         fillettimer = fillettime;
+        detonatetimer = detonatetime;
+        Selectedtimer = Selectedtime;
+        killTimer = killTime;
 
         //��ȡ���ܿ���̨
-        console=Console0Script.instance;
+        console =Console0Script.instance;
 
         //���ܿ�ʹ�ô�����ʼ��
         chances[0] = 0;//erase
@@ -129,9 +158,10 @@ public class playercontroller : MonoBehaviour
 
         //��ȡ�����
         restart = GameObject.FindGameObjectWithTag("Restart");
-
-        
-    }
+        //Boss
+        EliminateSafe = false;
+        Selected = false;
+}
 
     // Update is called once per frame
     void Update()
@@ -145,6 +175,18 @@ public class playercontroller : MonoBehaviour
                 transform.localScale = currentScale;
                 upsidedowntimer=upsidedowntime;
                 Debug.Log("y轴恢复正常");
+            }
+        }
+        if (Selected)
+        {
+            if (Selectedtimer > 0)
+            {
+                Selectedtimer -= Time.deltaTime;
+            }
+            else
+            {
+                Selectedtimer = Selectedtime;
+                Selected = false;
             }
         }
         //Debug.Log(speed);
@@ -193,6 +235,11 @@ public class playercontroller : MonoBehaviour
         if(restart != null)
         {
             restart.SetActive(false);
+        }
+        if (End)
+        {
+            rigidbody2d.simulated = false;
+            return;
         }
         
         //Debug.Log("mouse at:" + Input.mousePosition);
@@ -281,6 +328,11 @@ public class playercontroller : MonoBehaviour
         }
 
         if (timeup) CountDown();
+        if (killall)
+        {
+            Killall();
+        } 
+        Genshinstart();
     }
     
     void Move()
@@ -370,6 +422,10 @@ public class playercontroller : MonoBehaviour
         Vector2 mousepos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         Vector2 direction = new Vector2(mousepos.x - transform.position.x, mousepos.y - transform.position.y);
         direction.Normalize();
+        if (cankillall)
+        {
+            direction = Vector2.up;
+        }
         GameObject eraseobject = Instantiate(erase, rigidbody2d.position + Vector2.up * 0.3f, Quaternion.identity);
         erase eraseproj = eraseobject.GetComponent<erase>();
         eraseproj.launch(direction);
@@ -378,6 +434,7 @@ public class playercontroller : MonoBehaviour
         ani.SetTrigger("Erase");
         chances[0]--;
         console.Generate(0);
+        //cankillall = false;
     }
     void Fillet()
     {
@@ -449,7 +506,14 @@ public class playercontroller : MonoBehaviour
         {
             if (invtimer <= 0)
             {
-                HP = HP + value;
+                if (Selected)
+                {
+                    HP = HP + value*3;
+                }
+                else
+                {
+                    HP = HP + value;
+                }
                 invtimer = invtime;
 
                 //ani.SetTrigger("Hurt");
@@ -534,6 +598,48 @@ public class playercontroller : MonoBehaviour
             timer = 0f;
             timeup = false;
             ChangeAni(0);
+        }
+    }
+
+    void Killall()
+    {
+        if (killcount < killnum)
+        {
+            if (killTimer > 0)
+            {
+                killTimer-= Time.deltaTime;
+            }
+            else
+            {
+                killTimer = killTime;
+                Instantiate(killbeam,transform.position+offset*Vector3.right, Quaternion.identity);
+                Instantiate(killbeam, transform.position - offset * Vector3.right, Quaternion.identity);
+                offset += 13.0f;
+                killcount++;
+            }
+            if (killcount == 5)
+            {
+                //Bosscontroller.instance.HP = 0;
+            }
+        }
+        else
+        {
+            killcount = 0;
+            killall = false;
+        }
+    }
+    void Genshinstart()
+    {
+        if (rdyforstart)
+        {
+            if (detonatetimer > 0)
+            {
+                detonatetimer -= Time.deltaTime;
+            }
+            else
+            {
+                candetonate = true;
+            }
         }
     }
 }

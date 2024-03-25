@@ -1,5 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
+using UnityEditor.Rendering;
 using UnityEngine;
 using UnityEngine.UIElements;
 
@@ -7,67 +9,148 @@ public class Bosscontroller : MonoBehaviour
 {
     public static Bosscontroller instance {  get; private set; }
     public playercontroller player;
-    private float timer;
-    private float lengthtimer;
+    
+    public float lengthtimer;
     private float distance;
     int lor;
-    public float speed = 0.0001f;
+    public float speed = 2.0f;
     public GameObject bullet;
+
+    
     Animator ani;
     Rigidbody2D rb;
-
+    SpriteRenderer rend;
+    //attackchoose
+    float attacktime = 8.0f;
+    float attacktimer;
+    int attacktype = 0;//type of normal shots 1:circle 2:direct 4:random F 3:laser 5:choose 
     //MultiShoot
     private int MultiTrack;//track type of MultiShoot 
-    public float MultiInterval=0.0000f,MultiLength=9.0f;
-
+    float multtime = 0.04f;
+    float multtimer;
+    int multnum = 100;
+    int multcount = 0;
+    //DirectShoot
+    float directtime = 1f;
+    float directtimer;
+    int directnum = 6;
+    int directcount = 0;
+    public GameObject dart;
+    //Laser
+    float lasertime = 4f;
+    float lasertimer;
+    int lasernum = 1;
+    int lasercount = 0;
+    public GameObject beam;
+    //random F
+    float Ftime = 1.0f;
+    float Ftimer;
+    int Fnum = 4;
+    int Fcount = 0;
+    public GameObject flyspike;
+    //Eliminate
+    int energy = 0;
+    bool canrelease = true;
+    float elmtime = 20.0f;
+    float elmtimer;
+    public GameObject choose;
+    public GameObject mark;
+    //Select
+    float selecttime = 0.5f;
+    float selecttimer;
+    int selectnum = 2;
+    int selectcount = 0;
+    public GameObject selectline;
     //Blow
     float x0, y0;
     bool recorded=false;
-    public float blowforce = 10f;
-    
-    bool isMulti = false;
-    bool isBlow = false;
-    bool isJump = false;
+    public float blowforce = 500f;
+    float blowtime = 3.0f;
+    float blowtimer;
+    //HP
+    public int HP = 1000;
+    bool dead = false;
+    float vanishtime = 3;
+    float vanishtimer;
+    Color texturecolor;
+    float color=1.0f;
+    //Jump
+    public GameObject shock;
+
+    public bool isMulti = false;
+    public bool isDirect = false;
+    public bool isLaser = false;
+    public bool isF = false;
+    public bool isBlow = false;
+    public bool isJump = false;
+    public bool iselm= false;
+    public bool isselect=false;
     bool isWalk = false;
-    
+    public bool attacking=false;
+
+    //change target
+    public int targettype = 1;//1:Player 2:Empress of light
+    Transform target;
     // Start is called before the first frame update
     void Start()
     {
-        timer = 0f;
+        
+        attacktimer = attacktime;
+        blowtimer = blowtime;
+        multtimer = multtime;
+        directtimer = directtime;
+        lasertimer = lasertime;
+        Ftimer = Ftime;
+        elmtimer = elmtime;
+        selecttimer = selecttime;
+        vanishtimer = vanishtime;
+        targettype = 1;
+
         player = playercontroller.instance;
         ani = GetComponent<Animator>();
         rb = GetComponent<Rigidbody2D>();
+        rend = GetComponent<SpriteRenderer>();
     }
-
+    private void Awake()
+    {
+        instance = this;
+    }
     // Update is called once per frame
     void Update()
     {
-        distance=player.transform.position.x-transform.position.x;
-        if (distance>0) lor = 1;
+        //test
+        if(Input.GetKeyDown(KeyCode.R)) 
+        {
+            energy = 5;
+        }
+        if (HP <= 0)
+        {
+            dead = true;
+        }
+        if (dead)
+        {
+            Vanish();
+            return;
+        }
+        if (targettype == 1)
+        {
+            target=player.transform;
+            attacktime = 8;
+        }
+        if(targettype == 2)
+        {
+            target = EOLcontroller.instance.transform;
+            attacktime = 5;
+        }
+        distance=target.position.x-transform.position.x;
+        if (distance>0) lor = 1;//1:target at right -1:at left
         else
         {
             lor = -1;
         }
-        if (Input.GetKeyDown(KeyCode.M))
-        {
-            isMulti = true;
-            lengthtimer = 0f;
-        }
-        if(Input.GetKeyDown(KeyCode.B))
-        {
-            isBlow = true;
-        }
-        if (Mathf.Abs(distance) <= 10f&&!isJump)
-        {
-            isMulti = true;
-            lengthtimer = 0f;
-        }
-        if(Mathf.Abs(distance)>=30f)
-        {
-            isJump = true;
-        }
 
-        if(Mathf.Abs(distance)>10f&&Mathf.Abs(distance)<30f&&isWalk)
+        //Move
+        if (Mathf.Abs(distance) > 3f && Mathf.Abs(distance) < 70f && !attacking && !isJump)
         {
             Move();
         }
@@ -75,12 +158,121 @@ public class Bosscontroller : MonoBehaviour
         {
             ani.SetBool("Walk", false);
         }
+        //jump
+        if (Mathf.Abs(distance) >= 70f && !attacking)
+        {
+            isJump = true;
+            attacking = true;
+        }
+        if (isJump)
+        {
+            Jump();
+        }
+        else
+        {
+            ani.SetBool("Jump", false);
+            ani.SetBool("Fall", false);
+            
+        }
+        //blow
+        if (Mathf.Abs(distance) < 5f &&!attacking && Mathf.Abs(target.position.y - transform.position.y-16)<5f)
+        {
+            isBlow = true;
+            attacking = true;
+        }
+        //Eliminate
+        if (energy >= 5 && !attacking)
+        {
+            energy = 0;
+            attacking = true;
+            iselm = true;
+        }
+        //select attack
+        if (!attacking)
+        {
+            if (attacktimer > 0)
+            {
+                attacktimer -= Time.deltaTime;
+            }
+            else
+            {
+                attacktype= Random.Range(1, 6);
+                if (attacktype == 1)
+                {
+                    isMulti = true;
+                    attacking = true;
+                }
+                if(attacktype == 2)
+                {
+                    isDirect = true;
+                    attacking = true;
+                }
+                if (attacktype == 3)
+                {
+                    isLaser = true;
+                    attacking = true;
+                }
+                if(attacktype == 4)
+                {
+                    isF = true;
+                    attacking = true;
+                }
+                if( attacktype == 5)
+                {
+                    isselect = true;
+                    attacking= true;
+                }
+                attacktype = 0;
+                attacktimer = attacktime;
+            }
+        }
+        
+
+        if (Input.GetKeyDown(KeyCode.M))
+        {
+            isMulti = true;
+            attacking = true;
+            lengthtimer = 0f;
+        }
+        if(Input.GetKeyDown(KeyCode.B))
+        {
+            isBlow = true;
+            attacking = true;
+        }
+        if (Mathf.Abs(distance) <= 10f&&!isJump)
+        {
+            //isMulti = true;
+            //lengthtimer = 0f;
+        }
+        
+
+        
 
         if (isMulti)
         {
             MultiShoot();
+            
         }
-
+        if (isDirect)
+        {
+            Directshoot();
+        }
+        if (isLaser)
+        {
+            Laser();
+        }
+        if (isF)
+        {
+            RandomF();
+        }
+        if (iselm)
+        {
+            Eliminate();
+        }
+        if (isselect)
+        {
+            Select();
+        }
         if(isBlow)
         {
             if (!recorded)
@@ -99,19 +291,13 @@ public class Bosscontroller : MonoBehaviour
             ani.SetBool("BlowLeft", false);
         }
 
-        if(isJump)
-        {
-            Jump();
-        }
-        else
-        {
-            ani.SetBool("Jump", false);
-            ani.SetBool("Fall", false);
-        }
+        
     }
     void Move()
     {
-        transform.position += new Vector3((float)lor*speed *Time.deltaTime/2f, 0f, 0f);
+        Vector2 pos=transform.position;
+        pos.x += lor * speed * Time.deltaTime;
+        transform.position = pos;
         ani.SetBool("Walk", true);
     }
 
@@ -134,34 +320,195 @@ public class Bosscontroller : MonoBehaviour
                 transform.Translate(20f*Vector3.left * Time.deltaTime);
             }
         }
+        if (blowtimer > 0)
+        {
+            blowtimer -= Time.deltaTime;
+        }
+        else
+        {
+            attacking = false;
+            isBlow = false;
+            blowtimer = blowtime;
+        }
     }
 
     void MultiShoot()
     {
 
         ani.SetBool("MultiShoot",true);
-        if (lengthtimer<MultiLength)
+        if (multcount < multnum)
         {
-            lengthtimer += Time.deltaTime;
-            if (timer < MultiInterval)
+           
+            if (multtimer > 0)
             {
-                timer += Time.deltaTime;
+                multtimer -= Time.deltaTime;
             }
             else
             {
-                timer = 0f;
-                {
-                    GameObject temp = Instantiate(bullet, transform.position + new Vector3(0f, 16f, 0f), transform.rotation);
-                    Circle circle = temp.GetComponent<Circle>();
-                    circle.tracktype = MultiTrack++;
-                }
-                
+                GameObject temp = Instantiate(bullet, transform.position+Vector3.up*16 , transform.rotation);
+                Circle circle = temp.GetComponent<Circle>();
+                circle.tracktype = MultiTrack++;
+                multcount++;
+
+                multtimer = multtime;
             }
         }
         else
         {
+            multcount = 0;
             isMulti = false;
+            attacking = false;
             ani.SetBool("MultiShoot", false);
+        }
+                     
+    }
+
+    void Directshoot()
+    {
+        if (lor == 1)
+        {
+            ani.SetTrigger("ShootRight");
+        }
+        if (lor == -1)
+        {
+            ani.SetTrigger("ShootLeft");
+        }
+
+        if (directcount < directnum)
+        {
+            if(directtimer > 0)
+            {
+                directtimer-= Time.deltaTime;
+            }
+            else
+            {
+                directtimer = directtime;
+                Vector2 tmp=target.position-transform.position- Vector3.up * 16;
+                float angle = Mathf.Atan2(tmp.y, tmp.x) * Mathf.Rad2Deg;
+                //angle += 60;
+                for(int i = -4; i <= 4; i++)
+                {
+                    GameObject temp = Instantiate(dart, transform.position + new Vector3(lor*3f+4*Mathf.Cos((angle+15.0f*i)*Mathf.Deg2Rad),16+  4*Mathf.Sin((angle + 15.0f * i) * Mathf.Deg2Rad), 0f), Quaternion.AngleAxis(angle+15.0f*i, Vector3.forward));
+                    directshot proj = temp.GetComponent<directshot>();
+                    proj.deg = angle + 15.0f * i;
+                }
+                directcount++;
+            }
+        }
+        else
+        {
+            directcount = 0;
+            isDirect = false;
+            attacking = false;
+        }
+    }
+
+    void Laser()
+    {
+        if (lasertimer > 0)
+        {
+            lasertimer -= Time.deltaTime;
+            ani.SetBool("Laser", true);
+            if (lasercount < lasernum)
+            {
+                Vector2 tmp = target.position - transform.position - Vector3.up * 25;
+                float angle = Mathf.Atan2(tmp.y, tmp.x) * Mathf.Rad2Deg-80;
+                if (targettype == 2)
+                {
+                    angle += 80;
+                }
+                Instantiate(beam, transform.position+ 25*Vector3.up, Quaternion.AngleAxis(angle , Vector3.forward));
+                lasercount++;
+            }
+        }
+        else
+        {
+            lasercount = 0;
+            isLaser = false;
+            attacking= false;
+
+            ani.SetBool("Laser", false);
+            lasertimer = lasertime;
+        }
+    }
+
+    void RandomF()
+    {
+        if (Fcount < Fnum)
+        {
+            if (Ftimer > 0)
+            {
+                Ftimer -= Time.deltaTime;
+            }
+            else
+            {
+                Instantiate(flyspike, transform.position + 25 * Vector3.up, Quaternion.identity);
+                Fcount++;
+                Ftimer = Ftime;
+            }
+        }
+        else
+        {
+            Fcount = 0;
+            isF = false;
+            attacking = false;
+
+        }
+    }
+
+    void Eliminate()
+    {
+        if (canrelease)
+        {
+            Instantiate(choose,transform.position + 16 * Vector3.up, Quaternion.identity);
+            Instantiate(mark, transform.position+16*Vector3.up, Quaternion.identity);
+            canrelease = false;
+        }
+        if (elmtimer > 0)
+        {
+            elmtimer -= Time.deltaTime;
+            ani.SetBool("Eliminate", true);
+        }
+        else
+        {
+            canrelease = true;
+            iselm = false;
+            attacking = false;
+            ani.SetBool("Eliminate", false) ;
+        }
+    }
+    
+    void Select()
+    {
+        if (lor == 1)
+        {
+            ani.SetTrigger("ShootRight");
+        }
+        if (lor == -1)
+        {
+            ani.SetTrigger("ShootLeft");
+        }
+
+        if (selectcount < selectnum)
+        {
+            if (selecttimer > 0)
+            {
+                selecttimer -= Time.deltaTime;
+            }
+            else
+            {
+                Vector2 tmp = target.position - transform.position - Vector3.up * 17-Vector3.right*lor*5;
+                float angle = Mathf.Atan2(tmp.y, tmp.x) * Mathf.Rad2Deg;
+                Instantiate(selectline, transform.position + Vector3.up * 17 + Vector3.right * lor * 5, Quaternion.AngleAxis(angle, Vector3.forward));
+                selecttimer = selecttime;
+                selectcount++;
+            }
+        }
+        else
+        {
+            selectcount = 0;
+            isselect = false;
+            attacking= false;
         }
     }
 
@@ -199,22 +546,56 @@ public class Bosscontroller : MonoBehaviour
         {
             if (collision.gameObject.tag == "Player")
             {
+                
                 player.rigidbody2d.AddForce(new Vector2(lor * 100f, 0));//»÷·ÉPlayer
                 player.ChangeHP(-1);
                 
             }
             if(collision.gameObject.tag =="ground")
             {
-                isJump= false; 
+                isJump= false;
+                Instantiate(shock,transform.position+Vector3.up*11.5f,Quaternion.identity);
+                attacking = false;
             }
         }
         if(isBlow)
         {
-            if(collision.gameObject.tag=="player")
+            if(collision.gameObject.tag=="Player")
             {
-                player.rigidbody2d.AddForce(new Vector2(lor*blowforce * 1.7f, blowforce));//»÷·ÉPlayer
+                Debug.Log("player is hit!");
+                player.rigidbody2d.AddForce(new Vector2(lor*200, 5)*blowforce);//»÷·ÉPlayer
                 isBlow = false;
+                attacking = false;
             }
+        }
+    }
+
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.tag == "erase")
+        {
+            energy++;
+            HP--;
+        }
+    }
+
+    void Vanish()
+    {
+        if (vanishtimer > 0)
+        {
+            vanishtimer -= Time.deltaTime;
+            color += 0.002f;
+            texturecolor = new Color(color * 1.1f, color, color);
+            rend.material.color= texturecolor;
+        }
+        else
+        {
+            vanishtimer = vanishtime;
+            
+            playercontroller.instance.rdy2 = true;
+            playercontroller.instance.barriernum = 5;
+            Destroy(gameObject);
         }
     }
     /*IEnumerator MultiShooter()

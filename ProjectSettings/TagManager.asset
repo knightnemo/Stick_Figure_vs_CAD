@@ -5,7 +5,6 @@ TagManager:
   serializedVersion: 2
   tags:
   - ground
-  - object
   - duck
   - erase
   - feet
@@ -31,6 +30,11 @@ TagManager:
   - Cerror
   - terminalchar
   - Boss
+  - Bosslaser
+  - Bosselm
+  - barrier
+  - finish
+  - EOL
   layers:
   - Default
   - TransparentFX

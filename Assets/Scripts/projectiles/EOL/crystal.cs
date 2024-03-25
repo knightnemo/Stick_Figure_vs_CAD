@@ -82,7 +82,11 @@ public class crystal : MonoBehaviour
                 firedelaytimer = firedelaytime;
                 fired = true;
                 rdyforfire = false;
-                direction = (EOLcontroller.instance.target.position - transform.position).normalized;
+                if(EOLcontroller.instance.target != null)
+                {
+                    direction = (EOLcontroller.instance.target.position + Vector3.up * 16 - transform.position).normalized;
+                }
+                
             }
         }
 
@@ -99,10 +103,10 @@ public class crystal : MonoBehaviour
     //Please change "player"into "boss"
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.tag == "Player")
+        if (collision.tag == "Boss")
         {
-            playercontroller.instance.ChangeHP(-1);
-            Destroy(gameObject);
+            Bosscontroller.instance.HP-=7;
+            
         }
     }
 
