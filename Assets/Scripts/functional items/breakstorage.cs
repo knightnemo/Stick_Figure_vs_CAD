@@ -38,6 +38,7 @@ public class breakstorage : MonoBehaviour
             if (playercontroller.instance.chances[2] < 5)
             {
                 playercontroller.instance.chances[2]++;
+                playercontroller.instance.MakeSound(8);
                 Destroy(gameObject);
             }
         }

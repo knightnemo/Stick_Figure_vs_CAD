@@ -28,6 +28,7 @@ public class Csharp : MonoBehaviour
     public GameObject bomb;
     
     Rigidbody2D rigidbody2d;
+    AudioSource audio;
     // Start is called before the first frame update
     void Start()
     {
@@ -35,6 +36,7 @@ public class Csharp : MonoBehaviour
         height = transform.position.y;
         movetimer = movetime;
         divetimer = divetime;
+        audio=GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -55,6 +57,8 @@ public class Csharp : MonoBehaviour
         float distanceX = Mathf.Abs(distance.x);
         if (distance.magnitude <= divedistance)
         {
+            audio.Play();
+            Debug.Log("Play:"+audio.name);
             if (!finishpullup)
             {
                 rdyfordive = true;
@@ -64,7 +68,9 @@ public class Csharp : MonoBehaviour
         }
         else
         {
-            rdyfordive = false; 
+            rdyfordive = false;
+            //audio.Stop();
+            //Debug.Log("Stop:" + audio.name);
         }
         if(rdyfordive && !pullingup)
         {
@@ -156,6 +162,7 @@ public class Csharp : MonoBehaviour
 
     void Dive()
     {
+        audio.Play();
         Vector2 direction= new Vector2(-transform.position.x +
             playercontroller.instance.transform.position.x, -transform.position.y +
             playercontroller.instance.transform.position.y+0.1f);

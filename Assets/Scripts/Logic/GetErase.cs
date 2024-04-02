@@ -28,6 +28,7 @@ public class GetErase : MonoBehaviour
         {
             player.canErase = true;
             player.chances[0] += 5;
+            playercontroller.instance.MakeSound(9);
             gameObject.SetActive(false);
             
         }

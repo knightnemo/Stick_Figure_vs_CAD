@@ -6,6 +6,7 @@ using UnityEngine;
 public class camera : MonoBehaviour
 {
     CinemachineVirtualCamera cam;
+    float CurrentSize=8.0f;
     // Start is called before the first frame update
     void Start()
     {
@@ -17,11 +18,22 @@ public class camera : MonoBehaviour
     {
         if(Input.GetKeyDown(KeyCode.U)) 
         {
-            cam.m_Lens.OrthographicSize++;
+            playercontroller.instance.LenSize++;
         }
         if(Input.GetKeyDown(KeyCode.I)) 
         {
-            cam.m_Lens.OrthographicSize--;
+            playercontroller.instance.LenSize--;
         }
+
+        
+        if(CurrentSize- playercontroller.instance.LenSize>0.1f)
+        {
+            CurrentSize -= 0.05f;
+        }
+        if (CurrentSize - playercontroller.instance.LenSize < -0.1f)
+        {
+            CurrentSize += 0.05f;
+        }
+        cam.m_Lens.OrthographicSize = CurrentSize;
     }
 }

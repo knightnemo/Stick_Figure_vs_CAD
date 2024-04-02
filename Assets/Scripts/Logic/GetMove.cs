@@ -28,6 +28,7 @@ public class GetMove : MonoBehaviour
         {
             player.canTeleport = true;
             player.chances[1] ++;
+            playercontroller.instance.MakeSound(9);
             gameObject.SetActive(false);
         }
     }

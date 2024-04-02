@@ -10,10 +10,13 @@ public class Cplus : MonoBehaviour
     public float firetime = 4.0f;
     float firetimer;
     public GameObject Cpluserror;
+
+    AudioSource aud;
     // Start is called before the first frame update
     void Start()
     {
         firetimer = firetime;
+        aud = GetComponent<AudioSource>(); 
     }
 
     // Update is called once per frame
@@ -60,7 +63,7 @@ public class Cplus : MonoBehaviour
 
     void Shoot()
     {
-        
+        aud.Play();
         GameObject Cpluserrorobject = Instantiate(Cpluserror, transform.position, Quaternion.identity);
        
     }

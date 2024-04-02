@@ -27,6 +27,7 @@ public class GetFillet : MonoBehaviour
         if (collider2D.tag == "Player")
         {
             player.canFillet = true;
+            playercontroller.instance.MakeSound(9);
             gameObject.SetActive(false);
         }
     }

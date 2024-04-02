@@ -1,4 +1,5 @@
 using JetBrains.Annotations;
+using NUnit.Framework;
 using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
@@ -109,6 +110,14 @@ public class playercontroller : MonoBehaviour
     public bool candetonate = false;
     float detonatetime = 10.0f;
     float detonatetimer;
+    //Camera
+    public float LenSize=8.0f;
+
+    public GameObject[] sounds;
+    public Bosscontroller boss;
+    public GameObject[] bosssounds;
+    public AudioClip[] clips;
+    public AudioSource aud;
     void Awake()
     {
         isUpsideDown=false;
@@ -161,6 +170,9 @@ public class playercontroller : MonoBehaviour
         //Boss
         EliminateSafe = false;
         Selected = false;
+
+        boss=Bosscontroller.instance;
+        aud=GetComponent<AudioSource>();
 }
 
     // Update is called once per frame
@@ -333,6 +345,38 @@ public class playercontroller : MonoBehaviour
             Killall();
         } 
         Genshinstart();
+
+        if(boss!=null)
+        {
+            if (boss.isMulti)
+            {
+                BossSound(0);
+            }
+            if (boss.isDirect)
+            {
+                BossSound(1);
+            }
+            if (boss.isLaser)
+            {
+                BossSound(2);
+            }
+            if (boss.isF)
+            {
+                BossSound(3);
+            }
+            if (boss.iselm)
+            {
+                BossSound(4);
+            }
+            if (boss.isselect)
+            {
+                BossSound(5);
+            }
+            if(boss.isBlow)
+            {
+                BossSound(6);
+            }
+        }
     }
     
     void Move()
@@ -365,6 +409,7 @@ public class playercontroller : MonoBehaviour
             {
                 rigidbody2d.velocity = new Vector2(rigidbody2d.velocity.x, jumpspeed*1.2f);
                 canjumptwice = true;
+                MakeSound(1);
             } 
         }
         else
@@ -375,6 +420,7 @@ public class playercontroller : MonoBehaviour
                 {
                     rigidbody2d.velocity = new Vector2(rigidbody2d.velocity.x, jumpspeed * 1.3f);
                     canjumptwice = false;
+                    MakeSound(1);
                 }
             }
         }
@@ -388,6 +434,7 @@ public class playercontroller : MonoBehaviour
             if (Input.GetKeyDown(KeyCode.X))
             {
                 rdyfortele = rdyfortele * -1;
+                MakeSound(3);
             }
             if (rdyfortele == 1)
             {
@@ -401,6 +448,7 @@ public class playercontroller : MonoBehaviour
             {
                 if (rdyfortele == 1)
                 {
+                    MakeSound(2);
                     Vector2 mousepos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
                     Debug.Log("mouse,player,direction" + mousepos);
                     //transform.position = mousepos;
@@ -419,6 +467,7 @@ public class playercontroller : MonoBehaviour
     }
     void Erase()
     {
+        MakeSound(0);
         Vector2 mousepos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         Vector2 direction = new Vector2(mousepos.x - transform.position.x, mousepos.y - transform.position.y);
         direction.Normalize();
@@ -426,6 +475,7 @@ public class playercontroller : MonoBehaviour
         {
             direction = Vector2.up;
         }
+        MakeSound(12);
         GameObject eraseobject = Instantiate(erase, rigidbody2d.position + Vector2.up * 0.3f, Quaternion.identity);
         erase eraseproj = eraseobject.GetComponent<erase>();
         eraseproj.launch(direction);
@@ -438,6 +488,7 @@ public class playercontroller : MonoBehaviour
     }
     void Fillet()
     {
+        MakeSound(4);
         Vector2 mousepos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         Vector2 direction = new Vector2(mousepos.x - transform.position.x, mousepos.y - transform.position.y);
         direction.Normalize();
@@ -452,12 +503,14 @@ public class playercontroller : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.E))
         {
+            MakeSound(3);
             rdyforbreak = rdyforbreak * -1;
         }
         if (Input.GetKeyDown(KeyCode.Space))
         {
             if (rdyforbreak == 1)
             {
+                MakeSound(5);
                 GameObject detectobject=Instantiate(detect, rigidbody2d.position, Quaternion.identity);
                 //Debug.Log("Breakdown!");
                 rdyforbreak = -1;
@@ -475,6 +528,7 @@ public class playercontroller : MonoBehaviour
             {
                 if (shieldopen == false)
                 {
+                    MakeSound(7);
                     shieldopen = true;
                     Debug.Log("open the shield!");
                     ani.SetTrigger("Openshield");
@@ -541,6 +595,7 @@ public class playercontroller : MonoBehaviour
         HP = 0;
         died = true;
         rigidbody2d.simulated = false;
+        MakeSound(10);
         //ani.SetTrigger("Killed");
         ChangeAni(2);
         if(console?.tips!=null)//����ʱ�������ť
@@ -611,6 +666,7 @@ public class playercontroller : MonoBehaviour
             }
             else
             {
+                MakeSound(13);
                 killTimer = killTime;
                 Instantiate(killbeam,transform.position+offset*Vector3.right, Quaternion.identity);
                 Instantiate(killbeam, transform.position - offset * Vector3.right, Quaternion.identity);
@@ -641,5 +697,28 @@ public class playercontroller : MonoBehaviour
                 candetonate = true;
             }
         }
+    }
+
+    public void MakeSound(int n)
+    {
+        //if (sounds != null)
+        // if (sounds[n]!=null)
+        //sounds[n].GetComponent<AudioSource>().Play();
+        if(clips==null)
+        {
+            Debug.Log("clips==null");
+            return;
+        }
+        if(clips.Length>n)
+        {
+            
+            aud.clip = clips[n];
+            aud.Play();
+        }
+        
+    }
+    void BossSound(int n)
+    {
+        bosssounds[n].GetComponent<AudioSource>().Play();
     }
 }

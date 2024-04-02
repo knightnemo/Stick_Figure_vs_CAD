@@ -24,6 +24,7 @@ public class getkillall : MonoBehaviour
             if (playercontroller.instance.rdy1)
             {
                 playercontroller.instance.cankillall = true;
+                playercontroller.instance.MakeSound(11);
                 Destroy(gameObject);
             }
             

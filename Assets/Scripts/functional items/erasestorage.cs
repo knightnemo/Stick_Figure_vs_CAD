@@ -38,6 +38,7 @@ public class erasestorage : MonoBehaviour
             if (playercontroller.instance.chances[0] < 10)
             {
                 playercontroller.instance.chances[0]=10;
+                playercontroller.instance.MakeSound(8);
                 Destroy(gameObject);
             }
         }

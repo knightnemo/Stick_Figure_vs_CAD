@@ -13,6 +13,9 @@ public class SceneSwitchScript : MonoBehaviour
     bool resetpos = false;
     float posrestime = 0.2f;
     float posrestimer;
+
+    public AudioClip[] clips;
+    public AudioSource aud;
     // Start is called before the first frame update
     void Start()
     {
@@ -23,6 +26,8 @@ public class SceneSwitchScript : MonoBehaviour
         sceneNum = 0;
 
         posrestimer = posrestime;
+
+        aud = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -65,6 +70,8 @@ public class SceneSwitchScript : MonoBehaviour
         sceneNum++;
         SceneManager.LoadScene(scenes[sceneNum]);
         Debug.Log("sceneNum=" + sceneNum);
+        aud.clip = clips[sceneNum-1];
+        aud.Play();
     }
 
     void QuitGame()

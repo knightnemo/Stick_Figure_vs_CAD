@@ -173,6 +173,7 @@ MonoBehaviour:
   finish: 0
   spearcolor: 1
   HP: 500
+  door: {fileID: 7970765950259861941, guid: 9416949ae180479448ce82a2482c26d6, type: 3}
 --- !u!50 &2258593209174773767
 Rigidbody2D:
   serializedVersion: 4

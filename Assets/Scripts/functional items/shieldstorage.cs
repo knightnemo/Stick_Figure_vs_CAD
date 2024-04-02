@@ -43,6 +43,7 @@ public class shieldstorage : MonoBehaviour
                 {
                     playercontroller.instance.shieldnum = 10;
                 }
+                playercontroller.instance.MakeSound(8);
                 Destroy(gameObject);
             }
         }

@@ -22,17 +22,21 @@ public class C : MonoBehaviour
     Rigidbody2D rigidbody2d;
 
     public int HP = 2;
+    AudioSource aud;
     // Start is called before the first frame update
     void Start()
     {
         rigidbody2d = GetComponent<Rigidbody2D>();
         movetimer = movetime;
         jumptimer = jumptime;
+        aud=GetComponent<AudioSource>();
+        //GetComponent<AudioSource>().Play();
     }
 
     // Update is called once per frame
     void Update()
     {
+        
         if (!rdyfordash)
         {
             //Move
@@ -74,6 +78,7 @@ public class C : MonoBehaviour
         {
             if (rdyfordash)
             {
+                aud.Play();
                 Explode();
             }
             
@@ -117,14 +122,15 @@ public class C : MonoBehaviour
         }
         if(collision.tag=="Player" || collision.tag == "feet")
         {
+            aud.Play();
             Explode();
         }
     }
 
     void Explode()
     {
+        aud.Play();
         GameObject Cerrorobject = Instantiate(Cerror, rigidbody2d.position, Quaternion.identity);
         Destroy(gameObject);
     }
-    
 }

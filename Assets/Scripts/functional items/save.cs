@@ -28,6 +28,7 @@ public class save : MonoBehaviour
         if (collision.tag == "Player")
         {
             playercontroller.instance.TakedownSavepoint();
+            playercontroller.instance.MakeSound(8);
             Destroy(gameObject);
         }
     }

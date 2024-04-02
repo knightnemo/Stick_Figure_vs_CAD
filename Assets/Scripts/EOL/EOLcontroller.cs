@@ -62,6 +62,7 @@ public class EOLcontroller : MonoBehaviour
     Renderer rend;
     Color texturecolor;
     float colortime = 1.2f;
+    public GameObject door;
     // Start is called before the first frame update
     void Start()
     {
@@ -81,7 +82,8 @@ public class EOLcontroller : MonoBehaviour
         shifttimer = shifttime;
 
         rend=GetComponent<Renderer>();
-        
+
+        playercontroller.instance.LenSize = 21.0f;
     }
 
     // Update is called once per frame
@@ -403,6 +405,9 @@ public class EOLcontroller : MonoBehaviour
             fadetimer = fadetime;
             Bosscontroller.instance.targettype = 1;
             Debug.Log("Revenge for me, T......");
+            Instantiate(door, Bosscontroller.instance.transform.position+Vector3.up*24, Quaternion.identity);
+            dev.instance.stage = true;
+            Bosscontroller.instance.ON = false;
             Destroy(gameObject);
         }
     }

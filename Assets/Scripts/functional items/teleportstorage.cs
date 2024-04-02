@@ -8,6 +8,7 @@ public class teleportstorage : MonoBehaviour
     float movetime = 1.0f;
     float movetimer;
     int direction = 1;
+    public int num = 1;
     // Start is called before the first frame update
     void Start()
     {
@@ -37,7 +38,8 @@ public class teleportstorage : MonoBehaviour
         {
             if (playercontroller.instance.chances[1] < 5)
             {
-                playercontroller.instance.chances[1]++;
+                playercontroller.instance.chances[1]+=num;
+                playercontroller.instance.MakeSound(8);
                 Destroy(gameObject);
             }
         }

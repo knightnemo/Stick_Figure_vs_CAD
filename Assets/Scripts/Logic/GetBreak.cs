@@ -30,6 +30,7 @@ public class GetBreak : MonoBehaviour
         {
             player.canBreakdown = true;
             player.chances[2]++;
+            playercontroller.instance.MakeSound(9);
             gameObject.SetActive(false);
         }
     }
