@@ -37,7 +37,10 @@ public class ButtonScript : MonoBehaviour
     }
     void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
-        
+        if (playercontroller.instance.rdytoconc)
+        {
+            return;
+        }
         playercontroller.instance.died = false;
         if (Console0Script.instance?.tips != null)
         {

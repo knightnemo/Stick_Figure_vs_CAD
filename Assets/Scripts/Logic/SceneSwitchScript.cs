@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UIElements;
 
 public class SceneSwitchScript : MonoBehaviour
 {
@@ -13,6 +14,12 @@ public class SceneSwitchScript : MonoBehaviour
     bool resetpos = false;
     float posrestime = 0.2f;
     float posrestimer;
+
+    //End delete
+    public bool END=false;
+    public float endtime = 2.0f;
+    float endtimer;
+    public int endtype = 1;
 
     public AudioClip[] clips;
     public AudioSource aud;
@@ -26,7 +33,7 @@ public class SceneSwitchScript : MonoBehaviour
         sceneNum = 0;
 
         posrestimer = posrestime;
-
+        endtimer = endtime;
         aud = GetComponent<AudioSource>();
     }
 
@@ -64,10 +71,42 @@ public class SceneSwitchScript : MonoBehaviour
         {
             QuitGame();
         }
+
+        if (playercontroller.instance !=null)
+        {
+            if (playercontroller.instance.rdytoconc)
+            {
+                END = true;
+            }
+        }
+        if (END)
+        {
+            if (endtimer > 0)
+            {
+                endtimer -= Time.deltaTime;
+            }
+            else
+            {
+                endtimer = endtime;
+                endtype=playercontroller.instance.type;
+                SceneChange();
+                
+                //Destroy(gameObject);
+            }
+            if (portrait.instance != null)
+            {
+                Debug.Log("End is set!");
+                portrait.instance.portraittype = endtype;
+            }
+        }
     }
     void SceneChange()//³¡¾°±ä»»º¯Êý
     {
         sceneNum++;
+        if (sceneNum > scenes.Length)
+        {
+            sceneNum=scenes.Length;
+        }
         SceneManager.LoadScene(scenes[sceneNum]);
         Debug.Log("sceneNum=" + sceneNum);
         aud.clip = clips[sceneNum-1];

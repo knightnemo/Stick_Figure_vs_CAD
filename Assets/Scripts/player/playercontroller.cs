@@ -105,6 +105,9 @@ public class playercontroller : MonoBehaviour
     float offset = 1.5f;
     public GameObject killbeam;
     public bool End = false;
+    public bool rdytoconc = false;
+    public int type = 1;
+    public bool atdev = false;
     //Genshin
     public bool rdyforstart = false;
     public bool candetonate = false;
@@ -132,6 +135,7 @@ public class playercontroller : MonoBehaviour
         cankillall = false;
         killall = false;
         upsidedowntimer=upsidedowntime;
+        type = 1;
     }
 
     // Start is called before the first frame update
@@ -617,7 +621,11 @@ public class playercontroller : MonoBehaviour
     }
     public void Resqwan()
     {
-        transform.position = LogicScript.instance.startPos;
+        if (LogicScript.instance != null)
+        {
+            transform.position = LogicScript.instance.startPos;
+        }
+        
     }
     void ChangeAni(int n)
     {

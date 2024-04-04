@@ -69,7 +69,7 @@ public class Bosscontroller : MonoBehaviour
     //Blow
     float x0, y0;
     bool recorded=false;
-    public float blowforce = 200f;
+    public float blowforce = 10f;
     float blowtime = 3.0f;
     float blowtimer;
     //HP
@@ -82,6 +82,8 @@ public class Bosscontroller : MonoBehaviour
     //Jump
     public GameObject shock;
     public bool isfall = false;
+    public bool canjump = false;
+    public float heightlim = 75;
     //Walk
     float walktime = 1.0f;
     float walktimer;
@@ -134,7 +136,7 @@ public class Bosscontroller : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (!ON)
+        if (!ON || playercontroller.instance.atdev)
         {
             return;
         }
@@ -170,7 +172,7 @@ public class Bosscontroller : MonoBehaviour
         }
 
         //Move
-        if (Mathf.Abs(distance) > 3f && Mathf.Abs(distance) < 30f && !attacking && !isJump)
+        if (Mathf.Abs(distance) > 3f && Mathf.Abs(distance) < 50f && !attacking && !isJump)
         {
             Move();
         }
@@ -178,11 +180,31 @@ public class Bosscontroller : MonoBehaviour
         {
             ani.SetBool("Walk", false);
         }
+
         //jump
-        if ((Mathf.Abs(distance) >= 30f && !attacking)||(target.transform.position.y - transform.position.y-16 > 30 && !attacking) )
+        if (transform.position.y + 16 > heightlim)
         {
-            isJump = true;
-            attacking = true;
+            canjump = true;
+        }
+        else
+        {
+            canjump = false;
+        }
+        if ((Mathf.Abs(distance) >= 50f && !attacking)||(target.transform.position.y - transform.position.y-16 > 30 && !attacking) )
+        {
+            if (canjump && target.position.y>heightlim)
+            {
+                isJump = true;
+                attacking = true;
+            }
+            else
+            {
+                if (ON)
+                {
+                    transform.position = target.position - Vector3.up * 16 - Vector3.right * 5;
+                }
+                
+            }
         }
         if (isJump)
         {
@@ -355,7 +377,7 @@ public class Bosscontroller : MonoBehaviour
             ani.SetBool("BlowRight", true);
             if(transform.position.x<x0+10f)
             {
-                transform.Translate(20f*Vector3.right*Time.deltaTime);
+                transform.Translate(30f*Vector3.right*Time.deltaTime);
             }
         }
         if(lor==-1)
@@ -363,7 +385,7 @@ public class Bosscontroller : MonoBehaviour
             ani.SetBool("BlowLeft", true);
             if (transform.position.x > x0 - 10f)
             {
-                transform.Translate(20f*Vector3.left * Time.deltaTime);
+                transform.Translate(30f*Vector3.left * Time.deltaTime);
             }
         }
         if (blowtimer > 0)
@@ -514,18 +536,19 @@ public class Bosscontroller : MonoBehaviour
         if (canrelease)
         {
             MakeSound(6);
-            player.LenSize = 25.0f;
             Instantiate(choose,transform.position + 16 * Vector3.up, Quaternion.identity);
             Instantiate(mark, transform.position+16*Vector3.up, Quaternion.identity);
             canrelease = false;
         }
         if (elmtimer > 0)
         {
+            player.LenSize = 25.0f;
             elmtimer -= Time.deltaTime;
             ani.SetBool("Eliminate", true);
         }
         else
         {
+            elmtimer = elmtime;
             player.LenSize = 14.0f;
             canrelease = true;
             iselm = false;
@@ -607,8 +630,8 @@ public class Bosscontroller : MonoBehaviour
         {
             if (collision.gameObject.tag == "Player" && isfall)
             {
-                
-                player.rigidbody2d.AddForce(new Vector2(lor * 20f, 0));//»÷·ÉPlayer
+                player.transform.position += 0.1f * Vector3.up;
+                player.rigidbody2d.AddForce(10*Vector2.up);//»÷·ÉPlayer
                 player.ChangeHP(-1);
 
                 isJump = false;
@@ -628,11 +651,12 @@ public class Bosscontroller : MonoBehaviour
             }
             if ((collision.gameObject.tag == "ground" || collision.gameObject.tag == "barrier") && isfall && transform.position.y + 16 - player.transform.position.y > 10)
             {
-                transform.position -= Vector3.up*7;
+                rb.position -= Vector2.up*7;
             }
             if ((collision.gameObject.tag == "ground" || collision.gameObject.tag == "barrier") && rb.velocityY>0)
             {
-                transform.position += Vector3.up * 10;
+                
+                rb.position += Vector2.up * 20;
             }
         }
         if(isBlow)
@@ -640,8 +664,8 @@ public class Bosscontroller : MonoBehaviour
             if(collision.gameObject.tag=="Player")
             {
                 Debug.Log("player is hit!");
-                player.transform.position += Vector3.up * 0.5f;
-                player.rigidbody2d.AddForce(new Vector2(lor*5, 5)*blowforce);//»÷·ÉPlayer
+                player.transform.position += Vector3.up * 0.1f;
+                player.rigidbody2d.AddForce(new Vector2(lor, 1)*blowforce);//»÷·ÉPlayer
                 isBlow = false;
                 attacking = false;
             }

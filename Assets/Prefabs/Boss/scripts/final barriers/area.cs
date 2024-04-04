@@ -15,7 +15,7 @@ public class area : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (playercontroller.instance.barriernum == 5)
+        if (playercontroller.instance.barriernum == 5 || playercontroller.instance.rdy2)
         {
             Destroy(gameObject);
         }

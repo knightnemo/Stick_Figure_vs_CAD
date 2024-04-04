@@ -39,13 +39,14 @@ public class ring : MonoBehaviour
         if (activated)
         {
             playercontroller.instance.transform.position = transform.position;
+            playercontroller.instance.LenSize = 10;
         }
         if (activated)
         {
             if (risetimer > 0)
             {
                 Vector2 pos = transform.position;
-                pos.y += 0.5f;
+                pos.y += 0.2f;
                 transform.position = pos;
 
                 risetimer -= Time.deltaTime;
@@ -73,7 +74,7 @@ public class ring : MonoBehaviour
                 lituptimer -= Time.deltaTime;
                 if (transform.rotation.eulerAngles.z < 91.0f)
                 {
-                    transform.Rotate(Vector3.right, 0.40f);
+                    transform.Rotate(Vector3.right, 0.20f);
                 }
                     
             }
@@ -89,6 +90,7 @@ public class ring : MonoBehaviour
             }
             if (lituptimer <= 0)
             {
+                playercontroller.instance.rdytoconc = true;
                 Destroy(gameObject);
                 Instantiate(hole, transform.position, Quaternion.identity);
                 Instantiate(shadow, transform.position, Quaternion.identity);

@@ -34,6 +34,22 @@ public class Nuke : MonoBehaviour
         {
             canwarn = true;
         }
+        if (d.magnitude < 10)
+        {
+            if(Bosscontroller.instance != null)
+            {
+                Bosscontroller.instance.ON = false;
+            }
+            playercontroller.instance.LenSize = 8;
+        }
+        else
+        {
+            if (Bosscontroller.instance != null)
+            {
+                Bosscontroller.instance.ON = true;
+            }
+            playercontroller.instance.LenSize = 14;
+        }
 
         Vector2 mousepos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         if(Mathf.Abs(mousepos.x-transform.position.x)<0.78f && Mathf.Abs(mousepos.y - transform.position.y) < 0.8f)
@@ -74,6 +90,11 @@ public class Nuke : MonoBehaviour
                 if(canblast) 
                 {
                     GameObject flare = Instantiate(blast, transform.position, Quaternion.identity);
+                    playercontroller.instance.type = 2;
+                    if(Bosscontroller.instance != null)
+                    {
+                        Bosscontroller.instance.HP = 0;
+                    }
                     canblast = false;
                 }
                
