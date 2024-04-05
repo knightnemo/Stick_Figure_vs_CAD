@@ -7,10 +7,17 @@ public class Logicmaneger : MonoBehaviour
     public bool END = false;
     public float endtime = 3.0f;
     float endtimer;
+    public bool[] passed;
     // Start is called before the first frame update
     void Start()
     {
         endtimer = endtime;
+        passed = new bool[12];
+        for(int i=0;i<12;i++)
+        {
+            passed[i] = false;
+        }
+        passed[1] = true;
     }
 
     // Update is called once per frame

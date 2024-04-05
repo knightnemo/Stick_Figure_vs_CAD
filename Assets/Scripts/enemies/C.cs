@@ -113,6 +113,7 @@ public class C : MonoBehaviour
         }
         if (collision.tag == "erase")
         {
+            LogicScript.instance.finalScore++;
             HP--;
            
             if (HP <= 0)

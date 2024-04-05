@@ -203,3 +203,10 @@ Credits: TUOMF, Xyberoid, KnightNemo🧑‍💻
     * 按`Back`回到opening
     * 考虑之后加入选择关卡的页面
 * 目前游戏已经可以不经退出循环游玩 :)
+
+## 0405更新 
+* 新增关卡Scene06
+* 增加选关场景`Select`，相关素材在Assets/Art/Sprites/Select中，我下次做
+* 新增`death`与`score`的计数，在UI和结算页面显示
+    * 其中death试图用计时器实现数组从0到结果的自然滚动效果，但结果是不显示
+    * score的算法目前比较简单，是用erase击中duck/c/c#的次数和，后续可考虑结算时加入剩余未用技能数等

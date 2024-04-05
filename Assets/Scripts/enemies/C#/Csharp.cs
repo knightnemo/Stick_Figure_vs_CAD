@@ -203,6 +203,7 @@ public class Csharp : MonoBehaviour
         if (collision.tag == "erase")
         {
             HP--;
+            LogicScript.instance.finalScore++;
         }
         if (collision.tag == "Player")
         {

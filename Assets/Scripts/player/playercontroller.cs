@@ -121,6 +121,8 @@ public class playercontroller : MonoBehaviour
     public GameObject[] bosssounds;
     public AudioClip[] clips;
     public AudioSource aud;
+
+    public int score=0;
     void Awake()
     {
         isUpsideDown=false;
@@ -177,6 +179,8 @@ public class playercontroller : MonoBehaviour
 
         boss=Bosscontroller.instance;
         aud=GetComponent<AudioSource>();
+
+        score = LogicScript.instance.lastScore;
 }
 
     // Update is called once per frame
@@ -602,6 +606,8 @@ public class playercontroller : MonoBehaviour
         MakeSound(10);
         //ani.SetTrigger("Killed");
         ChangeAni(2);
+        LogicScript.instance.deathNum++;
+        LogicScript.instance.lastScore = score;
         if(console?.tips!=null)//����ʱ�������ť
         {
             foreach (GameObject tip in console.tips)
@@ -618,12 +624,14 @@ public class playercontroller : MonoBehaviour
     public void TakedownSavepoint()
     {
         LogicScript.instance.startPos=transform.position;
+        LogicScript.instance.lastScore = LogicScript.instance.finalScore;
     }
     public void Resqwan()
     {
         if (LogicScript.instance != null)
         {
             transform.position = LogicScript.instance.startPos;
+
         }
         
     }

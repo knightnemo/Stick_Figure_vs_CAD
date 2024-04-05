@@ -81,6 +81,7 @@ public class duck : MonoBehaviour
         if (collision.tag == "erase")
         {
             HP--;
+            LogicScript.instance.finalScore++;
             Debug.Log("Duck is hit!");
         }
         if (collision.tag == "shield")
