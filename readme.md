@@ -210,3 +210,8 @@ Credits: TUOMF, Xyberoid, KnightNemo🧑‍💻
 * 新增`death`与`score`的计数，在UI和结算页面显示
     * 其中death试图用计时器实现数组从0到结果的自然滚动效果，但结果是不显示
     * score的算法目前比较简单，是用erase击中duck/c/c#的次数和，后续可考虑结算时加入剩余未用技能数等
+
+## 0409更新
+* 完成了Scene03 Scene07
+* 继续加入音效
+* 小BOSS `Terminal`完成制作，加入光效，音效，以及受伤和死亡特效。只有用分解技能打碎的array接触它才能使其受伤。
