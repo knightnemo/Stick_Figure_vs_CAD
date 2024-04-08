@@ -57,5 +57,9 @@ public class arraybar : MonoBehaviour
         {
             ani.SetTrigger("Detected");
         }
+        if (collision.tag == "terminal")
+        {
+            Destroy(gameObject);
+        }
     }
 }

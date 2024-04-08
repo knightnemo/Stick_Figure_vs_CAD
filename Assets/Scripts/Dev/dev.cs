@@ -83,6 +83,7 @@ public class dev : MonoBehaviour
         if (stage)
         {
             ani.SetTrigger("A");
+            playercontroller.instance.atdev = true;
             if (timer2 > 0)
             {
                 timer2 -= Time.deltaTime;
@@ -94,6 +95,10 @@ public class dev : MonoBehaviour
                     Instantiate(talk2, transform.position + Vector3.right * 7.0f, Quaternion.identity);
                     cantalk2 = false;
                 }
+            }
+            if (timer2 < 4)
+            {
+                playercontroller.instance.atdev = false;
             }
         }
        

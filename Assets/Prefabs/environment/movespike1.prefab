@@ -218,6 +218,6 @@ MonoBehaviour:
   working: 1
   active: 0
   Ymin: 1.1
-  Ymax: 5
-  movetime: 0.6
+  Ymax: 8
+  movetime: 1
   movetimer: 0

@@ -35,6 +35,8 @@ TagManager:
   - barrier
   - finish
   - EOL
+  - object
+  - terminal
   layers:
   - Default
   - TransparentFX

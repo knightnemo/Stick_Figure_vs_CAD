@@ -29,7 +29,7 @@ public class laser : MonoBehaviour
         if (staytimer > 0)
         {
             staytimer -= Time.deltaTime;
-            transform.Rotate(Vector3.forward, 0.08f);
+            transform.Rotate(Vector3.forward, 0.1f);
         }
         else
         {

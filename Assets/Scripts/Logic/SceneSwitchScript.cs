@@ -7,6 +7,7 @@ using UnityEngine.UIElements;
 
 public class SceneSwitchScript : MonoBehaviour
 {
+    public static SceneSwitchScript instance { get; private set; }
     public GameObject[] objectsToRemain;//转场时要保留的游戏对象，editor中拖拽
     public string[] scenes;//所有的场景，editor中拖拽
     public int sceneNum;//切换到第sceneNum个场景
@@ -23,6 +24,10 @@ public class SceneSwitchScript : MonoBehaviour
 
     public AudioClip[] clips;
     public AudioSource aud;
+    private void Awake()
+    {
+        instance = this;
+    }
     // Start is called before the first frame update
     void Start()
     {
@@ -109,8 +114,13 @@ public class SceneSwitchScript : MonoBehaviour
         }
         SceneManager.LoadScene(scenes[sceneNum]);
         Debug.Log("sceneNum=" + sceneNum);
-        aud.clip = clips[sceneNum-1];
-        aud.Play();
+        if (sceneNum > 1)
+        {
+            aud.clip = clips[sceneNum - 2];
+            aud.Play();
+        }
+        
+        
     }
 
     void QuitGame()

@@ -12,6 +12,7 @@ public class rm : MonoBehaviour
     public float flytime = 5.0f;
     float timer;
     Vector2 direction;
+    SpriteRenderer rend;
     // Start is called before the first frame update
     void Start()
     {
@@ -19,6 +20,8 @@ public class rm : MonoBehaviour
         timer = flytime;
         Debug.Log(direction.x+"/"+direction.y);
         launch();
+        rend = GetComponent<SpriteRenderer>();
+        rend.material.color = new Color(1.2f, 1.2f, 1.2f);
     }
 
     // Update is called once per frame

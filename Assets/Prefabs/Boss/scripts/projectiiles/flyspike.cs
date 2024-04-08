@@ -6,10 +6,10 @@ public class flyspike : MonoBehaviour
 {
     float x=0,y=0;
     public float xc=0, yc=0;
-    int[]a=new int[5];
-    int[]b=new int[5];
-    int[] c = new int[5];
-    int[] d = new int[5];
+    int[]a=new int[11];
+    int[]b=new int[11];
+    int[] c = new int[11];
+    int[] d = new int[11];
     float t=0;
 
     float flytime = 15.0f;
@@ -21,12 +21,12 @@ public class flyspike : MonoBehaviour
     {
         x = xc;
         y = yc;
-        for(int i=0; i<5; i++)
+        for(int i=0; i<10; i++)
         {
-            a[i] = Random.Range(2, 6);
-            b[i] =Random.Range(2, 6);
-            c[i]=Random.Range(2, 6);
-            d[i]=Random.Range(2, 6);
+            a[i] = Random.Range(1, 6);
+            b[i] =Random.Range(1, 6);
+            c[i]=Random.Range(1, 6);
+            d[i]=Random.Range(1, 6);
         }
 
         flytimer = flytime;
@@ -48,10 +48,10 @@ public class flyspike : MonoBehaviour
             flytimer = flytime;
             Destroy(gameObject);
         }
-        t += Time.deltaTime;
+        t += 0.1f*Time.deltaTime;
         x = xc;
         y = yc;
-        for (int i=0; i < 5; i++)
+        for (int i=0; i < 10; i++)
         {
             x += a[i] * Mathf.Cos(i * t) + b[i] * Mathf.Sin(i * t);
             y += c[i] * Mathf.Cos(i * t) + d[i] * Mathf.Sin(i * t);

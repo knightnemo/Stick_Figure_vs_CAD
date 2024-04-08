@@ -39,7 +39,7 @@ public class deathbeam : MonoBehaviour
             }
             magtimer = magtime;
         }
-        transform.localScale = new Vector3(1, scale, 1);
+        transform.localScale = new Vector3(10, scale, 1);
         if (scale >= 1)
         {
             magfinish = true;

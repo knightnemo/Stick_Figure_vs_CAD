@@ -8,6 +8,7 @@ public class disruptor : MonoBehaviour
 
     public GameObject mark;
     bool canmark = true;
+    bool active = false;
     // Start is called before the first frame update
     void Start()
     {
@@ -17,7 +18,10 @@ public class disruptor : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        
         Disrupt();
+        
+        
     }
 
     void Disrupt()
@@ -25,12 +29,18 @@ public class disruptor : MonoBehaviour
         Vector2 distance = playercontroller.instance.transform.position - transform.position;
         if (distance.magnitude >= activedistance)
         {
-            playercontroller.instance.canTeleport = true;
-            Debug.Log("Now can teleport");
-            canmark = true;
+            if (active)
+            {
+                playercontroller.instance.canTeleport = true;
+                Debug.Log("Now can teleport");
+                canmark = true;
+                active = false;
+            }
+            
         }
         else
         {
+            active = true;
             playercontroller.instance.canTeleport = false;
             Debug.Log("Disrupt teleport!");
             if (canmark)

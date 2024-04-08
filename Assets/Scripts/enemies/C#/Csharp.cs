@@ -29,6 +29,9 @@ public class Csharp : MonoBehaviour
     
     Rigidbody2D rigidbody2d;
     AudioSource audio;
+    public AudioClip[] clips;
+    bool cancrash = true;
+    bool canfire = true;
     // Start is called before the first frame update
     void Start()
     {
@@ -57,8 +60,8 @@ public class Csharp : MonoBehaviour
         float distanceX = Mathf.Abs(distance.x);
         if (distance.magnitude <= divedistance)
         {
-            audio.Play();
-            Debug.Log("Play:"+audio.name);
+            
+            
             if (!finishpullup)
             {
                 rdyfordive = true;
@@ -82,6 +85,7 @@ public class Csharp : MonoBehaviour
                 //Debug.Log("Fire!");
                 rdyfordive = false;
                 pullingup = true;
+                canfire = false;
 
             }
         }
@@ -112,6 +116,7 @@ public class Csharp : MonoBehaviour
             {
                 finishpullup = false;
                 divetimer = divetime;
+                canfire = true;
             }
             
         }
@@ -162,7 +167,7 @@ public class Csharp : MonoBehaviour
 
     void Dive()
     {
-        audio.Play();
+        
         Vector2 direction= new Vector2(-transform.position.x +
             playercontroller.instance.transform.position.x, -transform.position.y +
             playercontroller.instance.transform.position.y+0.1f);
@@ -191,8 +196,14 @@ public class Csharp : MonoBehaviour
 
     void Fire()
     {
-        for(int i=1;i<=2;i++)
+        if (canfire)
         {
+            audio.clip = clips[1];
+            audio.Play();
+        }
+        for (int i=1;i<=2;i++)
+        {
+            
             GameObject bombobject = Instantiate(bomb, rigidbody2d.position + Vector2.down * 0.8f, Quaternion.identity);
         }
    
@@ -204,6 +215,12 @@ public class Csharp : MonoBehaviour
         {
             HP--;
             LogicScript.instance.finalScore++;
+            if (cancrash)
+            {
+                audio.clip = clips[0];
+                audio.Play();
+                cancrash = false;
+            }
         }
         if (collision.tag == "Player")
         {
@@ -229,5 +246,6 @@ public class Csharp : MonoBehaviour
     {
         rigidbody2d.gravityScale=1.0f;
         transform.Rotate(Vector3.forward, 3.0f);
+        
     }
 }

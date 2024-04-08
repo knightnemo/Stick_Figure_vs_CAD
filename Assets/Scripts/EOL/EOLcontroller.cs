@@ -57,12 +57,16 @@ public class EOLcontroller : MonoBehaviour
     //HP(only use when fighting whth boss)
     public int HP = 500;
     bool killed = false;
-    float fadetime = 2.0f;
+    float fadetime = 3.0f;
     float fadetimer;
     Renderer rend;
     Color texturecolor;
     float colortime = 1.2f;
     public GameObject door;
+
+    public AudioClip[] clips;
+    public AudioSource aud;
+    bool cansound = true;
     // Start is called before the first frame update
     void Start()
     {
@@ -82,6 +86,8 @@ public class EOLcontroller : MonoBehaviour
         shifttimer = shifttime;
 
         rend=GetComponent<Renderer>();
+        aud=GetComponent<AudioSource>();
+        MakeSound(0);
 
         playercontroller.instance.LenSize = 21.0f;
     }
@@ -93,6 +99,7 @@ public class EOLcontroller : MonoBehaviour
     }
     void Update()
     {
+        playercontroller.instance.LenSize = 21.0f;
         if (GameObject.FindGameObjectWithTag("Boss") == null)
         {
             return;
@@ -100,6 +107,11 @@ public class EOLcontroller : MonoBehaviour
         if (killed)
         {
             Fade();
+            if (cansound)
+            {
+                MakeSound(3);
+                cansound= false;
+            }
             return;
         }
 
@@ -213,6 +225,7 @@ public class EOLcontroller : MonoBehaviour
         }
         if(arraytimer < 0)
         {
+            MakeSound(1);
             arrayrounds++;
             spearmode++;
             Debug.Log("Fire spears, round" + arrayrounds + "at mode" + spearmode);
@@ -269,6 +282,7 @@ public class EOLcontroller : MonoBehaviour
         {
             if (aimrounds <= 20)
             {
+                MakeSound(1);
                 aimrounds++;
                 angle = angle + 30.0f;
                 Quaternion rotation = Quaternion.AngleAxis(angle, Vector3.forward);
@@ -313,6 +327,7 @@ public class EOLcontroller : MonoBehaviour
         {
             if (crystalrounds <=15)
             {
+                MakeSound(1);
                 crystalrounds++;
                 GameObject crystalobj=Instantiate(lightcrystal,transform.position,Quaternion.identity);
             }
@@ -336,6 +351,7 @@ public class EOLcontroller : MonoBehaviour
             {
                 preparing = true;
                 start = false;
+                MakeSound(2);
             }
         }
         
@@ -393,6 +409,7 @@ public class EOLcontroller : MonoBehaviour
 
     void Fade()
     {
+        
         if (fadetimer > 0)
         {
             fadetimer -= Time.deltaTime;
@@ -410,5 +427,10 @@ public class EOLcontroller : MonoBehaviour
             Bosscontroller.instance.ON = false;
             Destroy(gameObject);
         }
+    }
+    void MakeSound(int n)
+    {
+        aud.clip = clips[n];
+        aud.Play();
     }
 }

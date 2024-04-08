@@ -9368,6 +9368,7 @@ MonoBehaviour:
   - {fileID: 8300000, guid: f58270bef2f862844a295dc87f7f65e7, type: 3}
   - {fileID: 8300000, guid: 17c21a9ffabbaf045a53da53b09f018f, type: 3}
   aud: {fileID: 0}
+  score: 0
 --- !u!70 &1700734943
 CapsuleCollider2D:
   m_ObjectHideFlags: 0

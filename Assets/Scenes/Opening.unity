@@ -2014,13 +2014,16 @@ MonoBehaviour:
   - {fileID: 137095441}
   scenes:
   - Opening
+  - Select
   - Scene01
   - Scene02
   - Scene03
   - Scene04
   - Scene05
   - Scene06
-  - SampleScene
+  - Scene07
+  - Scene08
+  - Scene09
   - Scene10
   - Ending
   sceneNum: 0
@@ -2030,11 +2033,14 @@ MonoBehaviour:
   endtype: 1
   clips:
   - {fileID: 8300000, guid: 9f0ac9e375b3b134593f3398de904270, type: 3}
-  - {fileID: 8300000, guid: 9f0ac9e375b3b134593f3398de904270, type: 3}
-  - {fileID: 8300000, guid: 9f0ac9e375b3b134593f3398de904270, type: 3}
-  - {fileID: 8300000, guid: 9f0ac9e375b3b134593f3398de904270, type: 3}
-  - {fileID: 8300000, guid: 9f0ac9e375b3b134593f3398de904270, type: 3}
-  - {fileID: 8300000, guid: 9f0ac9e375b3b134593f3398de904270, type: 3}
+  - {fileID: 8300000, guid: 060dd034cdc84a74691449478f7627b8, type: 3}
+  - {fileID: 8300000, guid: 2bed9d1a28d680443b4de2a4f477ad37, type: 3}
+  - {fileID: 8300000, guid: 9c3ed350cac7b0d4594bac131ce69490, type: 3}
+  - {fileID: 8300000, guid: 858b7a95334690c4d918d8cd0d18cfd4, type: 3}
+  - {fileID: 8300000, guid: 0577c6b4b92119045b91d04925981c58, type: 3}
+  - {fileID: 8300000, guid: 605a1d6a51cf60646aca7b7b395615d2, type: 3}
+  - {fileID: 8300000, guid: 050f002b931146549bfc64ac8eb9bab2, type: 3}
+  - {fileID: 8300000, guid: ead2edbb42c5ccd4487237e80ac41e05, type: 3}
   - {fileID: 8300000, guid: 11248116644bc8249bf7451c6f3fa857, type: 3}
   - {fileID: 8300000, guid: ef26f5eeadad36645a0397ccfe671eb5, type: 3}
   aud: {fileID: 0}
@@ -2105,7 +2111,7 @@ AudioSource:
   m_audioClip: {fileID: 0}
   m_Resource: {fileID: 0}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.6
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -3566,6 +3572,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   END: 0
   endtime: 3
+  passed: 
 --- !u!1001 &1884941682
 PrefabInstance:
   m_ObjectHideFlags: 0

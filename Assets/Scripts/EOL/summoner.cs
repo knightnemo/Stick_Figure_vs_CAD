@@ -59,6 +59,7 @@ public class summoner : MonoBehaviour
                 Instantiate(EOL, transform.position + Vector3.up * 10, Quaternion.identity);
                 Bosscontroller.instance.targettype = 2;
                 playercontroller.instance.type = 3;
+                playercontroller.instance.LenSize = 21.0f;
                 Destroy(gameObject);
             }
         }

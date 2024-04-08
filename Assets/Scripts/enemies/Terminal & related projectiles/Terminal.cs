@@ -12,7 +12,7 @@ public class Terminal : MonoBehaviour
     public GameObject tac;
     public GameObject help;
     public GameObject move;
-    float force=200.0f;
+    float force=300.0f;
     bool activestate=false;
     public GameObject ply;
     public float activedistance;
@@ -30,6 +30,14 @@ public class Terminal : MonoBehaviour
 
     
     public float tmpx, tmpy;
+    SpriteRenderer rend;
+
+    public int HP = 5;
+    public GameObject hurteffect;
+    public GameObject deatheffect;
+
+    public AudioClip[] clips;
+    public AudioSource aud;
     // Start is called before the first frame update
     void Start()
     {
@@ -38,11 +46,22 @@ public class Terminal : MonoBehaviour
         intervaltime=interval;
         beamstate=false;
         beamtimer=beamtime;
+
+        rend=GetComponent<SpriteRenderer>();
+        rend.material.color = new Color(1.1f, 1.1f, 1.1f);
+        aud = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
     void Update()
     {//FIXME:预留接口，如果有一二阶段切换可以通过调整randomNumber的范围和intervaltime的数值实现
+        if (HP <= 0)
+        {
+            playercontroller.instance.LenSize = 8.0f;
+            Instantiate(deatheffect,transform.position,Quaternion.identity);
+            Destroy(gameObject);
+            playercontroller.instance.LenSize = 8;
+        }
         if(activestate){
             if(!beamstate){
                 intervaltime-=Time.deltaTime;
@@ -55,6 +74,7 @@ public class Terminal : MonoBehaviour
                     direction.x=targetTransform.position.x-terminalTransform.position.x;
                     direction.y=targetTransform.position.y-terminalTransform.position.y;
                     rigidbody2d.AddForce(-direction * force);//rm
+                        MakeSound(2);
                     }
                     else if(randomNumber<=4){
                         beam_action();//rm-f
@@ -65,6 +85,7 @@ public class Terminal : MonoBehaviour
                         direction.x=targetTransform.position.x-terminalTransform.position.x;
                         direction.y=targetTransform.position.y-terminalTransform.position.y;
                         rigidbody2d.AddForce(-direction * force);//--help
+                        MakeSound(2);
                     }
                     else if(randomNumber<=8){
                         rmobject = Instantiate(tac, (Vector2)terminalTransform.position, Quaternion.identity);
@@ -72,6 +93,7 @@ public class Terminal : MonoBehaviour
                         direction.x=targetTransform.position.x-terminalTransform.position.x;
                         direction.y=targetTransform.position.y-terminalTransform.position.y;
                         rigidbody2d.AddForce(-direction * force);//tac
+                        MakeSound(2);
                     }
                     else if(randomNumber<=10){
                     rmobject = Instantiate(wq, (Vector2)terminalTransform.position, Quaternion.identity);
@@ -79,6 +101,7 @@ public class Terminal : MonoBehaviour
                     direction.x=targetTransform.position.x-terminalTransform.position.x;
                     direction.y=targetTransform.position.y-terminalTransform.position.y;
                     rigidbody2d.AddForce(-direction * force);//wq
+                        MakeSound(2);
                     }
                     else{
                         rmobject = Instantiate(move, (Vector2)terminalTransform.position, Quaternion.identity);
@@ -86,6 +109,7 @@ public class Terminal : MonoBehaviour
                         direction.x=targetTransform.position.x-terminalTransform.position.x;
                         direction.y=targetTransform.position.y-terminalTransform.position.y;
                         rigidbody2d.AddForce(-direction * force);//move
+                        MakeSound(2);
                     }//随机生成6种projectile
                 }
             }
@@ -105,6 +129,7 @@ public class Terminal : MonoBehaviour
             //Debug.Log("Distance: " + distance);
             if(distance<=activedistance){
                 activestate=true;
+                playercontroller.instance.LenSize = 14;
                 Debug.Log("Terminal Active");
             }
         }//判断进入activestate,一旦进入后不再可能退出，直至Terminal死亡
@@ -120,6 +145,7 @@ public class Terminal : MonoBehaviour
         rmobject = Instantiate(beam, terminalTransform.position, targetRotation);
         Debug.Log("Beam Generated");
         beamstate = true;
+        MakeSound(0);
     }
 
     void Deathray()
@@ -128,5 +154,21 @@ public class Terminal : MonoBehaviour
         float angle = Mathf.Atan2(tmpy, tmpx) * Mathf.Rad2Deg;
         Quaternion targetRotation = Quaternion.AngleAxis(angle, Vector3.forward);
         GameObject deathray = Instantiate(rm_f, terminalTransform.position, targetRotation);
+        MakeSound(1);
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.tag == "Array")
+        {
+            HP--;
+            Instantiate(hurteffect, transform.position, Quaternion.identity);
+        }
+    }
+
+    void MakeSound(int n)
+    {
+        aud.clip = clips[n];
+        aud.Play();
     }
 }

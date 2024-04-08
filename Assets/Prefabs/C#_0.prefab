@@ -261,6 +261,9 @@ MonoBehaviour:
   divetimer: 0
   HP: 1
   bomb: {fileID: 5900420284555643155, guid: 4c942dcbc4562b34d845028b56eb5076, type: 3}
+  clips:
+  - {fileID: 8300000, guid: 29c9b93395314bf46b6e58c19993ba57, type: 3}
+  - {fileID: 8300000, guid: 0334def7bfc647d4aa5f8e88597f3f86, type: 3}
 --- !u!50 &6252563865530836568
 Rigidbody2D:
   serializedVersion: 4
@@ -298,12 +301,12 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: c01d515e5f5eeac46918fe4a0d2cab94, type: 3}
-  m_Resource: {fileID: 8300000, guid: c01d515e5f5eeac46918fe4a0d2cab94, type: 3}
+  m_audioClip: {fileID: 0}
+  m_Resource: {fileID: 0}
   m_PlayOnAwake: 0
   m_Volume: 0.3
   m_Pitch: 1
-  Loop: 1
+  Loop: 0
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0

@@ -13,6 +13,8 @@ public class help : MonoBehaviour
     public GameObject enemyduck;
     public GameObject enemyCplus;
     public GameObject enemyCsharp;
+
+    SpriteRenderer rend;
     // Start is called before the first frame update
     void Start()
     {
@@ -22,6 +24,9 @@ public class help : MonoBehaviour
         rigidbody2d.AddForce(v * force);
 
         flytimer = flytime;
+
+        rend=GetComponent<SpriteRenderer>();
+        rend.material.color = new Color(1.2f, 1.2f, 1.2f);
     }
 
     // Update is called once per frame

@@ -136,6 +136,10 @@ public class Bosscontroller : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (EOLcontroller.instance != null)
+        {
+            player.LenSize = 21.0f;
+        }
         if (!ON || playercontroller.instance.atdev)
         {
             return;
@@ -483,10 +487,10 @@ public class Bosscontroller : MonoBehaviour
             if (lasercount < lasernum)
             {
                 Vector2 tmp = target.position - transform.position - Vector3.up * 25;
-                float angle = Mathf.Atan2(tmp.y, tmp.x) * Mathf.Rad2Deg-80;
+                float angle = Mathf.Atan2(tmp.y, tmp.x) * Mathf.Rad2Deg-60;
                 if (targettype == 2)
                 {
-                    angle += 80;
+                    angle += 60;
                 }
                 Instantiate(beam, transform.position+ 25*Vector3.up, Quaternion.AngleAxis(angle , Vector3.forward));
                 lasercount++;

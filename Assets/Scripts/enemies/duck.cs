@@ -16,6 +16,10 @@ public class duck : MonoBehaviour
     public int HP = 3;
 
     Animator ani;
+    public AudioClip[] clips;
+    AudioSource aud;
+    
+    bool dead = false;
     // Start is called before the first frame update
     void Start()
     {
@@ -23,6 +27,8 @@ public class duck : MonoBehaviour
         rigidbody2d = GetComponent<Rigidbody2D>();
         timer = movetime;
         deadtimer = deadtime;
+        aud = GetComponent<AudioSource>();
+        
     }
 
     // Update is called once per frame
@@ -51,7 +57,14 @@ public class duck : MonoBehaviour
         if (HP <= 0)
         {
             ani.SetTrigger("IsKilled");
+            dead = true;
             deadtimer = deadtimer - Time.deltaTime;
+            if (dead)
+            {
+                aud.clip = clips[1];
+                aud.Play();
+                dead = false;
+            }
 
         }
         if (deadtimer <= 0)
@@ -59,6 +72,8 @@ public class duck : MonoBehaviour
             deadtimer = deadtime;
             Destroy(gameObject);
         }
+
+        
     }
 
     void Move()
@@ -83,6 +98,8 @@ public class duck : MonoBehaviour
             HP--;
             LogicScript.instance.finalScore++;
             Debug.Log("Duck is hit!");
+            aud.clip = clips[0];
+            aud.Play();
         }
         if (collision.tag == "shield")
         {

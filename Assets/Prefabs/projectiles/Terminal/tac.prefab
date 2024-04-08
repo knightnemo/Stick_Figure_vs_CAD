@@ -175,5 +175,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ply: {fileID: 7671142803375392009, guid: f8749428834992d46940fe9b40f4a53a, type: 3}
-  force: 300
+  force: 600
   flytime: 5

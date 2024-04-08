@@ -482,8 +482,8 @@ public class playercontroller : MonoBehaviour
         if (cankillall)
         {
             direction = Vector2.up;
+            MakeSound(12);
         }
-        MakeSound(12);
         GameObject eraseobject = Instantiate(erase, rigidbody2d.position + Vector2.up * 0.3f, Quaternion.identity);
         erase eraseproj = eraseobject.GetComponent<erase>();
         eraseproj.launch(direction);
