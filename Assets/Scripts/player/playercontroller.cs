@@ -123,6 +123,8 @@ public class playercontroller : MonoBehaviour
     public AudioSource aud;
 
     public int score=0;
+    public bool kuaipao = false;
+    public float defaultSpeed=5f;
     void Awake()
     {
         isUpsideDown=false;
@@ -389,8 +391,10 @@ public class playercontroller : MonoBehaviour
     
     void Move()
     {
-        RT = Input.GetAxis("Horizontal") * speed;
-        
+        if (!kuaipao)
+            RT = Input.GetAxis("Horizontal") * speed;
+        else RT = defaultSpeed;
+
         //Walk
         if (RT > 0)
         {

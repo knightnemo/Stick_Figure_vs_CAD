@@ -215,3 +215,12 @@ Credits: TUOMF, Xyberoid, KnightNemo🧑‍💻
 * 完成了Scene03 Scene07
 * 继续加入音效
 * 小BOSS `Terminal`完成制作，加入光效，音效，以及受伤和死亡特效。只有用分解技能打碎的array接触它才能使其受伤。
+
+## 0409更新2
+* 完成了7.5、8、9，至此所有场景完成
+* 实现了暂停功能
+* 改进方向：
+    * 添加tips
+    * （转场）
+    * 标题BGM
+    * Select场景排版

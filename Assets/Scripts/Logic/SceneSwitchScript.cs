@@ -74,7 +74,7 @@ public class SceneSwitchScript : MonoBehaviour
         }
         if(Input.GetKeyDown(KeyCode.Escape))
         {
-            QuitGame();
+            //QuitGame();
         }
 
         if (playercontroller.instance !=null)
@@ -105,7 +105,7 @@ public class SceneSwitchScript : MonoBehaviour
             }
         }
     }
-    void SceneChange()//场景变换函数
+    public void SceneChange()//场景变换函数
     {
         sceneNum++;
         if (sceneNum > scenes.Length)
@@ -119,7 +119,7 @@ public class SceneSwitchScript : MonoBehaviour
             aud.clip = clips[sceneNum - 2];
             aud.Play();
         }
-        
+        LogicScript.instance.startPos=new Vector2 (0,0);
         
     }
 

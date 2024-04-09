@@ -1,0 +1,1064 @@
+fileFormatVersion: 2
+guid: ee51f2ea18ec4b049ad0f5d8a3243c7e
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 2484324793020069687
+    second: gofurther_0
+  - first:
+      213: 2521806940910876620
+    second: gofurther_1
+  - first:
+      213: -311060701706482360
+    second: gofurther_2
+  - first:
+      213: -5825321338994053829
+    second: gofurther_3
+  - first:
+      213: 3120476985643911173
+    second: gofurther_4
+  - first:
+      213: -1500990604397623374
+    second: gofurther_5
+  - first:
+      213: 1935415168645225015
+    second: gofurther_6
+  - first:
+      213: -5730687818692463224
+    second: gofurther_7
+  - first:
+      213: -3487926937129416627
+    second: gofurther_8
+  - first:
+      213: 8015562076533337572
+    second: gofurther_9
+  - first:
+      213: 7747319936447614933
+    second: gofurther_10
+  - first:
+      213: -5562363758315625190
+    second: gofurther_11
+  - first:
+      213: 4710424432785827648
+    second: gofurther_12
+  - first:
+      213: 3194573049900302632
+    second: gofurther_13
+  - first:
+      213: -700130465129105914
+    second: gofurther_14
+  - first:
+      213: -1467336297347655742
+    second: gofurther_15
+  - first:
+      213: -2205338518664789341
+    second: gofurther_16
+  - first:
+      213: -8210907684291245483
+    second: gofurther_17
+  - first:
+      213: 2246355702437527747
+    second: gofurther_18
+  - first:
+      213: 4297685913971613755
+    second: gofurther_19
+  - first:
+      213: -3768649672248410898
+    second: gofurther_20
+  - first:
+      213: 1283453823602151055
+    second: gofurther_21
+  - first:
+      213: 547178006746553038
+    second: gofurther_22
+  - first:
+      213: 9171645249774426308
+    second: gofurther_23
+  - first:
+      213: 3102711470726069631
+    second: gofurther_24
+  - first:
+      213: -2578998836315450352
+    second: gofurther_25
+  - first:
+      213: -3041528892456263911
+    second: gofurther_26
+  - first:
+      213: 112610094327354168
+    second: gofurther_27
+  - first:
+      213: 1422273917231507885
+    second: gofurther_28
+  - first:
+      213: -5039567799995291232
+    second: gofurther_29
+  - first:
+      213: 8789455912840038509
+    second: gofurther_30
+  - first:
+      213: 7214185877789583529
+    second: gofurther_31
+  - first:
+      213: -812530428187427167
+    second: gofurther_32
+  - first:
+      213: 918698660407992346
+    second: gofurther_33
+  - first:
+      213: -2047917845582298637
+    second: gofurther_34
+  - first:
+      213: -3917863769056823028
+    second: gofurther_35
+  - first:
+      213: -4939871191484098787
+    second: gofurther_36
+  - first:
+      213: 5889870749712526303
+    second: gofurther_37
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: gofurther_0
+      rect:
+        serializedVersion: 2
+        x: 485
+        y: 550
+        width: 58
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 73738aa9c381a7220800000000000000
+      internalID: 2484324793020069687
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gofurther_1
+      rect:
+        serializedVersion: 2
+        x: 546
+        y: 549
+        width: 33
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cc77b193d024ff220800000000000000
+      internalID: 2521806940910876620
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gofurther_2
+      rect:
+        serializedVersion: 2
+        x: 601
+        y: 531
+        width: 46
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 84d833b90f3eeabf0800000000000000
+      internalID: -311060701706482360
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gofurther_3
+      rect:
+        serializedVersion: 2
+        x: 647
+        y: 549
+        width: 46
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b3da1c62b1d482fa0800000000000000
+      internalID: -5825321338994053829
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gofurther_4
+      rect:
+        serializedVersion: 2
+        x: 697
+        y: 549
+        width: 42
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 508461319492e4b20800000000000000
+      internalID: 3120476985643911173
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gofurther_5
+      rect:
+        serializedVersion: 2
+        x: 766
+        y: 530
+        width: 45
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2b74ea57ff86b2be0800000000000000
+      internalID: -1500990604397623374
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gofurther_6
+      rect:
+        serializedVersion: 2
+        x: 817
+        y: 549
+        width: 46
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 73a500477d9fbda10800000000000000
+      internalID: 1935415168645225015
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gofurther_7
+      rect:
+        serializedVersion: 2
+        x: 887
+        y: 550
+        width: 33
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8857d289ac18870b0800000000000000
+      internalID: -5730687818692463224
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gofurther_8
+      rect:
+        serializedVersion: 2
+        x: 920
+        y: 549
+        width: 42
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d4882e53ee4689fc0800000000000000
+      internalID: -3487926937129416627
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gofurther_9
+      rect:
+        serializedVersion: 2
+        x: 970
+        y: 550
+        width: 29
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4edacd68d3ffc3f60800000000000000
+      internalID: 8015562076533337572
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gofurther_10
+      rect:
+        serializedVersion: 2
+        x: 998
+        y: 549
+        width: 31
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5df03456f62048b60800000000000000
+      internalID: 7747319936447614933
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gofurther_11
+      rect:
+        serializedVersion: 2
+        x: 1033
+        y: 550
+        width: 41
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a15271ae1a38ec2b0800000000000000
+      internalID: -5562363758315625190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gofurther_12
+      rect:
+        serializedVersion: 2
+        x: 1078
+        y: 549
+        width: 42
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0472581901ace5140800000000000000
+      internalID: 4710424432785827648
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gofurther_13
+      rect:
+        serializedVersion: 2
+        x: 1125
+        y: 550
+        width: 29
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 82108586347655c20800000000000000
+      internalID: 3194573049900302632
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gofurther_14
+      rect:
+        serializedVersion: 2
+        x: 282
+        y: 419
+        width: 67
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 606fc892d03a846f0800000000000000
+      internalID: -700130465129105914
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gofurther_15
+      rect:
+        serializedVersion: 2
+        x: 556
+        y: 467
+        width: 16
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2c75e8e6969f2abe0800000000000000
+      internalID: -1467336297347655742
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gofurther_16
+      rect:
+        serializedVersion: 2
+        x: 898
+        y: 418
+        width: 31
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3a2cf793d401561e0800000000000000
+      internalID: -2205338518664789341
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gofurther_17
+      rect:
+        serializedVersion: 2
+        x: 1123
+        y: 467
+        width: 16
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 55a8b42e6fefc0e80800000000000000
+      internalID: -8210907684291245483
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gofurther_18
+      rect:
+        serializedVersion: 2
+        x: 356
+        y: 418
+        width: 42
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3c046f21c98ac2f10800000000000000
+      internalID: 2246355702437527747
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gofurther_19
+      rect:
+        serializedVersion: 2
+        x: 402
+        y: 419
+        width: 66
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b306a72919274ab30800000000000000
+      internalID: 4297685913971613755
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gofurther_20
+      rect:
+        serializedVersion: 2
+        x: 474
+        y: 418
+        width: 46
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eecbdba171113bbc0800000000000000
+      internalID: -3768649672248410898
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gofurther_21
+      rect:
+        serializedVersion: 2
+        x: 525
+        y: 419
+        width: 29
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f8e4c69d37ebfc110800000000000000
+      internalID: 1283453823602151055
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gofurther_22
+      rect:
+        serializedVersion: 2
+        x: 557
+        y: 419
+        width: 14
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ecad8018f77f79700800000000000000
+      internalID: 547178006746553038
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gofurther_23
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 418
+        width: 42
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4c814bed2ca384f70800000000000000
+      internalID: 9171645249774426308
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gofurther_24
+      rect:
+        serializedVersion: 2
+        x: 622
+        y: 418
+        width: 33
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f7d382dc4ab0f0b20800000000000000
+      internalID: 3102711470726069631
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gofurther_25
+      rect:
+        serializedVersion: 2
+        x: 681
+        y: 418
+        width: 33
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0149545f83e853cd0800000000000000
+      internalID: -2578998836315450352
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gofurther_26
+      rect:
+        serializedVersion: 2
+        x: 716
+        y: 418
+        width: 42
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 91f9e0746915ac5d0800000000000000
+      internalID: -3041528892456263911
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gofurther_27
+      rect:
+        serializedVersion: 2
+        x: 760
+        y: 418
+        width: 42
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 833518eb842109100800000000000000
+      internalID: 112610094327354168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gofurther_28
+      rect:
+        serializedVersion: 2
+        x: 806
+        y: 419
+        width: 66
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: da923e9979eecb310800000000000000
+      internalID: 1422273917231507885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gofurther_29
+      rect:
+        serializedVersion: 2
+        x: 931
+        y: 418
+        width: 46
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0a9a8c369cbdf0ab0800000000000000
+      internalID: -5039567799995291232
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gofurther_30
+      rect:
+        serializedVersion: 2
+        x: 1004
+        y: 418
+        width: 33
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d6889cd859b6af970800000000000000
+      internalID: 8789455912840038509
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gofurther_31
+      rect:
+        serializedVersion: 2
+        x: 1042
+        y: 400
+        width: 44
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9a8a94d55dfed1460800000000000000
+      internalID: 7214185877789583529
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gofurther_32
+      rect:
+        serializedVersion: 2
+        x: 1092
+        y: 419
+        width: 29
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1ae31ba61ef49b4f0800000000000000
+      internalID: -812530428187427167
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gofurther_33
+      rect:
+        serializedVersion: 2
+        x: 1124
+        y: 419
+        width: 14
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a10ee3d609fdfbc00800000000000000
+      internalID: 918698660407992346
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gofurther_34
+      rect:
+        serializedVersion: 2
+        x: 1146
+        y: 419
+        width: 41
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3f142ecd1955493e0800000000000000
+      internalID: -2047917845582298637
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gofurther_35
+      rect:
+        serializedVersion: 2
+        x: 1192
+        y: 399
+        width: 45
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c09bef6e8a3f0a9c0800000000000000
+      internalID: -3917863769056823028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gofurther_36
+      rect:
+        serializedVersion: 2
+        x: 1266
+        y: 418
+        width: 42
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d17976be25d027bb0800000000000000
+      internalID: -4939871191484098787
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gofurther_37
+      rect:
+        serializedVersion: 2
+        x: 1315
+        y: 400
+        width: 44
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fdb2491bd360db150800000000000000
+      internalID: 5889870749712526303
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      gofurther_0: 2484324793020069687
+      gofurther_1: 2521806940910876620
+      gofurther_10: 7747319936447614933
+      gofurther_11: -5562363758315625190
+      gofurther_12: 4710424432785827648
+      gofurther_13: 3194573049900302632
+      gofurther_14: -700130465129105914
+      gofurther_15: -1467336297347655742
+      gofurther_16: -2205338518664789341
+      gofurther_17: -8210907684291245483
+      gofurther_18: 2246355702437527747
+      gofurther_19: 4297685913971613755
+      gofurther_2: -311060701706482360
+      gofurther_20: -3768649672248410898
+      gofurther_21: 1283453823602151055
+      gofurther_22: 547178006746553038
+      gofurther_23: 9171645249774426308
+      gofurther_24: 3102711470726069631
+      gofurther_25: -2578998836315450352
+      gofurther_26: -3041528892456263911
+      gofurther_27: 112610094327354168
+      gofurther_28: 1422273917231507885
+      gofurther_29: -5039567799995291232
+      gofurther_3: -5825321338994053829
+      gofurther_30: 8789455912840038509
+      gofurther_31: 7214185877789583529
+      gofurther_32: -812530428187427167
+      gofurther_33: 918698660407992346
+      gofurther_34: -2047917845582298637
+      gofurther_35: -3917863769056823028
+      gofurther_36: -4939871191484098787
+      gofurther_37: 5889870749712526303
+      gofurther_4: 3120476985643911173
+      gofurther_5: -1500990604397623374
+      gofurther_6: 1935415168645225015
+      gofurther_7: -5730687818692463224
+      gofurther_8: -3487926937129416627
+      gofurther_9: 8015562076533337572
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
