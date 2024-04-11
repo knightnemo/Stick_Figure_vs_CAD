@@ -51,7 +51,11 @@ public class ButtonScript : MonoBehaviour
         }
         //Debug.Log("Ювдк");
         Destroy(playercontroller.instance.restart);
-        playercontroller.instance.Resqwan();
+        if (playercontroller.instance != null)
+        {
+            playercontroller.instance.Resqwan();
+        }
+        
     }
     
 }

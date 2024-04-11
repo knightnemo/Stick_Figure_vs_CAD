@@ -1,0 +1,814 @@
+fileFormatVersion: 2
+guid: 46f762a0a089f8c40b626442cd0159e8
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 4620035800191971834
+    second: disruptdesc_0
+  - first:
+      213: -4809841094937880499
+    second: disruptdesc_1
+  - first:
+      213: -3861573995657940551
+    second: disruptdesc_2
+  - first:
+      213: 8273961205137625450
+    second: disruptdesc_3
+  - first:
+      213: -6513038336859449370
+    second: disruptdesc_4
+  - first:
+      213: -2223800884928928868
+    second: disruptdesc_5
+  - first:
+      213: 7214877191992475071
+    second: disruptdesc_6
+  - first:
+      213: 8596647037190444962
+    second: disruptdesc_7
+  - first:
+      213: -7318070715324459764
+    second: disruptdesc_8
+  - first:
+      213: 3273792780377259462
+    second: disruptdesc_9
+  - first:
+      213: -7113562340779624952
+    second: disruptdesc_10
+  - first:
+      213: -3900138867077512623
+    second: disruptdesc_11
+  - first:
+      213: 7666327631722782842
+    second: disruptdesc_12
+  - first:
+      213: 2780831236576568772
+    second: disruptdesc_13
+  - first:
+      213: -3474450696720048366
+    second: disruptdesc_14
+  - first:
+      213: -264733168229722587
+    second: disruptdesc_15
+  - first:
+      213: -8819479652527588148
+    second: disruptdesc_16
+  - first:
+      213: -4432478026374719681
+    second: disruptdesc_17
+  - first:
+      213: 511110896573225918
+    second: disruptdesc_18
+  - first:
+      213: 689078921526410616
+    second: disruptdesc_19
+  - first:
+      213: -3889301971892314863
+    second: disruptdesc_20
+  - first:
+      213: 8170056669070811863
+    second: disruptdesc_21
+  - first:
+      213: 1007757885448063050
+    second: disruptdesc_22
+  - first:
+      213: 4850218401161090352
+    second: disruptdesc_23
+  - first:
+      213: -453713355478229158
+    second: disruptdesc_24
+  - first:
+      213: 2990035308987839498
+    second: disruptdesc_25
+  - first:
+      213: 937467070615925146
+    second: disruptdesc_26
+  - first:
+      213: -726296044776388267
+    second: disruptdesc_27
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: disruptdesc_0
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 629
+        width: 56
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: af1b700151aad1040800000000000000
+      internalID: 4620035800191971834
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: disruptdesc_1
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 629
+        width: 62
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d48d62ef103004db0800000000000000
+      internalID: -4809841094937880499
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: disruptdesc_2
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 629
+        width: 41
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9b13ce219eee86ac0800000000000000
+      internalID: -3861573995657940551
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: disruptdesc_3
+      rect:
+        serializedVersion: 2
+        x: 188
+        y: 606
+        width: 101
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a615795f0e303d270800000000000000
+      internalID: 8273961205137625450
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: disruptdesc_4
+      rect:
+        serializedVersion: 2
+        x: 287
+        y: 618
+        width: 27
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6e7ddf2e32a0d95a0800000000000000
+      internalID: -6513038336859449370
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: disruptdesc_5
+      rect:
+        serializedVersion: 2
+        x: 343
+        y: 606
+        width: 63
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c93ac9a90e87321e0800000000000000
+      internalID: -2223800884928928868
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: disruptdesc_6
+      rect:
+        serializedVersion: 2
+        x: 404
+        y: 629
+        width: 62
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fbd77ce7494602460800000000000000
+      internalID: 7214877191992475071
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: disruptdesc_7
+      rect:
+        serializedVersion: 2
+        x: 469
+        y: 629
+        width: 58
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2a7962feeec6d4770800000000000000
+      internalID: 8596647037190444962
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: disruptdesc_8
+      rect:
+        serializedVersion: 2
+        x: 558
+        y: 629
+        width: 60
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c0595eb057df07a90800000000000000
+      internalID: -7318070715324459764
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: disruptdesc_9
+      rect:
+        serializedVersion: 2
+        x: 619
+        y: 630
+        width: 77
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6cdff9e3039de6d20800000000000000
+      internalID: 3273792780377259462
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: disruptdesc_10
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 630
+        width: 71
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 806fb368dbc874d90800000000000000
+      internalID: -7113562340779624952
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: disruptdesc_11
+      rect:
+        serializedVersion: 2
+        x: 781
+        y: 630
+        width: 72
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 152862d3d5cefd9c0800000000000000
+      internalID: -3900138867077512623
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: disruptdesc_12
+      rect:
+        serializedVersion: 2
+        x: 859
+        y: 629
+        width: 74
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a702994fc54446a60800000000000000
+      internalID: 7666327631722782842
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: disruptdesc_13
+      rect:
+        serializedVersion: 2
+        x: 933
+        y: 630
+        width: 65
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4c5e474b64f779620800000000000000
+      internalID: 2780831236576568772
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: disruptdesc_14
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 456
+        width: 42
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 21f9460ff7548cfc0800000000000000
+      internalID: -3474450696720048366
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: disruptdesc_15
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 456
+        width: 56
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 526576b069a735cf0800000000000000
+      internalID: -264733168229722587
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: disruptdesc_16
+      rect:
+        serializedVersion: 2
+        x: 122
+        y: 457
+        width: 25
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cccbe4fcbf9ea9580800000000000000
+      internalID: -8819479652527588148
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: disruptdesc_17
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 456
+        width: 55
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f37d53328bcac72c0800000000000000
+      internalID: -4432478026374719681
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: disruptdesc_18
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 434
+        width: 60
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ebb141707a4d71700800000000000000
+      internalID: 511110896573225918
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: disruptdesc_19
+      rect:
+        serializedVersion: 2
+        x: 271
+        y: 456
+        width: 61
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 87d7ac3d0a9109900800000000000000
+      internalID: 689078921526410616
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: disruptdesc_20
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 456
+        width: 83
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 11dd125867c660ac0800000000000000
+      internalID: -3889301971892314863
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: disruptdesc_21
+      rect:
+        serializedVersion: 2
+        x: 449
+        y: 457
+        width: 56
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7d2e6c2f04fd16170800000000000000
+      internalID: 8170056669070811863
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: disruptdesc_22
+      rect:
+        serializedVersion: 2
+        x: 509
+        y: 456
+        width: 55
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a480bbd15764cfd00800000000000000
+      internalID: 1007757885448063050
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: disruptdesc_23
+      rect:
+        serializedVersion: 2
+        x: 567
+        y: 457
+        width: 42
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 035154430ff6f4340800000000000000
+      internalID: 4850218401161090352
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: disruptdesc_24
+      rect:
+        serializedVersion: 2
+        x: 608
+        y: 456
+        width: 55
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a5f9ed86b1614b9f0800000000000000
+      internalID: -453713355478229158
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: disruptdesc_25
+      rect:
+        serializedVersion: 2
+        x: 694
+        y: 487
+        width: 27
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a04781a854dbe7920800000000000000
+      internalID: 2990035308987839498
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: disruptdesc_26
+      rect:
+        serializedVersion: 2
+        x: 730
+        y: 441
+        width: 37
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a9130b4755d820d00800000000000000
+      internalID: 937467070615925146
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: disruptdesc_27
+      rect:
+        serializedVersion: 2
+        x: 694
+        y: 456
+        width: 27
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5590559689dabe5f0800000000000000
+      internalID: -726296044776388267
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      disruptdesc_0: 4620035800191971834
+      disruptdesc_1: -4809841094937880499
+      disruptdesc_10: -7113562340779624952
+      disruptdesc_11: -3900138867077512623
+      disruptdesc_12: 7666327631722782842
+      disruptdesc_13: 2780831236576568772
+      disruptdesc_14: -3474450696720048366
+      disruptdesc_15: -264733168229722587
+      disruptdesc_16: -8819479652527588148
+      disruptdesc_17: -4432478026374719681
+      disruptdesc_18: 511110896573225918
+      disruptdesc_19: 689078921526410616
+      disruptdesc_2: -3861573995657940551
+      disruptdesc_20: -3889301971892314863
+      disruptdesc_21: 8170056669070811863
+      disruptdesc_22: 1007757885448063050
+      disruptdesc_23: 4850218401161090352
+      disruptdesc_24: -453713355478229158
+      disruptdesc_25: 2990035308987839498
+      disruptdesc_26: 937467070615925146
+      disruptdesc_27: -726296044776388267
+      disruptdesc_3: 8273961205137625450
+      disruptdesc_4: -6513038336859449370
+      disruptdesc_5: -2223800884928928868
+      disruptdesc_6: 7214877191992475071
+      disruptdesc_7: 8596647037190444962
+      disruptdesc_8: -7318070715324459764
+      disruptdesc_9: 3273792780377259462
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

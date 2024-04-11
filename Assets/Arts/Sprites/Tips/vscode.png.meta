@@ -1,0 +1,1139 @@
+fileFormatVersion: 2
+guid: b11ccb8f61ffd97448ab9d5eb18f4fa5
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 6274815642165856912
+    second: vscode_0
+  - first:
+      213: 7111256833501487726
+    second: vscode_1
+  - first:
+      213: 1204484245211294477
+    second: vscode_2
+  - first:
+      213: 7705230538424458014
+    second: vscode_3
+  - first:
+      213: 1936377619914286899
+    second: vscode_4
+  - first:
+      213: 5484665776209529286
+    second: vscode_5
+  - first:
+      213: -1155953516840535691
+    second: vscode_6
+  - first:
+      213: -4000682903155962518
+    second: vscode_7
+  - first:
+      213: -8113659986111236630
+    second: vscode_8
+  - first:
+      213: 5302428387525635763
+    second: vscode_9
+  - first:
+      213: -1705017808814874805
+    second: vscode_10
+  - first:
+      213: 7882198902572613041
+    second: vscode_11
+  - first:
+      213: -4671411596978718998
+    second: vscode_12
+  - first:
+      213: 7661904891625785457
+    second: vscode_13
+  - first:
+      213: -2346117320216730357
+    second: vscode_14
+  - first:
+      213: 5177335956514350003
+    second: vscode_15
+  - first:
+      213: -1940616054110203528
+    second: vscode_16
+  - first:
+      213: -1800218853766089766
+    second: vscode_17
+  - first:
+      213: 4999233774744407302
+    second: vscode_18
+  - first:
+      213: 2136056325927348113
+    second: vscode_19
+  - first:
+      213: 6937594313223396644
+    second: vscode_20
+  - first:
+      213: -7896608075707334532
+    second: vscode_21
+  - first:
+      213: -7382170329917614130
+    second: vscode_22
+  - first:
+      213: -4402720331934107603
+    second: vscode_23
+  - first:
+      213: -7300940504804071258
+    second: vscode_24
+  - first:
+      213: 6462403707142872902
+    second: vscode_25
+  - first:
+      213: -2274625710027227803
+    second: vscode_26
+  - first:
+      213: 2526312318962794997
+    second: vscode_27
+  - first:
+      213: -6049734367144840957
+    second: vscode_28
+  - first:
+      213: -6941596613010806532
+    second: vscode_29
+  - first:
+      213: 3383900578635215863
+    second: vscode_30
+  - first:
+      213: -3212625085799186245
+    second: vscode_31
+  - first:
+      213: 5109409393761729117
+    second: vscode_32
+  - first:
+      213: 3367797420375688416
+    second: vscode_33
+  - first:
+      213: 2437379959598296765
+    second: vscode_34
+  - first:
+      213: -2470680716000822375
+    second: vscode_35
+  - first:
+      213: 1847826000323651421
+    second: vscode_36
+  - first:
+      213: 6322951436552229494
+    second: vscode_37
+  - first:
+      213: 1413244942262809038
+    second: vscode_38
+  - first:
+      213: -6614899147601190066
+    second: vscode_39
+  - first:
+      213: -1402321806850334376
+    second: vscode_40
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: vscode_0
+      rect:
+        serializedVersion: 2
+        x: 29
+        y: 290
+        width: 58
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 09a4c56c49f941750800000000000000
+      internalID: 6274815642165856912
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vscode_1
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 290
+        width: 37
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e62ec6bb96240b260800000000000000
+      internalID: 7111256833501487726
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vscode_2
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 289
+        width: 44
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d0baf551a0037b010800000000000000
+      internalID: 1204484245211294477
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vscode_3
+      rect:
+        serializedVersion: 2
+        x: 253
+        y: 338
+        width: 16
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e1b1843c95a7eea60800000000000000
+      internalID: 7705230538424458014
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vscode_4
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 289
+        width: 31
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 337e10a9f256fda10800000000000000
+      internalID: 1936377619914286899
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vscode_5
+      rect:
+        serializedVersion: 2
+        x: 411
+        y: 290
+        width: 36
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6c906b6e6727d1c40800000000000000
+      internalID: 5484665776209529286
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vscode_6
+      rect:
+        serializedVersion: 2
+        x: 586
+        y: 289
+        width: 44
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5793bd3a66a35ffe0800000000000000
+      internalID: -1155953516840535691
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vscode_7
+      rect:
+        serializedVersion: 2
+        x: 660
+        y: 289
+        width: 44
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a6d096a9818ba78c0800000000000000
+      internalID: -4000682903155962518
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vscode_8
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 290
+        width: 41
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ae5f98b0b3d766f80800000000000000
+      internalID: -8113659986111236630
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vscode_9
+      rect:
+        serializedVersion: 2
+        x: 254
+        y: 290
+        width: 14
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3bea9656682069940800000000000000
+      internalID: 5302428387525635763
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vscode_10
+      rect:
+        serializedVersion: 2
+        x: 305
+        y: 289
+        width: 46
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b4fdfd1265f8658e0800000000000000
+      internalID: -1705017808814874805
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vscode_11
+      rect:
+        serializedVersion: 2
+        x: 356
+        y: 290
+        width: 29
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1bd70d4e322336d60800000000000000
+      internalID: 7882198902572613041
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vscode_12
+      rect:
+        serializedVersion: 2
+        x: 449
+        y: 289
+        width: 46
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ae6717a17efcb2fb0800000000000000
+      internalID: -4671411596978718998
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vscode_13
+      rect:
+        serializedVersion: 2
+        x: 496
+        y: 290
+        width: 46
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 178ce2887ed845a60800000000000000
+      internalID: 7661904891625785457
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vscode_14
+      rect:
+        serializedVersion: 2
+        x: 541
+        y: 289
+        width: 42
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b05271f3abae07fd0800000000000000
+      internalID: -2346117320216730357
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vscode_15
+      rect:
+        serializedVersion: 2
+        x: 705
+        y: 271
+        width: 46
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3b325ea2f9799d740800000000000000
+      internalID: 5177335956514350003
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vscode_16
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 158
+        width: 44
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 87157590bfb8115e0800000000000000
+      internalID: -1940616054110203528
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vscode_17
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 158
+        width: 29
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ad3bf4f8d765407e0800000000000000
+      internalID: -1800218853766089766
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vscode_18
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 157
+        width: 46
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 60d86cc81a8d06540800000000000000
+      internalID: 4999233774744407302
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vscode_19
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 138
+        width: 45
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 197202f39ebc4ad10800000000000000
+      internalID: 2136056325927348113
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vscode_20
+      rect:
+        serializedVersion: 2
+        x: 214
+        y: 158
+        width: 29
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 42d537b5549474060800000000000000
+      internalID: 6937594313223396644
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vscode_21
+      rect:
+        serializedVersion: 2
+        x: 243
+        y: 157
+        width: 39
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c70cbfc0bcc996290800000000000000
+      internalID: -7896608075707334532
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vscode_22
+      rect:
+        serializedVersion: 2
+        x: 289
+        y: 158
+        width: 66
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ec715d582334d8990800000000000000
+      internalID: -7382170329917614130
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vscode_23
+      rect:
+        serializedVersion: 2
+        x: 363
+        y: 158
+        width: 66
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d287da94f2566e2c0800000000000000
+      internalID: -4402720331934107603
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vscode_24
+      rect:
+        serializedVersion: 2
+        x: 433
+        y: 157
+        width: 42
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6a864ecfa49ddaa90800000000000000
+      internalID: -7300940504804071258
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vscode_25
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 158
+        width: 29
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 64f1b6faee11fa950800000000000000
+      internalID: 6462403707142872902
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vscode_26
+      rect:
+        serializedVersion: 2
+        x: 511
+        y: 157
+        width: 33
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 56d3bdcd7f7ee60e0800000000000000
+      internalID: -2274625710027227803
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vscode_27
+      rect:
+        serializedVersion: 2
+        x: 545
+        y: 148
+        width: 18
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5f1887b4ba34f0320800000000000000
+      internalID: 2526312318962794997
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vscode_28
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 26
+        width: 31
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 301fbdc55a60b0ca0800000000000000
+      internalID: -6049734367144840957
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vscode_29
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 27
+        width: 41
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cf8af6b98ae7aaf90800000000000000
+      internalID: -6941596613010806532
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vscode_30
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 75
+        width: 16
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7f37ac8c5a706fe20800000000000000
+      internalID: 3383900578635215863
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vscode_31
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 27
+        width: 41
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bb04e6471867a63d0800000000000000
+      internalID: -3212625085799186245
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vscode_32
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 26
+        width: 46
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d5a3637d5c448e640800000000000000
+      internalID: 5109409393761729117
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vscode_33
+      rect:
+        serializedVersion: 2
+        x: 211
+        y: 27
+        width: 14
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0e448f419e1dcbe20800000000000000
+      internalID: 3367797420375688416
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vscode_34
+      rect:
+        serializedVersion: 2
+        x: 233
+        y: 27
+        width: 41
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dbe2382d82053d120800000000000000
+      internalID: 2437379959598296765
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vscode_35
+      rect:
+        serializedVersion: 2
+        x: 279
+        y: 7
+        width: 45
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 99bfc51aaf066bdd0800000000000000
+      internalID: -2470680716000822375
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vscode_36
+      rect:
+        serializedVersion: 2
+        x: 354
+        y: 27
+        width: 66
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d57a50405fbc4a910800000000000000
+      internalID: 1847826000323651421
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vscode_37
+      rect:
+        serializedVersion: 2
+        x: 426
+        y: 26
+        width: 46
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 672ddb3c4d2afb750800000000000000
+      internalID: 6322951436552229494
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vscode_38
+      rect:
+        serializedVersion: 2
+        x: 477
+        y: 27
+        width: 29
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ec1313c89cadc9310800000000000000
+      internalID: 1413244942262809038
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vscode_39
+      rect:
+        serializedVersion: 2
+        x: 506
+        y: 26
+        width: 42
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e436232c5482334a0800000000000000
+      internalID: -6614899147601190066
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vscode_40
+      rect:
+        serializedVersion: 2
+        x: 550
+        y: 26
+        width: 17
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 851e6e91fb3f98ce0800000000000000
+      internalID: -1402321806850334376
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      vscode_0: 6274815642165856912
+      vscode_1: 7111256833501487726
+      vscode_10: -1705017808814874805
+      vscode_11: 7882198902572613041
+      vscode_12: -4671411596978718998
+      vscode_13: 7661904891625785457
+      vscode_14: -2346117320216730357
+      vscode_15: 5177335956514350003
+      vscode_16: -1940616054110203528
+      vscode_17: -1800218853766089766
+      vscode_18: 4999233774744407302
+      vscode_19: 2136056325927348113
+      vscode_2: 1204484245211294477
+      vscode_20: 6937594313223396644
+      vscode_21: -7896608075707334532
+      vscode_22: -7382170329917614130
+      vscode_23: -4402720331934107603
+      vscode_24: -7300940504804071258
+      vscode_25: 6462403707142872902
+      vscode_26: -2274625710027227803
+      vscode_27: 2526312318962794997
+      vscode_28: -6049734367144840957
+      vscode_29: -6941596613010806532
+      vscode_3: 7705230538424458014
+      vscode_30: 3383900578635215863
+      vscode_31: -3212625085799186245
+      vscode_32: 5109409393761729117
+      vscode_33: 3367797420375688416
+      vscode_34: 2437379959598296765
+      vscode_35: -2470680716000822375
+      vscode_36: 1847826000323651421
+      vscode_37: 6322951436552229494
+      vscode_38: 1413244942262809038
+      vscode_39: -6614899147601190066
+      vscode_4: 1936377619914286899
+      vscode_40: -1402321806850334376
+      vscode_5: 5484665776209529286
+      vscode_6: -1155953516840535691
+      vscode_7: -4000682903155962518
+      vscode_8: -8113659986111236630
+      vscode_9: 5302428387525635763
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

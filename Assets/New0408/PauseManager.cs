@@ -44,6 +44,8 @@ public class PauseManager : MonoBehaviour
             canvas.SetActive(false);
             SceneSwitchScript.instance.sceneNum = 1;
             SceneManager.LoadScene("Select");
+            SceneSwitchScript.instance.aud.Stop();
+            
         }
     }
 

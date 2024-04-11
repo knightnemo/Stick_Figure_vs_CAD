@@ -7,7 +7,7 @@ public class kuaipao : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        playercontroller.instance.kuaipao = true;
     }
 
     // Update is called once per frame
@@ -18,7 +18,7 @@ public class kuaipao : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.tag == "Player")
-            playercontroller.instance.kuaipao = true;
+       
+            
     }
 }

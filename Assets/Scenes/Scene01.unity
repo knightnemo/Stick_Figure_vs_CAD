@@ -293,8 +293,12 @@ MonoBehaviour:
   killall: 0
   killbeam: {fileID: 0}
   End: 0
+  rdytoconc: 0
+  type: 1
+  atdev: 0
   rdyforstart: 0
   candetonate: 0
+  LenSize: 8
   sounds: []
   boss: {fileID: 0}
   bosssounds: []
@@ -311,6 +315,9 @@ MonoBehaviour:
   - {fileID: 8300000, guid: cc71866904358ac48a2580fb6fd2c515, type: 3}
   - {fileID: 8300000, guid: 62204b1bc39bbd44e9565960ceeb7138, type: 3}
   aud: {fileID: 0}
+  score: 0
+  kuaipao: 0
+  defaultSpeed: 5
 --- !u!70 &59548890
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -5000,8 +5007,8 @@ Transform:
   m_GameObject: {fileID: 1973279674}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -25.41, y: 52.47, z: 0}
-  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
+  m_LocalPosition: {x: -17.41, y: 52.37, z: 0}
+  m_LocalScale: {x: 0.6, y: 0.6, z: 0.6}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 0}

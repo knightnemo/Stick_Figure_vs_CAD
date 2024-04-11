@@ -1,0 +1,539 @@
+fileFormatVersion: 2
+guid: 850a4fe7e9b6817479d2a1aaf40eb3be
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -1849756768847732629
+    second: mirrordesc_0
+  - first:
+      213: 9028911876300590366
+    second: mirrordesc_1
+  - first:
+      213: -7901916554332314450
+    second: mirrordesc_2
+  - first:
+      213: 8528135503882336479
+    second: mirrordesc_3
+  - first:
+      213: 7271406256957842725
+    second: mirrordesc_4
+  - first:
+      213: -7999292935826497476
+    second: mirrordesc_5
+  - first:
+      213: -8017744198174283940
+    second: mirrordesc_6
+  - first:
+      213: 7706820261765585713
+    second: mirrordesc_7
+  - first:
+      213: -1525678389165545430
+    second: mirrordesc_8
+  - first:
+      213: -9013618159726625445
+    second: mirrordesc_9
+  - first:
+      213: -7394700105206973188
+    second: mirrordesc_10
+  - first:
+      213: -585507836238729261
+    second: mirrordesc_11
+  - first:
+      213: 7654999641917693446
+    second: mirrordesc_12
+  - first:
+      213: -7086928966601370777
+    second: mirrordesc_13
+  - first:
+      213: -558507787644473000
+    second: mirrordesc_14
+  - first:
+      213: 6935031298264108365
+    second: mirrordesc_15
+  - first:
+      213: -5405010983860445672
+    second: mirrordesc_16
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: mirrordesc_0
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 314
+        width: 138
+        height: 478
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b60e4f7e4085456e0800000000000000
+      internalID: -1849756768847732629
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mirrordesc_1
+      rect:
+        serializedVersion: 2
+        x: 321
+        y: 48
+        width: 334
+        height: 933
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e1dc337a3832d4d70800000000000000
+      internalID: 9028911876300590366
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mirrordesc_2
+      rect:
+        serializedVersion: 2
+        x: 729
+        y: 310
+        width: 138
+        height: 478
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ea46e3e82c0c65290800000000000000
+      internalID: -7901916554332314450
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mirrordesc_3
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 152
+        width: 89
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fd8bd498e060a5670800000000000000
+      internalID: 8528135503882336479
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mirrordesc_4
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 205
+        width: 28
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5256683177939e460800000000000000
+      internalID: 7271406256957842725
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mirrordesc_5
+      rect:
+        serializedVersion: 2
+        x: 178
+        y: 152
+        width: 24
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c3025c9f47dccf090800000000000000
+      internalID: -7999292935826497476
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mirrordesc_6
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 151
+        width: 58
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c576fdfa1204bb090800000000000000
+      internalID: -8017744198174283940
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mirrordesc_7
+      rect:
+        serializedVersion: 2
+        x: 269
+        y: 151
+        width: 60
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 13b1252123024fa60800000000000000
+      internalID: 7706820261765585713
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mirrordesc_8
+      rect:
+        serializedVersion: 2
+        x: 643
+        y: 151
+        width: 42
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a282c44a693b3dae0800000000000000
+      internalID: -1525678389165545430
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mirrordesc_9
+      rect:
+        serializedVersion: 2
+        x: 688
+        y: 152
+        width: 50
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b5dfb783a0239e280800000000000000
+      internalID: -9013618159726625445
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mirrordesc_10
+      rect:
+        serializedVersion: 2
+        x: 740
+        y: 205
+        width: 27
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cfc3890ee6fb06990800000000000000
+      internalID: -7394700105206973188
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mirrordesc_11
+      rect:
+        serializedVersion: 2
+        x: 741
+        y: 152
+        width: 25
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3df68cf99bbdfd7f0800000000000000
+      internalID: -585507836238729261
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mirrordesc_12
+      rect:
+        serializedVersion: 2
+        x: 772
+        y: 151
+        width: 57
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 60e1f3ccd950c3a60800000000000000
+      internalID: 7654999641917693446
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mirrordesc_13
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 151
+        width: 55
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7639c4d27ab26ad90800000000000000
+      internalID: -7086928966601370777
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mirrordesc_14
+      rect:
+        serializedVersion: 2
+        x: 890
+        y: 151
+        width: 45
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 85179215028cf38f0800000000000000
+      internalID: -558507787644473000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mirrordesc_15
+      rect:
+        serializedVersion: 2
+        x: 941
+        y: 175
+        width: 25
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d4d8f3fe83e2e3060800000000000000
+      internalID: 6935031298264108365
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mirrordesc_16
+      rect:
+        serializedVersion: 2
+        x: 940
+        y: 151
+        width: 28
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 81ed9eba52b8df4b0800000000000000
+      internalID: -5405010983860445672
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      mirrordesc_0: -1849756768847732629
+      mirrordesc_1: 9028911876300590366
+      mirrordesc_10: -7394700105206973188
+      mirrordesc_11: -585507836238729261
+      mirrordesc_12: 7654999641917693446
+      mirrordesc_13: -7086928966601370777
+      mirrordesc_14: -558507787644473000
+      mirrordesc_15: 6935031298264108365
+      mirrordesc_16: -5405010983860445672
+      mirrordesc_2: -7901916554332314450
+      mirrordesc_3: 8528135503882336479
+      mirrordesc_4: 7271406256957842725
+      mirrordesc_5: -7999292935826497476
+      mirrordesc_6: -8017744198174283940
+      mirrordesc_7: 7706820261765585713
+      mirrordesc_8: -1525678389165545430
+      mirrordesc_9: -9013618159726625445
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

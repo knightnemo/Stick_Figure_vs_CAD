@@ -19,6 +19,11 @@ public class ring : MonoBehaviour
     public GameObject hole;
     public GameObject shadow;
     SpriteRenderer rend;
+    AudioSource aud;
+    public AudioClip[] clips;
+    bool sound1 = true;
+    bool sound2 = true;
+    bool sound3 = true;
     // Start is called before the first frame update
     void Start()
     {
@@ -27,6 +32,7 @@ public class ring : MonoBehaviour
         lituptimer = lituptime;
 
         rend= GetComponent<SpriteRenderer>();
+        aud=  GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -38,8 +44,14 @@ public class ring : MonoBehaviour
         }
         if (activated)
         {
+            if (sound1)
+            {
+                MakeSound(0);
+                sound1 = false;
+            }
             playercontroller.instance.transform.position = transform.position;
             playercontroller.instance.LenSize = 10;
+            SceneSwitchScript.instance.aud.Stop();
         }
         if (activated)
         {
@@ -66,6 +78,11 @@ public class ring : MonoBehaviour
             {
                 finish = true;
             }
+            if (sound2)
+            {
+                MakeSound(1);
+                sound2 = false;
+            }
         }
         if (finish)
         {
@@ -85,6 +102,11 @@ public class ring : MonoBehaviour
                     Debug.Log("lightup!");
                     Lightup();
                     canlit = false;
+                    if (sound3)
+                    {
+                        MakeSound(2);
+                        sound3 = false;
+                    }
                 }
                 
             }
@@ -102,5 +124,11 @@ public class ring : MonoBehaviour
     {
         rend.material.color = new Color(2.0f, 2.0f, 2.0f);
         Instantiate(flare, transform.position, Quaternion.identity);
+    }
+    public void MakeSound(int n)
+    {
+        //sounds[n].GetComponent<AudioSource>().Play();
+        aud.clip = clips[n];
+        aud.Play();
     }
 }

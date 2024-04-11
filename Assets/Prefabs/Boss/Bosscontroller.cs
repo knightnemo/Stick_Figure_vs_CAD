@@ -60,6 +60,7 @@ public class Bosscontroller : MonoBehaviour
     float elmtimer;
     public GameObject choose;
     public GameObject mark;
+    public GameObject powermark;
     //Select
     float selecttime = 0.5f;
     float selecttimer;
@@ -87,6 +88,7 @@ public class Bosscontroller : MonoBehaviour
     //Walk
     float walktime = 1.0f;
     float walktimer;
+    public GameObject teleeffect;
 
     public bool isMulti = false;
     public bool isDirect = false;
@@ -196,7 +198,7 @@ public class Bosscontroller : MonoBehaviour
         }
         if ((Mathf.Abs(distance) >= 50f && !attacking)||(target.transform.position.y - transform.position.y-16 > 30 && !attacking) )
         {
-            if (canjump && target.position.y>heightlim)
+            if (canjump && target.position.y>heightlim-3)
             {
                 isJump = true;
                 attacking = true;
@@ -206,6 +208,7 @@ public class Bosscontroller : MonoBehaviour
                 if (ON)
                 {
                     transform.position = target.position - Vector3.up * 16 - Vector3.right * 5;
+                    Instantiate(teleeffect, transform.position+ Vector3.up * 16, Quaternion.identity);
                 }
                 
             }
@@ -683,6 +686,7 @@ public class Bosscontroller : MonoBehaviour
         {
             energy++;
             HP--;
+            Instantiate(powermark, transform.position + Vector3.up * 16, Quaternion.identity);
         }
     }
 

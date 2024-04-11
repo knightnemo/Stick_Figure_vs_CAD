@@ -7,6 +7,7 @@ public class Sceneselect : MonoBehaviour
 {
     Animator ani;
     Vector2 mousepos;
+    Vector2 defaultpos = new Vector2(0, 0);
     public int num = 1;
     // Start is called before the first frame update
     void Start()
@@ -24,6 +25,7 @@ public class Sceneselect : MonoBehaviour
             if (Input.GetMouseButton(0))
             {
                 SceneSwitchScript.instance.sceneNum=num;
+                LogicScript.instance.startPos = defaultpos;
                 SceneManager.LoadScene(SceneSwitchScript.instance.scenes[num]);
                 SceneSwitchScript.instance.aud.clip = SceneSwitchScript.instance.clips[num - 2];
                 SceneSwitchScript.instance.aud.Play();

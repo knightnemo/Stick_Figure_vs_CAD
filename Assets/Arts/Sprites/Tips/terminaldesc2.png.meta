@@ -1,0 +1,1539 @@
+fileFormatVersion: 2
+guid: 4466aa9de483ade4a8076ef0fd07de56
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 8804437952625361305
+    second: terminaldesc2_0
+  - first:
+      213: -159514607875179484
+    second: terminaldesc2_1
+  - first:
+      213: 7851554865344153526
+    second: terminaldesc2_2
+  - first:
+      213: -4747233176179059578
+    second: terminaldesc2_3
+  - first:
+      213: 2780971748236616495
+    second: terminaldesc2_4
+  - first:
+      213: -4239850304313080012
+    second: terminaldesc2_5
+  - first:
+      213: -5655304534417259907
+    second: terminaldesc2_6
+  - first:
+      213: 6040050540204083402
+    second: terminaldesc2_7
+  - first:
+      213: 9199334978947535501
+    second: terminaldesc2_8
+  - first:
+      213: 5779745398355948164
+    second: terminaldesc2_9
+  - first:
+      213: 4960104430253198085
+    second: terminaldesc2_10
+  - first:
+      213: 6438935415878249348
+    second: terminaldesc2_11
+  - first:
+      213: 1169544692696639635
+    second: terminaldesc2_12
+  - first:
+      213: 8978021960516831114
+    second: terminaldesc2_13
+  - first:
+      213: -4885629732859852924
+    second: terminaldesc2_14
+  - first:
+      213: -2109663261261693785
+    second: terminaldesc2_15
+  - first:
+      213: -4862498699202466519
+    second: terminaldesc2_16
+  - first:
+      213: -5784528261023733535
+    second: terminaldesc2_17
+  - first:
+      213: -5153378761030243318
+    second: terminaldesc2_18
+  - first:
+      213: -8889072994566117589
+    second: terminaldesc2_19
+  - first:
+      213: -3612169367604847611
+    second: terminaldesc2_20
+  - first:
+      213: -2691249209883411154
+    second: terminaldesc2_21
+  - first:
+      213: -2500343977250269269
+    second: terminaldesc2_22
+  - first:
+      213: -7203173450056741636
+    second: terminaldesc2_23
+  - first:
+      213: 2055443175628576873
+    second: terminaldesc2_24
+  - first:
+      213: -7491575869655511028
+    second: terminaldesc2_25
+  - first:
+      213: -4882373133030343581
+    second: terminaldesc2_26
+  - first:
+      213: -5690397896986902904
+    second: terminaldesc2_27
+  - first:
+      213: 1663304682881018982
+    second: terminaldesc2_28
+  - first:
+      213: -3126616948166684515
+    second: terminaldesc2_29
+  - first:
+      213: 3854488681940560269
+    second: terminaldesc2_30
+  - first:
+      213: -3628424351180213241
+    second: terminaldesc2_31
+  - first:
+      213: -5933489244150217307
+    second: terminaldesc2_32
+  - first:
+      213: -2497216227914967291
+    second: terminaldesc2_33
+  - first:
+      213: 7237364127034763876
+    second: terminaldesc2_34
+  - first:
+      213: -1938181242055453681
+    second: terminaldesc2_35
+  - first:
+      213: 7750744939452746012
+    second: terminaldesc2_36
+  - first:
+      213: -3466458912787832574
+    second: terminaldesc2_37
+  - first:
+      213: 7885900434730907974
+    second: terminaldesc2_38
+  - first:
+      213: 1341951842688491768
+    second: terminaldesc2_39
+  - first:
+      213: 6027479547505969607
+    second: terminaldesc2_40
+  - first:
+      213: 111194814409129422
+    second: terminaldesc2_41
+  - first:
+      213: 3889371267491560737
+    second: terminaldesc2_42
+  - first:
+      213: 3207501011778785387
+    second: terminaldesc2_43
+  - first:
+      213: -2961039019794478314
+    second: terminaldesc2_44
+  - first:
+      213: 3416140418846121087
+    second: terminaldesc2_45
+  - first:
+      213: 6913436985743321934
+    second: terminaldesc2_46
+  - first:
+      213: 8950604140402645742
+    second: terminaldesc2_47
+  - first:
+      213: 1589130775785500987
+    second: terminaldesc2_48
+  - first:
+      213: -8707312953514846824
+    second: terminaldesc2_49
+  - first:
+      213: 1280496468663394737
+    second: terminaldesc2_50
+  - first:
+      213: -7419846678087040301
+    second: terminaldesc2_51
+  - first:
+      213: -7057423793688244459
+    second: terminaldesc2_52
+  - first:
+      213: 6163761693546063128
+    second: terminaldesc2_53
+  - first:
+      213: 9078334380054819969
+    second: terminaldesc2_54
+  - first:
+      213: 8643183198039967032
+    second: terminaldesc2_55
+  - first:
+      213: -4840297137854876692
+    second: terminaldesc2_56
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: terminaldesc2_0
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 802
+        width: 48
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 991c3358ba5af2a70800000000000000
+      internalID: 8804437952625361305
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: terminaldesc2_1
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 801
+        width: 55
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 42c3d1d2f4a49cdf0800000000000000
+      internalID: -159514607875179484
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: terminaldesc2_2
+      rect:
+        serializedVersion: 2
+        x: 122
+        y: 801
+        width: 55
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6b7045bfc8356fc60800000000000000
+      internalID: 7851554865344153526
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: terminaldesc2_3
+      rect:
+        serializedVersion: 2
+        x: 178
+        y: 801
+        width: 60
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 684d5e304907e1eb0800000000000000
+      internalID: -4747233176179059578
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: terminaldesc2_4
+      rect:
+        serializedVersion: 2
+        x: 243
+        y: 855
+        width: 27
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f236a00221ff79620800000000000000
+      internalID: 2780971748236616495
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: terminaldesc2_5
+      rect:
+        serializedVersion: 2
+        x: 244
+        y: 802
+        width: 25
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4374696ac960925c0800000000000000
+      internalID: -4239850304313080012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: terminaldesc2_6
+      rect:
+        serializedVersion: 2
+        x: 275
+        y: 801
+        width: 58
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d7247613d725481b0800000000000000
+      internalID: -5655304534417259907
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: terminaldesc2_7
+      rect:
+        serializedVersion: 2
+        x: 335
+        y: 778
+        width: 61
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ac8454af6f192d350800000000000000
+      internalID: 6040050540204083402
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: terminaldesc2_8
+      rect:
+        serializedVersion: 2
+        x: 429
+        y: 801
+        width: 45
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d825ef55c6a9aaf70800000000000000
+      internalID: 9199334978947535501
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: terminaldesc2_9
+      rect:
+        serializedVersion: 2
+        x: 476
+        y: 801
+        width: 61
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 482743141d7c53050800000000000000
+      internalID: 5779745398355948164
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: terminaldesc2_10
+      rect:
+        serializedVersion: 2
+        x: 541
+        y: 801
+        width: 90
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 50b451613b4d5d440800000000000000
+      internalID: 4960104430253198085
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: terminaldesc2_11
+      rect:
+        serializedVersion: 2
+        x: 634
+        y: 801
+        width: 55
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 48bea1355a1bb5950800000000000000
+      internalID: 6438935415878249348
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: terminaldesc2_12
+      rect:
+        serializedVersion: 2
+        x: 717
+        y: 802
+        width: 46
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 398602593be0b3010800000000000000
+      internalID: 1169544692696639635
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: terminaldesc2_13
+      rect:
+        serializedVersion: 2
+        x: 761
+        y: 801
+        width: 53
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a87034ec767589c70800000000000000
+      internalID: 8978021960516831114
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: terminaldesc2_14
+      rect:
+        serializedVersion: 2
+        x: 819
+        y: 802
+        width: 25
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4874dc4a4a1c23cb0800000000000000
+      internalID: -4885629732859852924
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: terminaldesc2_15
+      rect:
+        serializedVersion: 2
+        x: 850
+        y: 801
+        width: 45
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7acfdccf078f8b2e0800000000000000
+      internalID: -2109663261261693785
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: terminaldesc2_16
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 801
+        width: 55
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 92dec39123fe48cb0800000000000000
+      internalID: -4862498699202466519
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: terminaldesc2_17
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 628
+        width: 42
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1e8e870c13a39bfa0800000000000000
+      internalID: -5784528261023733535
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: terminaldesc2_18
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 629
+        width: 56
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a0cefb312558b78b0800000000000000
+      internalID: -5153378761030243318
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: terminaldesc2_19
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 683
+        width: 27
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b276e50353ba3a480800000000000000
+      internalID: -8889072994566117589
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: terminaldesc2_20
+      rect:
+        serializedVersion: 2
+        x: 117
+        y: 629
+        width: 25
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 50c9d57291ffeddc0800000000000000
+      internalID: -3612169367604847611
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: terminaldesc2_21
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 629
+        width: 57
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e2d39da3a13c6aad0800000000000000
+      internalID: -2691249209883411154
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: terminaldesc2_22
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 605
+        width: 60
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ba7d5bb666efc4dd0800000000000000
+      internalID: -2500343977250269269
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: terminaldesc2_23
+      rect:
+        serializedVersion: 2
+        x: 275
+        y: 628
+        width: 44
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cfcc7d549ef290c90800000000000000
+      internalID: -7203173450056741636
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: terminaldesc2_24
+      rect:
+        serializedVersion: 2
+        x: 350
+        y: 683
+        width: 27
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 96897539da6668c10800000000000000
+      internalID: 2055443175628576873
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: terminaldesc2_25
+      rect:
+        serializedVersion: 2
+        x: 351
+        y: 629
+        width: 25
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c009b494073980890800000000000000
+      internalID: -7491575869655511028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: terminaldesc2_26
+      rect:
+        serializedVersion: 2
+        x: 382
+        y: 629
+        width: 57
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 36cb0d0e0835e3cb0800000000000000
+      internalID: -4882373133030343581
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: terminaldesc2_27
+      rect:
+        serializedVersion: 2
+        x: 441
+        y: 628
+        width: 43
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 88e377ff245a701b0800000000000000
+      internalID: -5690397896986902904
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: terminaldesc2_28
+      rect:
+        serializedVersion: 2
+        x: 484
+        y: 628
+        width: 62
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 66ced58ebce351710800000000000000
+      internalID: 1663304682881018982
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: terminaldesc2_29
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 683
+        width: 27
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d901fcf73760c94d0800000000000000
+      internalID: -3126616948166684515
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: terminaldesc2_30
+      rect:
+        serializedVersion: 2
+        x: 577
+        y: 629
+        width: 25
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d89a4d5c805ed7530800000000000000
+      internalID: 3854488681940560269
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: terminaldesc2_31
+      rect:
+        serializedVersion: 2
+        x: 605
+        y: 628
+        width: 42
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 704b68dd64f35adc0800000000000000
+      internalID: -3628424351180213241
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: terminaldesc2_32
+      rect:
+        serializedVersion: 2
+        x: 677
+        y: 629
+        width: 90
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5a543db28f208ada0800000000000000
+      internalID: -5933489244150217307
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: terminaldesc2_33
+      rect:
+        serializedVersion: 2
+        x: 770
+        y: 628
+        width: 53
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 50799cf421b185dd0800000000000000
+      internalID: -2497216227914967291
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: terminaldesc2_34
+      rect:
+        serializedVersion: 2
+        x: 823
+        y: 605
+        width: 63
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 46aef0e0458407460800000000000000
+      internalID: 7237364127034763876
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: terminaldesc2_35
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 455
+        width: 47
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f0495f4ed623a15e0800000000000000
+      internalID: -1938181242055453681
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: terminaldesc2_36
+      rect:
+        serializedVersion: 2
+        x: 61
+        y: 455
+        width: 53
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c19ccbc057d209b60800000000000000
+      internalID: 7750744939452746012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: terminaldesc2_37
+      rect:
+        serializedVersion: 2
+        x: 119
+        y: 455
+        width: 57
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2016bc22cf9a4efc0800000000000000
+      internalID: -3466458912787832574
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: terminaldesc2_38
+      rect:
+        serializedVersion: 2
+        x: 182
+        y: 455
+        width: 45
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 649fb320aa8507d60800000000000000
+      internalID: 7885900434730907974
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: terminaldesc2_39
+      rect:
+        serializedVersion: 2
+        x: 228
+        y: 455
+        width: 55
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8f0e02947129f9210800000000000000
+      internalID: 1341951842688491768
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: terminaldesc2_40
+      rect:
+        serializedVersion: 2
+        x: 312
+        y: 455
+        width: 61
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7c98608a6b8e5a350800000000000000
+      internalID: 6027479547505969607
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: terminaldesc2_41
+      rect:
+        serializedVersion: 2
+        x: 376
+        y: 455
+        width: 53
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ecdb8b5381b0b8100800000000000000
+      internalID: 111194814409129422
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: terminaldesc2_42
+      rect:
+        serializedVersion: 2
+        x: 435
+        y: 455
+        width: 89
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 12df17e9f82d9f530800000000000000
+      internalID: 3889371267491560737
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: terminaldesc2_43
+      rect:
+        serializedVersion: 2
+        x: 527
+        y: 455
+        width: 53
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b60d7c71d25538c20800000000000000
+      internalID: 3207501011778785387
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: terminaldesc2_44
+      rect:
+        serializedVersion: 2
+        x: 583
+        y: 432
+        width: 61
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 61b441323b648e6d0800000000000000
+      internalID: -2961039019794478314
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: terminaldesc2_45
+      rect:
+        serializedVersion: 2
+        x: 648
+        y: 455
+        width: 55
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f7c5d288c91986f20800000000000000
+      internalID: 3416140418846121087
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: terminaldesc2_46
+      rect:
+        serializedVersion: 2
+        x: 705
+        y: 455
+        width: 28
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e4b27404f4671ff50800000000000000
+      internalID: 6913436985743321934
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: terminaldesc2_47
+      rect:
+        serializedVersion: 2
+        x: 737
+        y: 455
+        width: 28
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eea17d91b0fe63c70800000000000000
+      internalID: 8950604140402645742
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: terminaldesc2_48
+      rect:
+        serializedVersion: 2
+        x: 769
+        y: 455
+        width: 28
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b31f550650abd0610800000000000000
+      internalID: 1589130775785500987
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: terminaldesc2_49
+      rect:
+        serializedVersion: 2
+        x: 211
+        y: 217
+        width: 100
+        height: 117
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 89517998009692780800000000000000
+      internalID: -8707312953514846824
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: terminaldesc2_50
+      rect:
+        serializedVersion: 2
+        x: 318
+        y: 217
+        width: 38
+        height: 123
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1b1e2def0cc35c110800000000000000
+      internalID: 1280496468663394737
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: terminaldesc2_51
+      rect:
+        serializedVersion: 2
+        x: 364
+        y: 215
+        width: 97
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3d282c022c8670990800000000000000
+      internalID: -7419846678087040301
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: terminaldesc2_52
+      rect:
+        serializedVersion: 2
+        x: 466
+        y: 215
+        width: 73
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 51f82d3937efe0e90800000000000000
+      internalID: -7057423793688244459
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: terminaldesc2_53
+      rect:
+        serializedVersion: 2
+        x: 548
+        y: 217
+        width: 93
+        height: 123
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 81529ff6a941a8550800000000000000
+      internalID: 6163761693546063128
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: terminaldesc2_54
+      rect:
+        serializedVersion: 2
+        x: 643
+        y: 215
+        width: 69
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 18432630509bcfd70800000000000000
+      internalID: 9078334380054819969
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: terminaldesc2_55
+      rect:
+        serializedVersion: 2
+        x: 715
+        y: 253
+        width: 73
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8350cc73351c2f770800000000000000
+      internalID: 8643183198039967032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: terminaldesc2_56
+      rect:
+        serializedVersion: 2
+        x: 726
+        y: 215
+        width: 40
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ce3f1dae56fc3dcb0800000000000000
+      internalID: -4840297137854876692
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      terminaldesc2_0: 8804437952625361305
+      terminaldesc2_1: -159514607875179484
+      terminaldesc2_10: 4960104430253198085
+      terminaldesc2_11: 6438935415878249348
+      terminaldesc2_12: 1169544692696639635
+      terminaldesc2_13: 8978021960516831114
+      terminaldesc2_14: -4885629732859852924
+      terminaldesc2_15: -2109663261261693785
+      terminaldesc2_16: -4862498699202466519
+      terminaldesc2_17: -5784528261023733535
+      terminaldesc2_18: -5153378761030243318
+      terminaldesc2_19: -8889072994566117589
+      terminaldesc2_2: 7851554865344153526
+      terminaldesc2_20: -3612169367604847611
+      terminaldesc2_21: -2691249209883411154
+      terminaldesc2_22: -2500343977250269269
+      terminaldesc2_23: -7203173450056741636
+      terminaldesc2_24: 2055443175628576873
+      terminaldesc2_25: -7491575869655511028
+      terminaldesc2_26: -4882373133030343581
+      terminaldesc2_27: -5690397896986902904
+      terminaldesc2_28: 1663304682881018982
+      terminaldesc2_29: -3126616948166684515
+      terminaldesc2_3: -4747233176179059578
+      terminaldesc2_30: 3854488681940560269
+      terminaldesc2_31: -3628424351180213241
+      terminaldesc2_32: -5933489244150217307
+      terminaldesc2_33: -2497216227914967291
+      terminaldesc2_34: 7237364127034763876
+      terminaldesc2_35: -1938181242055453681
+      terminaldesc2_36: 7750744939452746012
+      terminaldesc2_37: -3466458912787832574
+      terminaldesc2_38: 7885900434730907974
+      terminaldesc2_39: 1341951842688491768
+      terminaldesc2_4: 2780971748236616495
+      terminaldesc2_40: 6027479547505969607
+      terminaldesc2_41: 111194814409129422
+      terminaldesc2_42: 3889371267491560737
+      terminaldesc2_43: 3207501011778785387
+      terminaldesc2_44: -2961039019794478314
+      terminaldesc2_45: 3416140418846121087
+      terminaldesc2_46: 6913436985743321934
+      terminaldesc2_47: 8950604140402645742
+      terminaldesc2_48: 1589130775785500987
+      terminaldesc2_49: -8707312953514846824
+      terminaldesc2_5: -4239850304313080012
+      terminaldesc2_50: 1280496468663394737
+      terminaldesc2_51: -7419846678087040301
+      terminaldesc2_52: -7057423793688244459
+      terminaldesc2_53: 6163761693546063128
+      terminaldesc2_54: 9078334380054819969
+      terminaldesc2_55: 8643183198039967032
+      terminaldesc2_56: -4840297137854876692
+      terminaldesc2_6: -5655304534417259907
+      terminaldesc2_7: 6040050540204083402
+      terminaldesc2_8: 9199334978947535501
+      terminaldesc2_9: 5779745398355948164
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

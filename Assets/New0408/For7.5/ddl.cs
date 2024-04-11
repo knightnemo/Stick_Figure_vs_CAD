@@ -14,6 +14,7 @@ public class ddl : MonoBehaviour
     {
         timer = 0f;
         katimer = 0f;
+        transform.position=playercontroller.instance.transform.position-Vector3.right*5;
     }
 
     // Update is called once per frame
@@ -36,13 +37,21 @@ public class ddl : MonoBehaviour
 
         if(katimer<3f)
         {
-            katimer += Time.deltaTime;
+            if (playercontroller.instance.rigidbody2d.velocityX < 1)
+            {
+                katimer += Time.deltaTime;
+            }
+            else
+            {
+                katimer = 0;
+            }
         }
         if(katimer>=3f)
         {
             katimer = 0f;
             lastx = newx;
             newx = playercontroller.instance.transform.position.x;
+            transform.position= playercontroller.instance.transform.position- Vector3.right * 4;
             if(Mathf.Approximately(lastx, newx))
             {
                 playercontroller.instance.Destroyed();

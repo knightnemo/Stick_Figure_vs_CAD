@@ -13,6 +13,7 @@ public class dev : MonoBehaviour
     bool cangive = true;
     bool canput = true;
     public GameObject bottle;
+    public GameObject tip;
     public GameObject door1;
     Vector2 mousepos;
 
@@ -75,6 +76,7 @@ public class dev : MonoBehaviour
                     if (cangive)
                     {
                         Instantiate(bottle,transform.position-Vector3.right*5-Vector3.up*1, Quaternion.identity);
+                        Instantiate(tip, transform.position - Vector3.right * 5.5f + Vector3.up * 6.0f, Quaternion.identity);
                         cangive = false;
                     }
                 }
