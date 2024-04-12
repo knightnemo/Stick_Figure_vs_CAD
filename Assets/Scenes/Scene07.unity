@@ -2935,7 +2935,7 @@ PrefabInstance:
       objectReference: {fileID: 1573352243}
     - target: {fileID: 4018789090779610658, guid: a1aad3f8abf3c42c79900a145756557d, type: 3}
       propertyPath: interval
-      value: 1.5
+      value: 1.3
       objectReference: {fileID: 0}
     - target: {fileID: 5242152046024316817, guid: a1aad3f8abf3c42c79900a145756557d, type: 3}
       propertyPath: m_Name
@@ -10957,7 +10957,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isUpsideDown: 0
-  upsidedowntime: 0
+  upsidedowntime: 6
   rigidbody2d: {fileID: 0}
   speed: 5
   jumpspeed: 6
@@ -10998,7 +10998,7 @@ MonoBehaviour:
   LAtimer: 0
   EliminateSafe: 0
   Selected: 0
-  Selectedtime: 5
+  Selectedtime: 15
   barriernum: 1
   rdy1: 0
   rdy2: 0

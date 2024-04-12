@@ -12,7 +12,7 @@ public class Terminal : MonoBehaviour
     public GameObject tac;
     public GameObject help;
     public GameObject move;
-    float force=300.0f;
+    float force=500.0f;
     bool activestate=false;
     public GameObject ply;
     public float activedistance;

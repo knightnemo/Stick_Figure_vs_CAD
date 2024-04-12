@@ -1,0 +1,1189 @@
+fileFormatVersion: 2
+guid: eb40b35f2f8a66643ae16f8224076aa3
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 4560042755632646285
+    second: memorialdesc_0
+  - first:
+      213: -2447810931701685338
+    second: memorialdesc_1
+  - first:
+      213: 1759629589931546650
+    second: memorialdesc_2
+  - first:
+      213: -8404690942331191538
+    second: memorialdesc_3
+  - first:
+      213: -419354394829757880
+    second: memorialdesc_4
+  - first:
+      213: -8661380412709476706
+    second: memorialdesc_5
+  - first:
+      213: -976836122832141746
+    second: memorialdesc_6
+  - first:
+      213: 7450218811847343496
+    second: memorialdesc_7
+  - first:
+      213: 3599934410836535827
+    second: memorialdesc_8
+  - first:
+      213: 3088179782779730487
+    second: memorialdesc_9
+  - first:
+      213: -270886123619389043
+    second: memorialdesc_10
+  - first:
+      213: -338061301255460307
+    second: memorialdesc_11
+  - first:
+      213: 5557246336862481469
+    second: memorialdesc_12
+  - first:
+      213: 2886746717932745678
+    second: memorialdesc_13
+  - first:
+      213: -4788666475588568055
+    second: memorialdesc_14
+  - first:
+      213: -6803084923830105903
+    second: memorialdesc_15
+  - first:
+      213: -3845015934889304297
+    second: memorialdesc_16
+  - first:
+      213: -7007553678361708755
+    second: memorialdesc_17
+  - first:
+      213: 8490554687736485657
+    second: memorialdesc_18
+  - first:
+      213: -4753343228769679352
+    second: memorialdesc_19
+  - first:
+      213: 600743612756844816
+    second: memorialdesc_20
+  - first:
+      213: -1339976646206567984
+    second: memorialdesc_21
+  - first:
+      213: 4977861072454396658
+    second: memorialdesc_22
+  - first:
+      213: 185807567861226416
+    second: memorialdesc_23
+  - first:
+      213: -1065170004858361139
+    second: memorialdesc_24
+  - first:
+      213: -6408981602163148227
+    second: memorialdesc_25
+  - first:
+      213: 2863807605475170740
+    second: memorialdesc_26
+  - first:
+      213: -5819808805799904870
+    second: memorialdesc_27
+  - first:
+      213: -533945977359650102
+    second: memorialdesc_28
+  - first:
+      213: 8956108357183497991
+    second: memorialdesc_29
+  - first:
+      213: 114452273366803941
+    second: memorialdesc_30
+  - first:
+      213: 7202327900183232138
+    second: memorialdesc_31
+  - first:
+      213: -1122452729071005936
+    second: memorialdesc_32
+  - first:
+      213: -6103799733049053220
+    second: memorialdesc_33
+  - first:
+      213: -3934607543162772718
+    second: memorialdesc_34
+  - first:
+      213: 1589748214485740663
+    second: memorialdesc_35
+  - first:
+      213: -5208121330641541086
+    second: memorialdesc_36
+  - first:
+      213: 3027309712556750167
+    second: memorialdesc_37
+  - first:
+      213: 3729284686679011342
+    second: memorialdesc_38
+  - first:
+      213: -2222029538383418575
+    second: memorialdesc_39
+  - first:
+      213: 9044859781006057651
+    second: memorialdesc_40
+  - first:
+      213: 6653455885645768270
+    second: memorialdesc_41
+  - first:
+      213: -1906886729803618967
+    second: memorialdesc_42
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: memorialdesc_0
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 1180
+        width: 26
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d88c312e9b6884f30800000000000000
+      internalID: 4560042755632646285
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: memorialdesc_1
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 1172
+        width: 64
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6a36a9a3de0a70ed0800000000000000
+      internalID: -2447810931701685338
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: memorialdesc_2
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 1171
+        width: 62
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a18d2240ac57b6810800000000000000
+      internalID: 1759629589931546650
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: memorialdesc_3
+      rect:
+        serializedVersion: 2
+        x: 217
+        y: 1175
+        width: 271
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e0ff76f2e1a8c5b80800000000000000
+      internalID: -8404690942331191538
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: memorialdesc_4
+      rect:
+        serializedVersion: 2
+        x: 486
+        y: 1182
+        width: 66
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8426c2556672e2af0800000000000000
+      internalID: -419354394829757880
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: memorialdesc_5
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 974
+        width: 169
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e96ece397689cc780800000000000000
+      internalID: -8661380412709476706
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: memorialdesc_6
+      rect:
+        serializedVersion: 2
+        x: 226
+        y: 950
+        width: 291
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e4202d6c8b49172f0800000000000000
+      internalID: -976836122832141746
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: memorialdesc_7
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 1037
+        width: 19
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 88df713598e746760800000000000000
+      internalID: 7450218811847343496
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: memorialdesc_8
+      rect:
+        serializedVersion: 2
+        x: 607
+        y: 950
+        width: 160
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 31aed9cf54985f130800000000000000
+      internalID: 3599934410836535827
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: memorialdesc_9
+      rect:
+        serializedVersion: 2
+        x: 782
+        y: 1037
+        width: 19
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 73af02b862b6bda20800000000000000
+      internalID: 3088179782779730487
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: memorialdesc_10
+      rect:
+        serializedVersion: 2
+        x: 516
+        y: 965
+        width: 63
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d81751b718e9d3cf0800000000000000
+      internalID: -270886123619389043
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: memorialdesc_11
+      rect:
+        serializedVersion: 2
+        x: 776
+        y: 973
+        width: 136
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d2aac52a907fe4bf0800000000000000
+      internalID: -338061301255460307
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: memorialdesc_12
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 766
+        width: 81
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d3c670e891e4f1d40800000000000000
+      internalID: 5557246336862481469
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: memorialdesc_13
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 763
+        width: 303
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ec3f7e668d8cf0820800000000000000
+      internalID: 2886746717932745678
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: memorialdesc_14
+      rect:
+        serializedVersion: 2
+        x: 438
+        y: 744
+        width: 57
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 90cb8be363d3b8db0800000000000000
+      internalID: -4788666475588568055
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: memorialdesc_15
+      rect:
+        serializedVersion: 2
+        x: 499
+        y: 769
+        width: 153
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1d88a4a5e469691a0800000000000000
+      internalID: -6803084923830105903
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: memorialdesc_16
+      rect:
+        serializedVersion: 2
+        x: 667
+        y: 742
+        width: 160
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 71fd4350162c3aac0800000000000000
+      internalID: -3845015934889304297
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: memorialdesc_17
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 538
+        width: 282
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d27b4c0ae0b20ce90800000000000000
+      internalID: -7007553678361708755
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: memorialdesc_18
+      rect:
+        serializedVersion: 2
+        x: 363
+        y: 554
+        width: 231
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9179f8ce08284d570800000000000000
+      internalID: 8490554687736485657
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: memorialdesc_19
+      rect:
+        serializedVersion: 2
+        x: 592
+        y: 564
+        width: 66
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 808cca9848bb80eb0800000000000000
+      internalID: -4753343228769679352
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: memorialdesc_20
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 419
+        width: 19
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 011e4770225465800800000000000000
+      internalID: 600743612756844816
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: memorialdesc_21
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 347
+        width: 291
+        height: 87
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0d9c98bf652776de0800000000000000
+      internalID: -1339976646206567984
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: memorialdesc_22
+      rect:
+        serializedVersion: 2
+        x: 508
+        y: 356
+        width: 188
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2faa3e4854ae41540800000000000000
+      internalID: 4977861072454396658
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: memorialdesc_23
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 355
+        width: 134
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0bb92fe9ffe149200800000000000000
+      internalID: 185807567861226416
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: memorialdesc_24
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 175
+        width: 351
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dca240b2681c731f0800000000000000
+      internalID: -1065170004858361139
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: memorialdesc_25
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 246
+        width: 20
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d3a3d076039be07a0800000000000000
+      internalID: -6408981602163148227
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: memorialdesc_26
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 159
+        width: 196
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4b9d86518d94eb720800000000000000
+      internalID: 2863807605475170740
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: memorialdesc_27
+      rect:
+        serializedVersion: 2
+        x: 617
+        y: 174
+        width: 62
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a993b9dc9b2eb3fa0800000000000000
+      internalID: -5819808805799904870
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: memorialdesc_28
+      rect:
+        serializedVersion: 2
+        x: 663
+        y: 184
+        width: 19
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ac2ba3a66fa0798f0800000000000000
+      internalID: -533945977359650102
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: memorialdesc_29
+      rect:
+        serializedVersion: 2
+        x: 687
+        y: 184
+        width: 19
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 70764df691d7a4c70800000000000000
+      internalID: 8956108357183497991
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: memorialdesc_30
+      rect:
+        serializedVersion: 2
+        x: 713
+        y: 184
+        width: 19
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5e5a3c97cbd969100800000000000000
+      internalID: 114452273366803941
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: memorialdesc_31
+      rect:
+        serializedVersion: 2
+        x: 738
+        y: 184
+        width: 19
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a8e7e4ec01fc3f360800000000000000
+      internalID: 7202327900183232138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: memorialdesc_32
+      rect:
+        serializedVersion: 2
+        x: 763
+        y: 184
+        width: 19
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 01f0e8e903f3c60f0800000000000000
+      internalID: -1122452729071005936
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: memorialdesc_33
+      rect:
+        serializedVersion: 2
+        x: 788
+        y: 184
+        width: 19
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cdfac7b6b72fa4ba0800000000000000
+      internalID: -6103799733049053220
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: memorialdesc_34
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 68
+        width: 49
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 213e53339477569c0800000000000000
+      internalID: -3934607543162772718
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: memorialdesc_35
+      rect:
+        serializedVersion: 2
+        x: 115
+        y: 68
+        width: 50
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 77cebb6049bef0610800000000000000
+      internalID: 1589748214485740663
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: memorialdesc_36
+      rect:
+        serializedVersion: 2
+        x: 179
+        y: 68
+        width: 50
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 228e9fb5e3909b7b0800000000000000
+      internalID: -5208121330641541086
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: memorialdesc_37
+      rect:
+        serializedVersion: 2
+        x: 244
+        y: 68
+        width: 50
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 755f80ae42a230a20800000000000000
+      internalID: 3027309712556750167
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: memorialdesc_38
+      rect:
+        serializedVersion: 2
+        x: 308
+        y: 68
+        width: 50
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e007ec7f9a411c330800000000000000
+      internalID: 3729284686679011342
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: memorialdesc_39
+      rect:
+        serializedVersion: 2
+        x: 372
+        y: 68
+        width: 50
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 13b2b3c58e3c921e0800000000000000
+      internalID: -2222029538383418575
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: memorialdesc_40
+      rect:
+        serializedVersion: 2
+        x: 437
+        y: 45
+        width: 77
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3b065129c0cc58d70800000000000000
+      internalID: 9044859781006057651
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: memorialdesc_41
+      rect:
+        serializedVersion: 2
+        x: 520
+        y: 20
+        width: 439
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e46e5a060e2d55c50800000000000000
+      internalID: 6653455885645768270
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: memorialdesc_42
+      rect:
+        serializedVersion: 2
+        x: 951
+        y: 35
+        width: 62
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 96526235f906985e0800000000000000
+      internalID: -1906886729803618967
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      memorialdesc_0: 4560042755632646285
+      memorialdesc_1: -2447810931701685338
+      memorialdesc_10: -270886123619389043
+      memorialdesc_11: -338061301255460307
+      memorialdesc_12: 5557246336862481469
+      memorialdesc_13: 2886746717932745678
+      memorialdesc_14: -4788666475588568055
+      memorialdesc_15: -6803084923830105903
+      memorialdesc_16: -3845015934889304297
+      memorialdesc_17: -7007553678361708755
+      memorialdesc_18: 8490554687736485657
+      memorialdesc_19: -4753343228769679352
+      memorialdesc_2: 1759629589931546650
+      memorialdesc_20: 600743612756844816
+      memorialdesc_21: -1339976646206567984
+      memorialdesc_22: 4977861072454396658
+      memorialdesc_23: 185807567861226416
+      memorialdesc_24: -1065170004858361139
+      memorialdesc_25: -6408981602163148227
+      memorialdesc_26: 2863807605475170740
+      memorialdesc_27: -5819808805799904870
+      memorialdesc_28: -533945977359650102
+      memorialdesc_29: 8956108357183497991
+      memorialdesc_3: -8404690942331191538
+      memorialdesc_30: 114452273366803941
+      memorialdesc_31: 7202327900183232138
+      memorialdesc_32: -1122452729071005936
+      memorialdesc_33: -6103799733049053220
+      memorialdesc_34: -3934607543162772718
+      memorialdesc_35: 1589748214485740663
+      memorialdesc_36: -5208121330641541086
+      memorialdesc_37: 3027309712556750167
+      memorialdesc_38: 3729284686679011342
+      memorialdesc_39: -2222029538383418575
+      memorialdesc_4: -419354394829757880
+      memorialdesc_40: 9044859781006057651
+      memorialdesc_41: 6653455885645768270
+      memorialdesc_42: -1906886729803618967
+      memorialdesc_5: -8661380412709476706
+      memorialdesc_6: -976836122832141746
+      memorialdesc_7: 7450218811847343496
+      memorialdesc_8: 3599934410836535827
+      memorialdesc_9: 3088179782779730487
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

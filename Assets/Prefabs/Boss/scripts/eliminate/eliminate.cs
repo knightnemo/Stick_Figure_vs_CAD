@@ -33,7 +33,7 @@ public class eliminate : MonoBehaviour
         {
             if (!playercontroller.instance.EliminateSafe)
             {
-                playercontroller.instance.ChangeHP(-1);
+                playercontroller.instance.ChangeHP(-2);
             }
         }
         if(collision.tag == "EOL")
