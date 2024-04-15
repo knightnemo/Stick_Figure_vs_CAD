@@ -7,8 +7,8 @@ public class Death_ : MonoBehaviour
 {
     Text self;
     int count;
-    float timer=0f;
-    int i=0;
+    float timer = 0f;
+    int i = 0;
     // Start is called before the first frame update
     void Start()
     {
@@ -20,17 +20,17 @@ public class Death_ : MonoBehaviour
     {
         if (LogicScript.instance != null)
         {
-            count= LogicScript.instance.deathNum;
+            count = LogicScript.instance.deathNum;
         }
-        if(timer<0.1f)
+        if (timer < 0.1f)
         {
             timer += Time.deltaTime;
         }
-        if(timer>=0.1f)
+        if (timer >= 0.1f)
         {
             timer = 0f;
-            self.text=i.ToString();
+            self.text = "Deaths:" + i.ToString();
         }
     }
-    
+
 }
