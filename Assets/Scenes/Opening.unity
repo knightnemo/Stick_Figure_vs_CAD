@@ -2634,6 +2634,7 @@ MonoBehaviour:
   - Scene09
   - Scene10
   - Ending
+  - Credit
   sceneNum: 0
   next: {fileID: 0}
   END: 0
@@ -2652,6 +2653,7 @@ MonoBehaviour:
   - {fileID: 8300000, guid: ead2edbb42c5ccd4487237e80ac41e05, type: 3}
   - {fileID: 8300000, guid: 11248116644bc8249bf7451c6f3fa857, type: 3}
   - {fileID: 8300000, guid: ef26f5eeadad36645a0397ccfe671eb5, type: 3}
+  - {fileID: 8300000, guid: 2b0c499887a119f4b9d7c8c023be3df9, type: 3}
   aud: {fileID: 0}
 --- !u!212 &898061800
 SpriteRenderer:
